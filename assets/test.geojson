@@ -1,0 +1,43 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mapbox",
+        "events": "Centrale",
+        "startDate": "15/04",
+        "endDate": "21/04",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Pontaccio+18+Milano",
+        "regLink": "",
+        "type": "Design",
+        "description": "Note aggiuntive"
+      },
+      "geometry": {
+        "coordinates": [
+          9.184562, 45.472364
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mapbox",
+        "events": "Centrale",
+        "startDate": "15/04",
+        "endDate": "21/04",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Pontaccio+18+Milano",
+        "regLink": "",
+        "type": "Design",
+        "description": "Note aggiuntive"
+      },
+      "geometry": {
+        "coordinates": [
+            9.1783767, 45.4661897
+        ],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

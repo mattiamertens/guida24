@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <title>Rec-overtourism</title>
+</head>
+<body>
+    <div class="topnav hidden-nav">
+        <a href="../index.html" class="nav-title">REC-OVERTOURISM</a>
+    
+        <div class="link-section">
+            <div class="link link-1">
+                <a href="map.html" class="nav-item">Map</a>
+            </div>
+            <div class="link link-2">
+                <a href="streams.html" class="nav-item2">Camera streams</a>
+            </div>
+        </div>
+
+        <a href="simulator.html" class="nav-item3">Simulator</a>
+    </div>
+
+    <div class="map-container flex-display-center-center">
+        <div class="side-bar sb-left">
+            <a href="../destinations/boracay.html">
+                <div class="city-card">
+                Boracay - Philippines <br> <br>
+                <span><div class="time">443 days</div> of waiting time </span> <br> 
+                POLLUTION
+                </div>
+            </a>
+            <div class="line"></div>
+           
+            <a href="../destinations/cinqueT.html">
+                <div class="city-card">
+                Cinque Terre - Italia <br> <br>
+                <span><div class="time">243 days</div> of waiting time </span> <br> 
+                HISTORIC
+                </div>
+            </a>
+            <div class="line"></div>
+
+            <a href="../destinations/dubrovnik.html">
+                <div class="city-card">
+                Dubrovnik - Croatia <br> <br>
+                <span><div class="time">525 days</div> of waiting time </span> <br> 
+                RESIDENTS
+                </div>
+            </a>
+            <div class="line"></div>
+
+            <a href="../destinations/canyon.html">
+                <div class="city-card">
+                Fjadrargljufur canyon - Iceland <br> <br>
+                <span><div class="time">292 days</div> of waiting time </span> <br> 
+                NATURAL
+                </div>
+            </a>
+            <div class="line"></div>
+
+            <a href="../destinations/mayaB.html">
+                <div class="city-card">
+                Maya Bay - Thailand <br> <br>
+                <span><div class="time">283 days</div> of waiting time </span> <br> 
+                NATURE
+                </div>
+            </a>
+            <div class="line"></div>
+
+            <a href="../destinations/machuP.html">
+                <div class="city-card">
+                Machu Pichu - Peru <br> <br>
+                <span><div class="time">235 days</div> of waiting time </span> <br> 
+                HISTORIC
+                </div>
+            </a>
+            <div class="line"></div>
+
+            <a href="../destinations/mallorca.html">
+                <div class="city-card">
+                Mallorca - Spain <br> <br>
+                <span><div class="time">87 days</div> of waiting time </span> <br> 
+                RESIDENTS
+                </div>
+            </a>
+            <div class="line"></div>
+
+            <a href="../destinations/santorini.html">
+                <div class="city-card">
+                Santorini - Greece <br> <br>
+                <span><div class="time">96 days</div> of waiting time </span> <br> 
+                SOCIAL MEDIA
+                </div>
+            </a>
+            <div class="line"></div>
+
+            <a href="../destinations/venice.html">
+                <div class="city-card">
+                Venice - Italy <br> <br>
+                <span><div class="time">431 days</div> of waiting time </span> <br> 
+                RESIDENTS
+                </div>
+            </a>
+        </div>
+
+        <div class="buttons flex-display-center-sb">
+            <div class="list-btn pointer animated-btn btn-text sans-regular flex-display-center-center">
+                Show list
+                <img src="../assets/arrow.svg" class="arrow"></img>
+            </div>
+        </div>
+
+        <div id='map'></div>
+    </div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Vya2k0IiwiYSI6ImNsMTJpNWluMTAyamYzanFremVrcGxwZmIifQ.iXZ5OIerg1Tnq8eRy4rmtw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            center:[12.347337, 45.436674],
+            zoom: 1
+        });
+        this.map.once('load', () => {
+            this.map.resize()
+        })
+    </script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="../script.js"></script>
+<script type="text/javascript" src="../map.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <title>Cosa si scrocca oggi?</title>
+</head>
+<body>
+    <div class="topnav hidden-nav">
+        <a href="../index.html" class="nav-title">Guida fuorisalone :) 🍹</a>
+    </div>
+
+    <div class="map-container flex-display-center-center">
+        <div class="side-bar sb-left">
+            <a href="../destinations/boracay.html">
+                <div class="city-card">
+                Boracay - Philippines <br> <br>
+                <span><div class="time">443 days</div> of waiting time </span> <br> 
+                POLLUTION
+                </div>
+            </a>
+        </div>
+
+        <div class="buttons flex-display-center-sb">
+            <div class="list-btn pointer animated-btn btn-text sans-regular flex-display-center-center">
+                Show list
+                <img src="../assets/arrow.svg" class="arrow"></img>
+            </div>
+        </div>
+
+        <div id='map'></div>
+    </div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Vya2k0IiwiYSI6ImNsMTJpNWluMTAyamYzanFremVrcGxwZmIifQ.iXZ5OIerg1Tnq8eRy4rmtw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            center:[9.19547994071335, 45.47106013361857],
+            zoom: 10
+        });
+        this.map.once('load', () => {
+            this.map.resize()
+        })
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="map.js"></script>
+</body>
+</html>

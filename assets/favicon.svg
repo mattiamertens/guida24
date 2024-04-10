@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9fd60;
+      }
+    </style>
+  </defs>
+  <g id="Livello_1" data-name="Livello 1"/>
+  <g id="Livello_2" data-name="Livello 2">
+    <g id="Livello_1-2" data-name="Livello 1">
+      <circle class="cls-1" cx="22" cy="22" r="22"/>
+    </g>
+  </g>
+</svg>

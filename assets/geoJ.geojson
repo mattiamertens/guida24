@@ -1,0 +1,22 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [9.1845623, 45.4723644]
+            },
+            "properties": {
+                "title": "Mapbox",
+                "events": "Centrale",
+                "startDate": "15/04",
+                "endDate": "21/04",
+                "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Pontaccio+18+Milano",
+                "regLink": "",
+                "type": "Design",
+                "description": "Note aggiuntive"
+            }
+        }
+    ]
+}

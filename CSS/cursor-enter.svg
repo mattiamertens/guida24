@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        fill: #f9fd60;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        font-family: NeueMachina-Medium, Neue Machina;
+        font-size: 12px;
+      }
+    </style>
+  </defs>
+  <g id="Livello_1" data-name="Livello 1"/>
+  <g id="Livello_2" data-name="Livello 2">
+    <g id="Livello_1-2" data-name="Livello 1">
+      <g>
+        <circle class="cls-3" cx="22" cy="22" r="22"/>
+        <text class="cls-5" transform="translate(2.88 26.16)"><tspan class="cls-1" x="0" y="0">E</tspan><tspan class="cls-2" x="6.73" y="0">NT</tspan><tspan class="cls-1" x="23.4" y="0">E</tspan><tspan class="cls-4" x="30.13" y="0">R</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
