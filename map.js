@@ -1,27 +1,3 @@
-// NON USATO, MA MI SERVE COME REF
-const geojso1n = {
-    type: 'FeatureCollection',
-    features: [
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [9.1845623, 45.4723644]
-            },
-            properties: {
-                title: 'Mapbox',
-                event: 'Centrale',
-                startDate: '15/04',
-                startHour: '',
-                endDate: '21/04',
-                gMapsLink: 'https://www.google.com/maps/search/?api=1&query=Via+Pontaccio+18+Milano',
-                regLink: '',
-                type: 'Design',
-                description: 'Note aggiuntive'
-            }
-        }
-    ]
-};
 const geojson = {
     "features": [
       {
@@ -1869,6 +1845,8 @@ map.on('load', () => {
             clusterRadius: 50,
             clusterMaxZoom: 13,
         });
+
+        // MARKERS
         map.addLayer({
             'id': 'events',
             'type': 'symbol',
@@ -1879,6 +1857,8 @@ map.on('load', () => {
                 "icon-allow-overlap": false,               
             }
         });
+
+        // CLUSTERS
         map.addLayer({
             id: 'clusters',
             type: 'circle',
@@ -1907,6 +1887,8 @@ map.on('load', () => {
                 ]
             }
         });
+
+        // CLUSTERS COUNT
         map.addLayer({
             id: 'cluster-count',
             type: 'symbol',
@@ -1943,6 +1925,7 @@ map.on('click', 'clusters', (e) => {
     );
 });
 
+
 map.on('click', 'events', (e) => {
     const coordinates = e.features[0].geometry.coordinates.slice();
     const type = e.features[0].properties.type;
@@ -1974,7 +1957,7 @@ map.on('click', 'events', (e) => {
         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
     }
 
-    new mapboxgl.Popup()
+    let popup = new mapboxgl.Popup()
         .setLngLat(coordinates)
         .setHTML(` <div class="popUp">
             <div class="popUp-title">${type}</div>
@@ -1996,15 +1979,16 @@ map.on('click', 'events', (e) => {
                 </div>
             </div>`
         )
-        .setMaxWidth("45%")
+        .setMaxWidth("80%")
         .addTo(map);
 
     map.flyTo({
         center: e.features[0].geometry.coordinates,
         zoom: 11
     });
-    console.log("link is:" + regLink)
 
+    // LINK HIDDEN IF VALUE NOT PRESENT
+    console.log("link is:" + regLink)
     if(!regLink){
         console.log("no link present")
         $(".cancello").hide();
@@ -2013,6 +1997,24 @@ map.on('click', 'events', (e) => {
         console.log('link exists')
     }
 });
+
+$('#scrocco').on('click', function() {
+  // display only features with the 'type' property 'Scrocco'
+  var scrocco = document.getElementById("scrocco");
+  // $(scrocco).is(':checked')
+  // console.log(scrocco);
+  if($(scrocco).is(':checked')) {
+    map.setFilter('events', ['==', ['get', 'type'], 'Scrocco']);
+    console.log('did it happen?')
+    popup.remove();
+  }
+  else{
+    map.setFilter('events', null)
+  }
+ 
+})
+
+
 
 // function createPopUp(feature) {
 //     const popUps = document.getElementsByClassName('mapboxgl-popup');
