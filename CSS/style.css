@@ -438,8 +438,7 @@ a {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
 }
 #map{
     height: 100%;
@@ -521,9 +520,13 @@ a {
 /* CHECKBOX SHIT */
 .checkbox-container{
     z-index: 1000;
+    padding: 8px 16px;
+    width: 80%;
     position: relative;
-    top: 80%;
-    left: 0;
+    margin-bottom: 10%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+
 }
 .switch {
     position: relative;
