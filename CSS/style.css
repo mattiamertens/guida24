@@ -528,6 +528,9 @@ a {
     backdrop-filter: blur(10px);
 
 }
+.type, .weekday{
+    width: 100%;
+}
 .switch {
     position: relative;
     display: inline-block;
