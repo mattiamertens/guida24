@@ -1,174 +1,113 @@
 var geoJ = 'assets/features.geojson';
 var feature;
 map.on('load', () => {
-    map.loadImage('assets/pin.png', 
-    (error, image) => {
-        if (error) throw error;
-        map.addImage('pin', image);
-    });
-    map.loadImage('assets/pinD.png', 
-    (error, image) => {
-        if (error) throw error;
-        map.addImage('pinD', image);
-    });
-    map.loadImage('assets/pinSc.png', 
-    (error, image) => {
-        if (error) throw error;
-        map.addImage('pinSc', image);
-    });
-    map.loadImage('assets/pinSe.png', 
-    (error, image) => {
-        if (error) throw error;
-        map.addImage('pinSe', image);
-    });
-       
+  map.loadImage('assets/pin.png', 
+  (error, image) => {
+      if (error) throw error;
+      map.addImage('pin', image);
+  });
+  map.loadImage('assets/pinD.png', 
+  (error, image) => {
+      if (error) throw error;
+      map.addImage('pinD', image);
+  });
+  map.loadImage('assets/pinSc.png', 
+  (error, image) => {
+      if (error) throw error;
+      map.addImage('pinSc', image);
+  });
+  map.loadImage('assets/pinSe.png', 
+  (error, image) => {
+      if (error) throw error;
+      map.addImage('pinSe', image);
+  });
+      
 
-        // const geojson = {
-        //   "features": [
-        //     {
-        //       "type": "Feature",
-        //       "properties": {
-        //         "event": "Bagno diurno",
-        //         "startDate": "15/04/2024",
-        //         "startHour": "",
-        //         "endDate": "21/04/2024",
-        //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+giacosa+30,+Milano",
-        //         "regLink": "",
-        //         "type": "Location",
-        //         "description": ""
-        //       },
-        //       "geometry": {
-        //         "coordinates": [
-        //           9.221438,
-        //           45.494965
-        //         ],
-        //         "type": "Point"
-        //       },
-        //       "id": "0a18449b5966c833d7e9e5d708c0f615"
-        //     },
-        //     {
-        //       "type": "Feature",
-        //       "properties": {
-        //         "event": "ALESSI",
-        //         "startDate": "16/04/2024",
-        //         "startHour": "10:00",
-        //         "endDate": "21/04/2024",
-        //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Palazzo+Borromeo+d'Adda,+Via+Alessandro+Manzoni,+41,+20121+Milano+MI,+Italia",
-        //         "regLink": "",
-        //         "type": "Design",
-        //         "description": ""
-        //       },
-        //       "geometry": {
-        //         "coordinates": [
-        //           9.194015,
-        //           45.471326
-        //         ],
-        //         "type": "Point"
-        //       },
-        //       "id": "0b5377b1d6455f45d6c1a6977d80b4a1"
-        //     }
-        //   ]
-        // }
-        
-        $.getJSON(geoJ, function(events){
+      // const geojson = {
+      //   "features": [
+      //     {
+      //       "type": "Feature",
+      //       "properties": {
+      //         "event": "Bagno diurno",
+      //         "startDate": "15/04/2024",
+      //         "startHour": "",
+      //         "endDate": "21/04/2024",
+      //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+giacosa+30,+Milano",
+      //         "regLink": "",
+      //         "type": "Location",
+      //         "description": ""
+      //       },
+      //       "geometry": {
+      //         "coordinates": [
+      //           9.221438,
+      //           45.494965
+      //         ],
+      //         "type": "Point"
+      //       },
+      //       "id": "0a18449b5966c833d7e9e5d708c0f615"
+      //     },
+      //     {
+      //       "type": "Feature",
+      //       "properties": {
+      //         "event": "ALESSI",
+      //         "startDate": "16/04/2024",
+      //         "startHour": "10:00",
+      //         "endDate": "21/04/2024",
+      //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Palazzo+Borromeo+d'Adda,+Via+Alessandro+Manzoni,+41,+20121+Milano+MI,+Italia",
+      //         "regLink": "",
+      //         "type": "Design",
+      //         "description": ""
+      //       },
+      //       "geometry": {
+      //         "coordinates": [
+      //           9.194015,
+      //           45.471326
+      //         ],
+      //         "type": "Point"
+      //       },
+      //       "id": "0b5377b1d6455f45d6c1a6977d80b4a1"
+      //     }
+      //   ]
+      // }
+      
+  $.getJSON(geoJ, function(events){
 
-          for (feature of events.features) {
-            const type = feature.properties.type;
-            const layerID = `${type}`;
-            
-            // console.log(feature)
-            if (!map.getLayer(layerID)) {
-              map.addLayer({
-                id: layerID,
-                type: 'symbol',
-                source: 'events',
-                layout: {
-                  'icon-image': [
-                        'match',
-                        ['get', 'type'],
-                        'Scrocco', 'pinSc',
-                        'Design', 'pinD',
-                        'Serata', 'pinSe',
-                        'pin'
-                      ],
-                  'icon-size': 0.2,
-                  'icon-allow-overlap': true
-                 },
-                filter: ['==', ['get', 'type'], type],
-              });
-            }
-          }
-        }); // getJSON
-
-        map.addSource('events', {
-                    type: 'geojson',
-                    // Use a URL for the value for the `data` property.
-                    data: geoJ,
-                    cluster: false,
-                    clusterRadius: 50,
-                    clusterMaxZoom: 11,
+    for (feature of events.features) {
+      const type = feature.properties.type;
+      const layerID = `${type}`;
+      
+      // console.log(feature)
+      if (!map.getLayer(layerID)) {
+        map.addLayer({
+          id: layerID,
+          type: 'symbol',
+          source: 'events',
+          layout: {
+            'icon-image': [
+                  'match',
+                  ['get', 'type'],
+                  'Scrocco', 'pinSc',
+                  'Design', 'pinD',
+                  'Serata', 'pinSe',
+                  'pin'
+                ],
+            'icon-size': 0.2,
+            'icon-allow-overlap': true
+            },
+          filter: ['==', ['get', 'type'], type],
         });
+      }
+    }
+  }); // getJSON
 
-       
-    
-        // MARKERS
-    //     map.addLayer({
-    //         'id': 'events',
-    //         'type': 'symbol',
-    //         'source': 'events',
-    //         'layout': {
-    //             'icon-image': 'pin',
-    //             'icon-size': 0.2,
-    //             'icon-allow-overlap': true,
-    //         }
-    //     });
-
-    //     // CLUSTERS
-    //     map.addLayer({
-    //         id: 'clusters',
-    //         type: 'circle',
-    //         source: 'events',
-    //         filter: ['has', 'point_count'],
-    //         paint: {
-    //             // Use step expressions (https://docs.mapbox.com/style-spec/reference/expressions/#step)
-    //             'circle-color': [
-    //                 'step',
-    //                 ['get', 'point_count'],
-    //                 '#fdffb8',
-    //                 5,
-    //                 '#F9FD60',
-    //                 15,
-    //                 '#ffbf47'
-                    
-    //             ],
-    //             'circle-radius': [
-    //                 'step',
-    //                 ['get', 'point_count'],
-    //                 20,
-    //                 5,
-    //                 30,
-    //                 25,
-    //                 40
-    //             ]
-    //         }
-    //     });
-
-    //     // CLUSTERS COUNT
-    //     map.addLayer({
-    //         id: 'cluster-count',
-    //         type: 'symbol',
-    //         source: 'events',
-    //         // filter: ['has', 'point_count'],
-    //         layout: {
-    //             'text-field': ['get', 'point_count_abbreviated'],
-    //             'text-size': 12
-    //         },
-    //         paint: {
-    //             "text-color": "#000000"
-    //         }
-    //     });
-    // });
-
+  map.addSource('events', {
+              type: 'geojson',
+              // Use a URL for the value for the `data` property.
+              data: geoJ,
+              cluster: false,
+              clusterRadius: 50,
+              clusterMaxZoom: 11,
+  });
 });
 
 // inspect a cluster on click
@@ -196,7 +135,9 @@ map.on('click', 'clusters', (e) => {
 //       console.log('aa')
 //   });
 // }
-function poppinUp(e){
+
+// POPUP 
+map.on('click', 'Design', function poppinUp(e){
   const coordinates = e.features[0].geometry.coordinates.slice();
   const type = e.features[0].properties.type;
   const event = e.features[0].properties.event;
@@ -212,49 +153,38 @@ function poppinUp(e){
     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
     }
+  let popup = new mapboxgl.Popup()
+      .setLngLat(coordinates)
+      .setHTML(` <div class="popUp">
+          <div class="popUp-title">${type}</div>
+              <div class="waiting-time-big sans-bold">
+                      ${event}
+                      <div>
+                      ${description}
+                      </div>
+                  <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
+                  <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
+                  <div class="comparison-data">
+                      
+                  </div>
+              </div>
 
-    let popup = new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(` <div class="popUp">
-            <div class="popUp-title">${type}</div>
-                <div class="waiting-time-big sans-bold">
-                        ${event}
-                        <div>
-                        ${description}
-                        </div>
-                    <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
-                    <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
-                    <div class="comparison-data">
-                        
-                    </div>
-                </div>
+              <div class="popUp-footer flex-display-center-sb">
+                  <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
+                  <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
+              </div>
+          </div>`
+      ).setMaxWidth("80%").addTo(map);
 
-                <div class="popUp-footer flex-display-center-sb">
-                    <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
-                    <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
-                </div>
-            </div>`
-        )
-        .setMaxWidth("80%")
-        .addTo(map);
+      map.flyTo({
+          center: e.features[0].geometry.coordinates
+      });
 
-    map.flyTo({
-        center: e.features[0].geometry.coordinates
-    });
-
-    // LINK HIDDEN IF VALUE NOT PRESENT
-    console.log("link is:" + regLink)
-    if(!regLink){
-        console.log("no link present")
-        $(".cancello").hide();
-    }
-    else{
-        console.log('link exists')
-    }
-  console.log('idea giusta')
-}
-map.on('click', 'Design', (e) => 
-  poppinUp()
+      // LINK HIDDEN IF VALUE NOT PRESENT
+      if(!regLink){
+          $(".cancello").hide();
+      }
+  }
 );
 
 map.on('click', 'Scrocco', (e) => {
@@ -267,14 +197,6 @@ map.on('click', 'Scrocco', (e) => {
     const gMapsLink = e.features[0].properties.gMapsLink;
     const regLink = e.features[0].properties.regLink;
 
-    // map.getSource('events')._data.features.forEach(function(feature) {
-    //     console.log('aaa')
-    // });
-
-    
-    
-    // const tsunami =
-    //     e.features[0].properties.tsunami === 1 ? 'yes' : 'no';
 
     // Ensure that if the map is zoomed out such that
     // multiple copies of the feature are visible, the
@@ -313,62 +235,120 @@ map.on('click', 'Scrocco', (e) => {
     });
 
     // LINK HIDDEN IF VALUE NOT PRESENT
-    console.log("link is:" + regLink)
     if(!regLink){
-        console.log("no link present")
         $(".cancello").hide();
-    }
-    else{
-        console.log('link exists')
     }
 });
 
-var scrocco = document.getElementById("scrocco");
-var design = document.getElementById("design");
-var serata = document.getElementById("serata");
+map.on('click', 'Serata', (e) => {
+  const coordinates = e.features[0].geometry.coordinates.slice();
+  const type = e.features[0].properties.type;
+  const event = e.features[0].properties.event;
+  const description = e.features[0].properties.description;
+  const startDate = e.features[0].properties.startDate;
+  const endDate = e.features[0].properties.endDate;
+  const gMapsLink = e.features[0].properties.gMapsLink;
+  const regLink = e.features[0].properties.regLink;
 
 
+  // Ensure that if the map is zoomed out such that
+  // multiple copies of the feature are visible, the
+  // popup appears over the copy being pointed to.
+  while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+  }
 
-$('#scrocco').on('click', function() {
-  if($(scrocco).is(':checked')) {
-    map.setFilter('events', ['==', ['get', 'type'], 'Scrocco']);
-  }
-  else{
-    map.setFilter('events', null)
-  }
-})
+  let popup = new mapboxgl.Popup()
+      .setLngLat(coordinates)
+      .setHTML(` <div class="popUp">
+          <div class="popUp-title">${type}</div>
+              <div class="waiting-time-big sans-bold">
+                      ${event}
+                      <div>
+                      ${description}
+                      </div>
+                  <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
+                  <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
+                  <div class="comparison-data">
+                      
+                  </div>
+              </div>
 
-$('#design').on('click', function() {
-  if($(design).is(':checked')) {
-    map.setFilter('events', ['==', ['get', 'type'], 'Design']);
-  }
-  else{
-    map.setFilter('events', null)
-  }
-})
+              <div class="popUp-footer flex-display-center-sb">
+                  <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
+                  <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
+              </div>
+          </div>`
+      )
+      .setMaxWidth("80%")
+      .addTo(map);
 
-$('#serata').on('click', function() {
-  if($(serata).is(':checked')) {
-    map.setFilter('events', ['==', ['get', 'type'], 'Serata']);
+  map.flyTo({
+      center: e.features[0].geometry.coordinates
+  });
+
+  // LINK HIDDEN IF VALUE NOT PRESENT
+  if(!regLink){
+      $(".cancello").hide();
   }
-  else{
-    map.setFilter('events', null)
-  }
-})
+});
+
+// var scrocco = document.getElementById("Scrocco");
+// var design = document.getElementById("Design");
+// var serata = document.getElementById("Serata");
+
+var check = document.querySelectorAll('.control')
+
+for (let i = 0; i < check.length; i++) {
+  var selectedLayer = check[i];
+  // console.log(selectedLayer);
+
+  $(selectedLayer).on('click', function() {
+    var currentID = this.id;
+    console.log(currentID)
+
+    if(!$(this).is(':checked')) {
+        map.setLayoutProperty(currentID, 'visibility', 'none');
+      }
+      else{
+        map.setLayoutProperty(currentID, 'visibility', 'visible');
+      }
+  })
+}
+
+
+// $(scrocco).on('click', function() {
+//   if(!$(this).is(':checked')) {
+//     map.setLayoutProperty('Scrocco', 'visibility', 'none');
+//   }
+//   else{
+//     map.setLayoutProperty('Scrocco', 'visibility', 'visible');
+//   }
+  
+//   // console.log($(this).val())
+// })
+
+
 
 // WEEK DAYS FILTERS
 var monday = document.getElementById("monday");
 
+// var statusCheck = monday.prop('checked');
 $(monday).on('click', function() {
-  if($(monday).is(':checked')) {
-    map.setFilter('events', ['==', ['get', 'startDate'], '15/04/2024']);
-    map.setLayoutProperty('clusters', 'visibility', 'none');
-    map.setLayoutProperty('cluster-count', 'visibility', 'none');
-    map.setLayoutProperty('events', 'icon-allow-overlap', true);
+  
+  console.log($(this).prop('checked'))
+
+  if(!$(monday).is(':checked')) {
+    map.setFilter('Design', ['!=', ['get', 'startDate'], '15/04/2024']);
+    
+    // map.setLayoutProperty('clusters', 'visibility', 'none');
+    // map.setLayoutProperty('cluster-count', 'visibility', 'none');
+    // map.setLayoutProperty('events', 'icon-allow-overlap', true);
   }
   else{
-    map.setFilter('events', null)
-    map.setLayoutProperty('clusters', 'visibility', 'visible');
-    map.setLayoutProperty('cluster-count', 'visibility', 'visible');
+    map.setFilter('Design', null);
+    // map.setFilter('Design', null)
+    // map.setLayoutProperty('clusters', 'visibility', 'visible');
+    // map.setLayoutProperty('cluster-count', 'visibility', 'visible');
   }
 })
