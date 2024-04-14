@@ -21,6 +21,11 @@ map.on('load', () => {
       if (error) throw error;
       map.addImage('pinSe', image);
   });
+  map.loadImage('assets/mapbox-icon.png', 
+  (error, image) => {
+      if (error) throw error;
+      map.addImage('random', image);
+  });
       
 
       // const geojson = {
@@ -89,7 +94,8 @@ map.on('load', () => {
                   'Scrocco', 'pinSc',
                   'Design', 'pinD',
                   'Serata', 'pinSe',
-                  'pin'
+                  'Altro', 'pin',
+                  'random'
                 ],
             'icon-size': 0.2,
             'icon-allow-overlap': true
@@ -292,6 +298,58 @@ map.on('click', 'Serata', (e) => {
       $(".cancello").hide();
   }
 });
+// map.on('click', 'Altro', (e) => {
+//   const coordinates = e.features[0].geometry.coordinates.slice();
+//   const type = e.features[0].properties.type;
+//   const event = e.features[0].properties.event;
+//   const description = e.features[0].properties.description;
+//   const startDate = e.features[0].properties.startDate;
+//   const endDate = e.features[0].properties.endDate;
+//   const gMapsLink = e.features[0].properties.gMapsLink;
+//   const regLink = e.features[0].properties.regLink;
+
+
+//   // Ensure that if the map is zoomed out such that
+//   // multiple copies of the feature are visible, the
+//   // popup appears over the copy being pointed to.
+//   while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+//       coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+//   }
+
+//   let popup = new mapboxgl.Popup()
+//       .setLngLat(coordinates)
+//       .setHTML(` <div class="popUp">
+//           <div class="popUp-title">${type}</div>
+//               <div class="waiting-time-big sans-bold">
+//                       ${event}
+//                       <div>
+//                       ${description}
+//                       </div>
+//                   <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
+//                   <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
+//                   <div class="comparison-data">
+                      
+//                   </div>
+//               </div>
+
+//               <div class="popUp-footer flex-display-center-sb">
+//                   <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
+//                   <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
+//               </div>
+//           </div>`
+//       )
+//       .setMaxWidth("80%")
+//       .addTo(map);
+
+//   map.flyTo({
+//       center: e.features[0].geometry.coordinates
+//   });
+
+//   // LINK HIDDEN IF VALUE NOT PRESENT
+//   if(!regLink){
+//       $(".cancello").hide();
+//   }
+// });
 
 // var scrocco = document.getElementById("Scrocco");
 // var design = document.getElementById("Design");
@@ -317,38 +375,56 @@ for (let i = 0; i < check.length; i++) {
 }
 
 
-// $(scrocco).on('click', function() {
-//   if(!$(this).is(':checked')) {
-//     map.setLayoutProperty('Scrocco', 'visibility', 'none');
-//   }
-//   else{
-//     map.setLayoutProperty('Scrocco', 'visibility', 'visible');
-//   }
-  
-//   // console.log($(this).val())
-// })
+var weekCheck = document.querySelectorAll('.weekControl')
+
+for (let i = 0; i < weekCheck.length; i++) {
+  var selectedLayer = weekCheck[i];
+
+  $(selectedLayer).on('click', function() {
+    var currentVal = this.value;
+    console.log(currentVal)
+    
+    // const date1 = new Date(currentVal).toLocaleDateString("en-GB");
+    // const currentDate = new Date().toDateString();
+    // const date2 = new Date('15/04/2024');
+    // const diffTime = Math.abs(date1 - date2);
+    // const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+    // console.log(currentDate);
+
+
+    if(!$(this).is(':checked')) {
+      map.setFilter('Design', ['!=', ['get', 'startDate'], currentVal]);
+      map.setFilter('Serata', ['!=', ['get', 'startDate'], currentVal]);
+      map.setFilter('Scrocco', ['!=', ['get', 'startDate'], currentVal]);
+      }
+      else{
+        map.setFilter('Design', null);
+        map.setFilter('Serata', null);
+        map.setFilter('Scrocco', null);
+      }
+  })
+}
 
 
 
 // WEEK DAYS FILTERS
-var monday = document.getElementById("monday");
+// var monday = document.getElementById("monday");
 
-// var statusCheck = monday.prop('checked');
-$(monday).on('click', function() {
+// $(monday).on('click', function() {
   
-  console.log($(this).prop('checked'))
+//   console.log($(this).prop('checked'))
 
-  if(!$(monday).is(':checked')) {
-    map.setFilter('Design', ['!=', ['get', 'startDate'], '15/04/2024']);
+//   if(!$(monday).is(':checked')) {
+//     map.setFilter('Design', ['!=', ['get', 'startDate'], '15/04/2024']);
     
-    // map.setLayoutProperty('clusters', 'visibility', 'none');
-    // map.setLayoutProperty('cluster-count', 'visibility', 'none');
-    // map.setLayoutProperty('events', 'icon-allow-overlap', true);
-  }
-  else{
-    map.setFilter('Design', null);
-    // map.setFilter('Design', null)
-    // map.setLayoutProperty('clusters', 'visibility', 'visible');
-    // map.setLayoutProperty('cluster-count', 'visibility', 'visible');
-  }
-})
+//     // map.setLayoutProperty('clusters', 'visibility', 'none');
+//     // map.setLayoutProperty('cluster-count', 'visibility', 'none');
+//     // map.setLayoutProperty('events', 'icon-allow-overlap', true);
+//   }
+//   else{
+//     map.setFilter('Design', null);
+//     // map.setFilter('Design', null)
+//     // map.setLayoutProperty('clusters', 'visibility', 'visible');
+//     // map.setLayoutProperty('cluster-count', 'visibility', 'visible');
+//   }
+// })

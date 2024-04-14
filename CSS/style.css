@@ -530,6 +530,7 @@ a {
 }
 .type, .weekday{
     width: 100%;
+    margin: 12px;
 }
 .switch {
     position: relative;
