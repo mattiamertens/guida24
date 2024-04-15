@@ -298,68 +298,16 @@ map.on('click', 'Serata', (e) => {
       $(".cancello").hide();
   }
 });
-// map.on('click', 'Altro', (e) => {
-//   const coordinates = e.features[0].geometry.coordinates.slice();
-//   const type = e.features[0].properties.type;
-//   const event = e.features[0].properties.event;
-//   const description = e.features[0].properties.description;
-//   const startDate = e.features[0].properties.startDate;
-//   const endDate = e.features[0].properties.endDate;
-//   const gMapsLink = e.features[0].properties.gMapsLink;
-//   const regLink = e.features[0].properties.regLink;
 
-
-//   // Ensure that if the map is zoomed out such that
-//   // multiple copies of the feature are visible, the
-//   // popup appears over the copy being pointed to.
-//   while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-//       coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-//   }
-
-//   let popup = new mapboxgl.Popup()
-//       .setLngLat(coordinates)
-//       .setHTML(` <div class="popUp">
-//           <div class="popUp-title">${type}</div>
-//               <div class="waiting-time-big sans-bold">
-//                       ${event}
-//                       <div>
-//                       ${description}
-//                       </div>
-//                   <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
-//                   <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
-//                   <div class="comparison-data">
-                      
-//                   </div>
-//               </div>
-
-//               <div class="popUp-footer flex-display-center-sb">
-//                   <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
-//                   <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
-//               </div>
-//           </div>`
-//       )
-//       .setMaxWidth("80%")
-//       .addTo(map);
-
-//   map.flyTo({
-//       center: e.features[0].geometry.coordinates
-//   });
-
-//   // LINK HIDDEN IF VALUE NOT PRESENT
-//   if(!regLink){
-//       $(".cancello").hide();
-//   }
-// });
 
 // var scrocco = document.getElementById("Scrocco");
 // var design = document.getElementById("Design");
 // var serata = document.getElementById("Serata");
 
+// FILTRI TIPOLOGIA EVENTI
 var check = document.querySelectorAll('.control')
-
 for (let i = 0; i < check.length; i++) {
   var selectedLayer = check[i];
-  // console.log(selectedLayer);
 
   $(selectedLayer).on('click', function() {
     var currentID = this.id;
@@ -367,16 +315,18 @@ for (let i = 0; i < check.length; i++) {
 
     if(!$(this).is(':checked')) {
         map.setLayoutProperty(currentID, 'visibility', 'none');
+        console.log(currentID + ' is now hidden')
       }
       else{
         map.setLayoutProperty(currentID, 'visibility', 'visible');
+        console.log(currentID + ' is now visible')
       }
   })
 }
 
 
+// FILTRI GIORNI SETTIMANA
 var weekCheck = document.querySelectorAll('.weekControl')
-
 for (let i = 0; i < weekCheck.length; i++) {
   var selectedLayer = weekCheck[i];
 
@@ -405,6 +355,19 @@ for (let i = 0; i < weekCheck.length; i++) {
   })
 }
 
+
+// TRACK LOCATION OF USER
+map.addControl(
+    new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        // When active the map will receive updates to the device's location as it changes.
+        trackUserLocation: true,
+        // Draw an arrow next to the location dot to indicate which direction the device is heading.
+        showUserHeading: true
+    }), 'bottom-right'
+);
 
 
 // WEEK DAYS FILTERS
