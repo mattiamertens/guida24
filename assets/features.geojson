@@ -182,8 +182,8 @@
       },
       "geometry": {
         "coordinates": [
-          45.476733,
-          9.195614
+          9.195614, 45.476733
+          
         ],
         "type": "Point"
       },
@@ -392,8 +392,8 @@
       },
       "geometry": {
         "coordinates": [
-          45.468137,
-          9.172801
+          9.172801, 45.468137
+          
         ],
         "type": "Point"
       },
@@ -1315,8 +1315,8 @@
       },
       "geometry": {
         "coordinates": [
-          45.493203,
-          9.209384
+          9.209589,
+          45.492795
         ],
         "type": "Point"
       },
@@ -1620,18 +1620,18 @@
       "type": "Feature",
       "properties": {
         "event": "Is one life enough",
-        "startDate": "",
+        "startDate": "15/04/2024",
         "startHour": "",
-        "endDate": "",
+        "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Valtellina+5,+Milano",
         "regLink": "",
-        "type": "design",
+        "type": "Design",
         "description": "Circolarità"
       },
       "geometry": {
         "coordinates": [
-          45.49139,
-          9.180745
+           9.180745, 45.49139
+         
         ],
         "type": "Point"
       },
@@ -1756,7 +1756,7 @@
       },
       "geometry": {
         "coordinates": [
-          45.43725942930822, 9.114276326947216
+         9.114276326947216, 45.43725942930822
         ],
         "type": "Point"
       },
@@ -1818,8 +1818,7 @@
       },
       "geometry": {
         "coordinates": [
-          45.473868,
-          9.195202
+          9.195202, 45.473868
         ],
         "type": "Point"
       },
@@ -1860,7 +1859,7 @@
       },
       "geometry": {
         "coordinates": [
-          45.43725942930822, 9.1176326947216
+          9.1176326947216, 45.43725942930822
         ],
         "type": "Point"
       },

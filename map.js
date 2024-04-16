@@ -161,7 +161,7 @@ map.on('click', 'clusters', (e) => {
 
 
 // POPUP 
-map.on('click', 'Design', function poppinUp(e){
+map.on('click', 'eventini', function poppinUp(e){
   const coordinates = e.features[0].geometry.coordinates.slice();
   const type = e.features[0].properties.type;
   const event = e.features[0].properties.event;

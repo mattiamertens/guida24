@@ -530,7 +530,7 @@ a {
 .type, .weekday{
     width: 100%;
     margin: 12px;
-    row-gap: 24px;
+    gap: 24px;
     flex-wrap: wrap;
 }
 .weekday{
