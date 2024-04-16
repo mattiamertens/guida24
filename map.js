@@ -28,84 +28,86 @@ map.on('load', () => {
   });
       
 
-      // const geojson = {
-      //   "features": [
-      //     {
-      //       "type": "Feature",
-      //       "properties": {
-      //         "event": "Bagno diurno",
-      //         "startDate": "15/04/2024",
-      //         "startHour": "",
-      //         "endDate": "21/04/2024",
-      //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+giacosa+30,+Milano",
-      //         "regLink": "",
-      //         "type": "Location",
-      //         "description": ""
-      //       },
-      //       "geometry": {
-      //         "coordinates": [
-      //           9.221438,
-      //           45.494965
-      //         ],
-      //         "type": "Point"
-      //       },
-      //       "id": "0a18449b5966c833d7e9e5d708c0f615"
-      //     },
-      //     {
-      //       "type": "Feature",
-      //       "properties": {
-      //         "event": "ALESSI",
-      //         "startDate": "16/04/2024",
-      //         "startHour": "10:00",
-      //         "endDate": "21/04/2024",
-      //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Palazzo+Borromeo+d'Adda,+Via+Alessandro+Manzoni,+41,+20121+Milano+MI,+Italia",
-      //         "regLink": "",
-      //         "type": "Design",
-      //         "description": ""
-      //       },
-      //       "geometry": {
-      //         "coordinates": [
-      //           9.194015,
-      //           45.471326
-      //         ],
-      //         "type": "Point"
-      //       },
-      //       "id": "0b5377b1d6455f45d6c1a6977d80b4a1"
-      //     }
-      //   ]
-      // }
-      
-  $.getJSON(geoJ, function(events){
+//   $.getJSON(geoJ, function(events){
 
-    for (feature of events.features) {
-      const type = feature.properties.type;
-      const layerID = `${type}`;
+//     for (feature of events.features) {
+//       const type = feature.properties.type;
+//       const layerID = `${type}`;
       
-      // console.log(feature)
-      if (!map.getLayer(layerID)) {
-        map.addLayer({
-          id: layerID,
-          type: 'symbol',
-          source: 'events',
-          layout: {
-            'icon-image': [
-                  'match',
-                  ['get', 'type'],
-                  'Scrocco', 'pinSc',
-                  'Design', 'pinD',
-                  'Serata', 'pinSe',
-                  'Altro', 'pin',
-                  'random'
-                ],
-            'icon-size': 0.2,
-            'icon-allow-overlap': true
-            },
-          filter: ['==', ['get', 'type'], type],
-        });
-      }
-    }
-  }); // getJSON
+//       // console.log(feature)
+//       if (!map.getLayer(layerID)) {
+//         map.addLayer({
+//           id: layerID,
+//           type: 'symbol',
+//           source: 'events',
+//           layout: {
+//             'icon-image': [
+//                   'match',
+//                   ['get', 'type'],
+//                   'Scrocco', 'pinSc',
+//                   'Design', 'pinD',
+//                   'Serata', 'pinSe',
+//                   'Altro', 'pin',
+//                   'random'
+//                 ],
+//             'icon-size': 0.2,
+//             'icon-allow-overlap': true
+//             },
+//           filter: ['==', ['get', 'type'], type],
+//         });
+//       }
+//     }
 
+
+//   }); // getJSON
+
+    // const geojson = {
+    //   "features": [
+    //     {
+    //       "type": "Feature",
+    //       "properties": {
+    //         "event": "Bagno diurno",
+    //         "startDate": "15/04/2024",
+    //         "startHour": "",
+    //         "endDate": "21/04/2024",
+    //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+giacosa+30,+Milano",
+    //         "regLink": "",
+    //         "type": "Location",
+    //         "description": ""
+    //       },
+    //       "geometry": {
+    //         "coordinates": [
+    //           9.221438,
+    //           45.494965
+    //         ],
+    //         "type": "Point"
+    //       },
+    //       "id": "0a18449b5966c833d7e9e5d708c0f615"
+    //     },
+    //     {
+    //       "type": "Feature",
+    //       "properties": {
+    //         "event": "ALESSI",
+    //         "startDate": "16/04/2024",
+    //         "startHour": "10:00",
+    //         "endDate": "21/04/2024",
+    //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Palazzo+Borromeo+d'Adda,+Via+Alessandro+Manzoni,+41,+20121+Milano+MI,+Italia",
+    //         "regLink": "",
+    //         "type": "Design",
+    //         "description": ""
+    //       },
+    //       "geometry": {
+    //         "coordinates": [
+    //           9.194015,
+    //           45.471326
+    //         ],
+    //         "type": "Point"
+    //       },
+    //       "id": "0b5377b1d6455f45d6c1a6977d80b4a1"
+    //     }
+    //   ]
+    // }
+    
   map.addSource('events', {
               type: 'geojson',
               // Use a URL for the value for the `data` property.
@@ -114,6 +116,28 @@ map.on('load', () => {
               clusterRadius: 50,
               clusterMaxZoom: 11,
   });
+
+  // LIVELLO UNICO
+    map.addLayer({
+        'id': 'eventini',
+        'type': 'symbol',
+        'source': 'events',
+        'layout': {
+            'icon-image': 'pin', // [così forse si può distinguere tra i vari tipi di eventi]
+            'icon-image': [
+                'match',
+                ['get', 'type'],
+                'Scrocco', 'pinSc',
+                'Design', 'pinD',
+                'Serata', 'pinSe',
+                'Altro', 'pin',
+                'random'
+            ],
+            'icon-size': 0.16,
+            'icon-allow-overlap': true
+        }
+    });
+
 });
 
 // inspect a cluster on click
@@ -135,12 +159,6 @@ map.on('click', 'clusters', (e) => {
     );
 });
 
-// for (e of e.features[0]) {
-   
-//   el.addEventListener('click', (e) => {
-//       console.log('aa')
-//   });
-// }
 
 // POPUP 
 map.on('click', 'Design', function poppinUp(e){
@@ -299,63 +317,6 @@ map.on('click', 'Serata', (e) => {
   }
 });
 
-
-// var scrocco = document.getElementById("Scrocco");
-// var design = document.getElementById("Design");
-// var serata = document.getElementById("Serata");
-
-// FILTRI TIPOLOGIA EVENTI
-var check = document.querySelectorAll('.control')
-for (let i = 0; i < check.length; i++) {
-  var selectedLayer = check[i];
-
-  $(selectedLayer).on('click', function() {
-    var currentID = this.id;
-    console.log(currentID)
-
-    if(!$(this).is(':checked')) {
-        map.setLayoutProperty(currentID, 'visibility', 'none');
-        console.log(currentID + ' is now hidden')
-      }
-      else{
-        map.setLayoutProperty(currentID, 'visibility', 'visible');
-        console.log(currentID + ' is now visible')
-      }
-  })
-}
-
-
-// FILTRI GIORNI SETTIMANA
-var weekCheck = document.querySelectorAll('.weekControl')
-for (let i = 0; i < weekCheck.length; i++) {
-  var selectedLayer = weekCheck[i];
-
-  $(selectedLayer).on('click', function() {
-    var currentVal = this.value;
-    console.log(currentVal)
-    
-    // const date1 = new Date(currentVal).toLocaleDateString("en-GB");
-    // const currentDate = new Date().toDateString();
-    // const date2 = new Date('15/04/2024');
-    // const diffTime = Math.abs(date1 - date2);
-    // const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-    // console.log(currentDate);
-
-
-    if(!$(this).is(':checked')) {
-      map.setFilter('Design', ['!=', ['get', 'startDate'], currentVal]);
-      map.setFilter('Serata', ['!=', ['get', 'startDate'], currentVal]);
-      map.setFilter('Scrocco', ['!=', ['get', 'startDate'], currentVal]);
-      }
-      else{
-        map.setFilter('Design', null);
-        map.setFilter('Serata', null);
-        map.setFilter('Scrocco', null);
-      }
-  })
-}
-
-
 // TRACK LOCATION OF USER
 map.addControl(
     new mapboxgl.GeolocateControl({
@@ -369,25 +330,112 @@ map.addControl(
     }), 'bottom-right'
 );
 
+var scrocco = document.getElementById("Scrocco");
+var design = document.getElementById("Design");
+var serata = document.getElementById("Serata");
 
-// WEEK DAYS FILTERS
-// var monday = document.getElementById("monday");
+// FILTRI TIPOLOGIA EVENTI
+var check = document.querySelectorAll('.control')
+var combinedFilter = ["all"];
 
-// $(monday).on('click', function() {
+for (let i = 0; i < check.length; i++) {
+    var selectedLayer = check[i];
   
-//   console.log($(this).prop('checked'))
+    $(selectedLayer).on('click', function() {
+        var selType = this.id;
+        var typeFilter = ['!=', ['get', 'type'], selType];
+  
+        //  combinedFilter.splice(1, 1, typeFilter);
+        combinedFilter.push(typeFilter)
+        console.log(combinedFilter[1][2]);
+        // map.setFilter('eventini', typeFilter); // USE COMBINED-FILTER
+        map.setFilter('eventini', combinedFilter);
 
-//   if(!$(monday).is(':checked')) {
-//     map.setFilter('Design', ['!=', ['get', 'startDate'], '15/04/2024']);
+    })
+}
+
+// DAYS FILTER
+var dayFilter = ['!=', ['get', 'startDate']];
+var monday = document.getElementById("monday");
+
+var weekCheck = document.querySelectorAll('.weekControl')
+for (let i = 0; i < weekCheck.length; i++) {
+  var selectedLayer = weekCheck[i];
+
+  $(selectedLayer).on('click', function() {
+    var selDay = this.value;
+    var dayFilter = ['!=', ['get', 'startDate'], selDay];
+    combinedFilter.push(dayFilter)
+    console.log(combinedFilter);
+    map.setFilter('eventini', combinedFilter);
+
+    if($(this).is(':checked')) {
+        for (var i = combinedFilter.length - 1; i >= 0; --i) {
+            if (combinedFilter[i][2] == this.value) {
+                combinedFilter.splice(i,1);
+            }
+        }
+
+        map.setFilter('eventini', combinedFilter);
+        // console.log('Scrocco is now visible')
+        console.log(combinedFilter)
+    }
     
-//     // map.setLayoutProperty('clusters', 'visibility', 'none');
-//     // map.setLayoutProperty('cluster-count', 'visibility', 'none');
-//     // map.setLayoutProperty('events', 'icon-allow-overlap', true);
-//   }
-//   else{
-//     map.setFilter('Design', null);
-//     // map.setFilter('Design', null)
-//     // map.setLayoutProperty('clusters', 'visibility', 'visible');
-//     // map.setLayoutProperty('cluster-count', 'visibility', 'visible');
-//   }
-// })
+    }
+)}
+
+
+// SPLICE FILTERS TO REMOVE FROM ARRAY
+$(scrocco).on('click', function() {
+    if($(this).is(':checked')) {
+
+        for (var i = combinedFilter.length - 1; i >= 0; --i) {
+            if (combinedFilter[i][2] == "Scrocco") {
+                combinedFilter.splice(i,1);
+            }
+        }
+        map.setFilter('eventini', combinedFilter);
+        // console.log('Scrocco is now visible')
+        console.log(combinedFilter)
+    }
+})
+
+$(design).on('click', function() {
+    if($(this).is(':checked')) {
+        for (var i = combinedFilter.length - 1; i >= 0; --i) {
+            if (combinedFilter[i][2] == "Design") {
+                combinedFilter.splice(i,1);
+            }
+        }
+
+        map.setFilter('eventini', combinedFilter);
+        console.log(combinedFilter)
+    }
+})
+
+$(serata).on('click', function() {
+    if($(this).is(':checked')) {
+        for (var i = combinedFilter.length - 1; i >= 0; --i) {
+            if (combinedFilter[i][2] == "Serata") {
+                combinedFilter.splice(i,1);
+            }
+        }
+
+        map.setFilter('eventini', combinedFilter);
+        // console.log('Scrocco is now visible')
+        console.log(combinedFilter)
+    }
+})
+$(monday).on('click', function() {
+    // if($(this).is(':checked')) {
+    //     for (var i = combinedFilter.length - 1; i >= 0; --i) {
+    //         if (combinedFilter[i][2] == this.value) {
+    //             combinedFilter.splice(i,1);
+    //         }
+    //     }
+
+    //     map.setFilter('eventini', combinedFilter);
+    //     // console.log('Scrocco is now visible')
+    //     console.log(combinedFilter)
+    // }
+})

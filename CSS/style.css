@@ -50,7 +50,7 @@
 :root {
     --sans-font: Neue Machina medium;
     --mono-font: Suisse Intl regular;
-    --navbar-height: 48px;
+    --navbar-height: 42px;
     --yellow: #F9FD60;
     --grey: #c4c4c4
 }
@@ -520,17 +520,21 @@ a {
 /* CHECKBOX SHIT */
 .checkbox-container{
     z-index: 1000;
-    padding: 8px 16px;
+    padding: 8px 24px;
     width: 80%;
     position: relative;
     margin-bottom: 10%;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-
 }
 .type, .weekday{
     width: 100%;
     margin: 12px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+}
+.weekday{
+    justify-content: flex-start;
 }
 .switch {
     position: relative;
