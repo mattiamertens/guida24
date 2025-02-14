@@ -1,144 +1,82 @@
 var geoJ = 'assets/features.geojson';
-var feature;
-map.on('load', () => {
-  map.loadImage('assets/pin.png', 
-  (error, image) => {
-      if (error) throw error;
-      map.addImage('pin', image);
-  });
-  map.loadImage('assets/pinD.png', 
-  (error, image) => {
-      if (error) throw error;
-      map.addImage('pinD', image);
-  });
-  map.loadImage('assets/pinSc.png', 
-  (error, image) => {
-      if (error) throw error;
-      map.addImage('pinSc', image);
-  });
-  map.loadImage('assets/pinSe.png', 
-  (error, image) => {
-      if (error) throw error;
-      map.addImage('pinSe', image);
-  });
-  map.loadImage('assets/mapbox-icon.png', 
-  (error, image) => {
-      if (error) throw error;
-      map.addImage('random', image);
-  });
-      
+let savedEventsArray = JSON.parse(localStorage.getItem('savedEvents')) || [];
 
-//   $.getJSON(geoJ, function(events){
+fetch(geoJ).then(response => response.json())
+.then(data => {
 
-//     for (feature of events.features) {
-//       const type = feature.properties.type;
-//       const layerID = `${type}`;
-      
-//       // console.log(feature)
-//       if (!map.getLayer(layerID)) {
-//         map.addLayer({
-//           id: layerID,
-//           type: 'symbol',
-//           source: 'events',
-//           layout: {
-//             'icon-image': [
-//                   'match',
-//                   ['get', 'type'],
-//                   'Scrocco', 'pinSc',
-//                   'Design', 'pinD',
-//                   'Serata', 'pinSe',
-//                   'Altro', 'pin',
-//                   'random'
-//                 ],
-//             'icon-size': 0.2,
-//             'icon-allow-overlap': true
-//             },
-//           filter: ['==', ['get', 'type'], type],
-//         });
-//       }
-//     }
+    const places = data.features;
+    places.forEach((place, i) => {
+        place.properties.id = i + 1;
 
-
-//   }); // getJSON
-
-    // const geojson = {
-    //   "features": [
-    //     {
-    //       "type": "Feature",
-    //       "properties": {
-    //         "event": "Bagno diurno",
-    //         "startDate": "15/04/2024",
-    //         "startHour": "",
-    //         "endDate": "21/04/2024",
-    //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+giacosa+30,+Milano",
-    //         "regLink": "",
-    //         "type": "Location",
-    //         "description": ""
-    //       },
-    //       "geometry": {
-    //         "coordinates": [
-    //           9.221438,
-    //           45.494965
-    //         ],
-    //         "type": "Point"
-    //       },
-    //       "id": "0a18449b5966c833d7e9e5d708c0f615"
-    //     },
-    //     {
-    //       "type": "Feature",
-    //       "properties": {
-    //         "event": "ALESSI",
-    //         "startDate": "16/04/2024",
-    //         "startHour": "10:00",
-    //         "endDate": "21/04/2024",
-    //         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Palazzo+Borromeo+d'Adda,+Via+Alessandro+Manzoni,+41,+20121+Milano+MI,+Italia",
-    //         "regLink": "",
-    //         "type": "Design",
-    //         "description": ""
-    //       },
-    //       "geometry": {
-    //         "coordinates": [
-    //           9.194015,
-    //           45.471326
-    //         ],
-    //         "type": "Point"
-    //       },
-    //       "id": "0b5377b1d6455f45d6c1a6977d80b4a1"
-    //     }
-    //   ]
-    // }
-    
-  map.addSource('events', {
-              type: 'geojson',
-              // Use a URL for the value for the `data` property.
-              data: geoJ,
-              cluster: false,
-              clusterRadius: 50,
-              clusterMaxZoom: 11,
-  });
-
-  // LIVELLO UNICO
-    map.addLayer({
-        'id': 'eventini',
-        'type': 'symbol',
-        'source': 'events',
-        'layout': {
-            'icon-image': 'pin', // [così forse si può distinguere tra i vari tipi di eventi]
-            'icon-image': [
-                'match',
-                ['get', 'type'],
-                'Scrocco', 'pinSc',
-                'Design', 'pinD',
-                'Serata', 'pinSe',
-                'Altro', 'pin',
-                'random'
-            ],
-            'icon-size': 0.16,
-            'icon-allow-overlap': true
+        if(place.properties.type == "Scrocco"){
+            place.properties.color = 'var(--event_orange)';
+        }
+        else if(place.properties.type == "Design"){
+            place.properties.color = 'var(--event_blue)';
+        }
+        else if(place.properties.type == "Serata"){
+            place.properties.color = 'var(--event_green)';
         }
     });
+    // console.log(places);
 
+    map.on('load', () => {
+        map.loadImage('assets/icons/pinD.png', 
+        (error, image) => {
+            if (error) throw error;
+            map.addImage('pinD', image);
+        });
+        map.loadImage('assets/icons/pinSc.png', 
+        (error, image) => {
+            if (error) throw error;
+            map.addImage('pinSc', image);
+        });
+        map.loadImage('assets/icons/pinSe.png', 
+        (error, image) => {
+            if (error) throw error;
+            map.addImage('pinSe', image);
+        });
+        map.loadImage('assets/mapbox-icon.png', 
+        (error, image) => {
+            if (error) throw error;
+            map.addImage('random', image);
+        });
+
+            
+        map.addSource('events', {
+            type: 'geojson',
+            // Use a URL for the value for the `data` property.
+            data: data,
+            cluster: false,
+            clusterRadius: 50,
+            clusterMaxZoom: 11,
+        });
+            
+
+        // LIVELLO UNICO
+        map.addLayer({
+            'id': 'eventini',
+            'type': 'symbol',
+            'source': 'events',
+            'layout': {
+                'icon-image': 'pin', // [così forse si può distinguere tra i vari tipi di eventi]
+                'icon-image': [
+                    'match',
+                    ['get', 'type'],
+                    'Scrocco', 'pinSc',
+                    'Design', 'pinD',
+                    'Serata', 'pinSe',
+                    'Altro', 'pin',
+                    'random'
+                ],
+                'icon-size': 0.4,
+                'icon-allow-overlap': true
+            }
+        });
+
+    });
 });
+
 
 // inspect a cluster on click
 map.on('click', 'clusters', (e) => {
@@ -170,6 +108,8 @@ map.on('click', 'eventini', function poppinUp(e){
   const endDate = e.features[0].properties.endDate;
   const gMapsLink = e.features[0].properties.gMapsLink;
   const regLink = e.features[0].properties.regLink;
+  const dataId = e.features[0].properties.id;
+  const color = e.features[0].properties.color;
 
     // Ensure that if the map is zoomed out such that
     // multiple copies of the feature are visible, the
@@ -179,156 +119,318 @@ map.on('click', 'eventini', function poppinUp(e){
     }
   let popup = new mapboxgl.Popup()
       .setLngLat(coordinates)
-      .setHTML(` <div class="popUp">
-          <div class="popUp-title">${type}</div>
-              <div class="waiting-time-big sans-bold">
-                      ${event}
-                      <div>
-                      ${description}
-                      </div>
-                  <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
-                  <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
-                  <div class="comparison-data">
-                      
-                  </div>
-              </div>
+      .setHTML(`<div class="popUp flex column g-m" data-id="${dataId}">
+        <div class="popUp-header flex-display-center-sb">
+            <div class="event-type">${type}</div>
+            <div class="popUp-icons flex-display-center-center g-xs">
+                <div class="icon icon-m" alt="favorites" id="bookmark" style="mask-image: var(--icon-favorites);"></div>
+                <button class="remove-popup"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
+            </div>
+        </div>
+        
+        <div class="event-title bold"> ${event} </div>
 
-              <div class="popUp-footer flex-display-center-sb">
-                  <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
-                  <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
-              </div>
-          </div>`
+        <div class="popUp-time flex column g-xs">
+            <div class="day-type flex v-center g-xs muted-text"> 
+                <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
+                This is a one-day event
+            </div>
+
+            <div class="event-dates flex v-center g-s">
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${startDate} </span></div> 
+                <div class="divider"></div>
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${endDate}</span></div>
+            </div>
+        </div>
+
+        <div class="popUp-footer flex-display-center-sb">
+            <button class="primary-btn"><a href="${gMapsLink}" class="btn-text">Google maps</a></button>
+            
+            <button class="secondary-btn no-link">
+                <a href="${regLink}" class="btn-text flex v-center underlined">
+                    RSVP
+                    <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
+                </a>
+            </button>
+        </div>
+    </div>`
       ).setMaxWidth("80%").addTo(map);
-
-      map.flyTo({
-          center: e.features[0].geometry.coordinates
-      });
-
-      // LINK HIDDEN IF VALUE NOT PRESENT
-      if(!regLink){
-          $(".cancello").hide();
-      }
-  }
-);
-
-map.on('click', 'Scrocco', (e) => {
-    const coordinates = e.features[0].geometry.coordinates.slice();
-    const type = e.features[0].properties.type;
-    const event = e.features[0].properties.event;
-    const description = e.features[0].properties.description;
-    const startDate = e.features[0].properties.startDate;
-    const endDate = e.features[0].properties.endDate;
-    const gMapsLink = e.features[0].properties.gMapsLink;
-    const regLink = e.features[0].properties.regLink;
-
-
-    // Ensure that if the map is zoomed out such that
-    // multiple copies of the feature are visible, the
-    // popup appears over the copy being pointed to.
-    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-    }
-
-    let popup = new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(` <div class="popUp">
-            <div class="popUp-title">${type}</div>
-                <div class="waiting-time-big sans-bold">
-                        ${event}
-                        <div>
-                        ${description}
-                        </div>
-                    <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
-                    <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
-                    <div class="comparison-data">
-                        
-                    </div>
-                </div>
-
-                <div class="popUp-footer flex-display-center-sb">
-                    <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
-                    <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
-                </div>
-            </div>`
-        )
-        .setMaxWidth("80%")
-        .addTo(map);
 
     map.flyTo({
         center: e.features[0].geometry.coordinates
     });
+    
 
     // LINK HIDDEN IF VALUE NOT PRESENT
     if(!regLink){
-        $(".cancello").hide();
+        $(".no-link").hide();
     }
+    
+    // CHANGE COLOR OF PILL BASED ON TYPE
+    var eventPill = document.querySelector('.mapboxgl-popup-content .event-type');
+    if(type == "Scrocco"){
+        console.log("Scrocco");
+        $(eventPill).css('background-color', color);
+    }
+    else if(type == "Design"){
+        console.log("Design");
+        $(eventPill).css('background-color', color);
+    }
+    else if(type == "Serata"){
+        console.log("Serata");
+        $(eventPill).css('background-color', color);  
+    }
+
+    //REMOVE POPUP
+    $('.remove-popup').on('click', function(){
+        popup.remove();
+    });
+
+    // CHECK IF EVENT IS ALREADY SAVED
+    if(savedEventsArray.some(e => e.id === dataId)){
+        console.log('Event is already saved');
+        $('#bookmark').css('mask-image', 'var(--icon-favorites-filled)');
+        
+    };
+
+
+    // ADD EVENT TO FAVORITES
+    $('#bookmark').on('click', function(){
+        let eventData = {id: dataId, type: type, title: event, startDate: startDate, endDate: endDate, gMapsLink: gMapsLink, rsvp: regLink, color: color};
+
+       saveEvents(eventData);
+
+        // let favContainer = $('.favorites-events-content');
+        // $(favContainer).addClass('flex-display-start-center h-100');
+
+    });
 });
 
-map.on('click', 'Serata', (e) => {
-  const coordinates = e.features[0].geometry.coordinates.slice();
-  const type = e.features[0].properties.type;
-  const event = e.features[0].properties.event;
-  const description = e.features[0].properties.description;
-  const startDate = e.features[0].properties.startDate;
-  const endDate = e.features[0].properties.endDate;
-  const gMapsLink = e.features[0].properties.gMapsLink;
-  const regLink = e.features[0].properties.regLink;
+
+function saveEvents(event){
+    // let savedEventsArray = JSON.parse(localStorage.getItem('savedEvents')) || [];
+    // console.log(savedEventsArray);
+
+    // CEHCK IF SAVED IN CASE: DON'T SAVE IF ALREADY PRESENT ---- first e.id is the one in the array, second is the one we are trying to save
+    if(!savedEventsArray.some(e => e.id === event.id)){
+        $('#bookmark').css('mask-image', 'var(--icon-favorites-filled)');
+
+        // PUSH TO ARRAY
+        savedEventsArray.unshift(event);
+        localStorage.setItem('savedEvents', JSON.stringify(savedEventsArray));
+
+        document.querySelector('.nr-fav-events').innerHTML = savedEventsArray.length + ' events';
+        renderSavedEvents(event);
+
+        // MAKE LITTLE ANIMATION FEEDBACK FOR SAVED EVENT
+
+    }
+    else{
+        $('#bookmark').css('mask-image', 'var(--icon-favorites)');
+
+        // REMOVE FROM ARRAY
+        savedEventsArray = savedEventsArray.filter(e => e.id !== event.id);
+        localStorage.setItem('savedEvents', JSON.stringify(savedEventsArray));
+
+        removeSavedEvent(event);
+    }
+};
+
+function renderSavedEvents(event){
+    console.log(savedEventsArray);
+
+    let favContainer = $('.favorites-events-content');
+    $('.placebo').hide();
+    $(favContainer).addClass('flex-display-start-center h-100');
+
+    $(favContainer).prepend(
+        `<div class="fav-popUp w-100 flex column g-m" data-id="${event.id}">
+            <div class="popUp-header flex-display-center-sb">
+                <div class="event-type" style="background-color: ${event.color}" >${event.type}</div>
+                <div class="popUp-icons flex-display-center-center g-xs">
+                    <button class="icon icon-m fav-bookmark" id='silly' alt="favorites" style="mask-image: var(--icon-favorites-filled);"></button>
+                </div>
+            </div>
+        
+            <div class="event-title bold"> ${event.title} </div>
+
+            <div class="popUp-time flex column g-xs">
+                <div class="day-type flex v-center g-xs muted-text"> 
+                    <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
+                    This is a one-day event
+                </div>
+
+                <div class="event-dates flex v-center g-s">
+                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.startDate} </span></div> 
+                    <div class="divider"></div>
+                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${event.endDate}</span></div>
+                </div>
+            </div>
+
+            <div class="popUp-footer flex-display-center-sb">
+                <button class="primary-btn"><a href="${event.gMapsLink}" class="btn-text">Google maps</a></button>
+                
+                <button class="secondary-btn">
+                    <a href="${event.rsvp}" class="btn-text flex v-center underlined">
+                        RSVP
+                        <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
+                    </a>
+                </button>
+            </div>
+        </div>`
+    );
+
+};
+
+function loadSavedEvents(){ 
+    savedEventsArray.reverse().forEach(renderSavedEvents);
+
+    document.querySelector('.nr-fav-events').innerHTML = savedEventsArray.length + ' events';
+}
+
+function removeSavedEvent(event){
+    $(`.fav-popUp[data-id="${event.id}"]`).remove();
+    document.querySelector('.nr-fav-events').innerHTML = savedEventsArray.length + ' events';
+
+    if (savedEventsArray.length == 0){
+        $('.placebo').show();
+    }
+};
+
+$(document).ready(function(){
+    console.log('Document ready');
+    loadSavedEvents();
 
 
-  // Ensure that if the map is zoomed out such that
-  // multiple copies of the feature are visible, the
-  // popup appears over the copy being pointed to.
-  while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-  }
+    var deleteFav = document.querySelectorAll('.fav-bookmark');
+    for (let i = 0; i < deleteFav.length; i++) {
+        deleteFav[i].addEventListener('click', function(){
+            $(this).closest('.fav-popUp').remove();
 
-  let popup = new mapboxgl.Popup()
-      .setLngLat(coordinates)
-      .setHTML(` <div class="popUp">
-          <div class="popUp-title">${type}</div>
-              <div class="waiting-time-big sans-bold">
-                      ${event}
-                      <div>
-                      ${description}
-                      </div>
-                  <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
-                  <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
-                  <div class="comparison-data">
+            let removingId = $(this).closest('.fav-popUp').attr('data-id');
+            savedEventsArray = savedEventsArray.filter(e => e.id !== Number(removingId));
+            
+            console.log(savedEventsArray);
+            localStorage.setItem('savedEvents', JSON.stringify(savedEventsArray));
+            if (savedEventsArray.length == 0){
+                $('.placebo').show();
+            }
+
+            document.querySelector('.nr-fav-events').innerHTML = savedEventsArray.length + ' events';
+        });
+    }
+
+});
+
+
+// NON TOCCARE è OLD
+// map.on('click', 'Scrocco', (e) => {
+//     const coordinates = e.features[0].geometry.coordinates.slice();
+//     const type = e.features[0].properties.type;
+//     const event = e.features[0].properties.event;
+//     const description = e.features[0].properties.description;
+//     const startDate = e.features[0].properties.startDate;
+//     const endDate = e.features[0].properties.endDate;
+//     const gMapsLink = e.features[0].properties.gMapsLink;
+//     const regLink = e.features[0].properties.regLink;
+
+
+//     // Ensure that if the map is zoomed out such that
+//     // multiple copies of the feature are visible, the
+//     // popup appears over the copy being pointed to.
+//     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+//         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+//     }
+
+//     let popup = new mapboxgl.Popup()
+//         .setLngLat(coordinates)
+//         .setHTML(` <div class="popUp">
+//             <div class="popUp-title">${type}</div>
+//                 <div class="waiting-time-big sans-bold">
+//                         ${event}
+//                         <div>
+//                         ${description}
+//                         </div>
+//                     <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
+//                     <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
+//                     <div class="comparison-data">
+                        
+//                     </div>
+//                 </div>
+
+//                 <div class="popUp-footer flex-display-center-sb">
+//                     <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
+//                     <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
+//                 </div>
+//             </div>`
+//         )
+//         .setMaxWidth("80%")
+//         .addTo(map);
+
+//     map.flyTo({
+//         center: e.features[0].geometry.coordinates
+//     });
+
+//     // LINK HIDDEN IF VALUE NOT PRESENT
+//     if(!regLink){
+//         $(".cancello").hide();
+//     }
+// });
+
+// map.on('click', 'Serata', (e) => {
+//   const coordinates = e.features[0].geometry.coordinates.slice();
+//   const type = e.features[0].properties.type;
+//   const event = e.features[0].properties.event;
+//   const description = e.features[0].properties.description;
+//   const startDate = e.features[0].properties.startDate;
+//   const endDate = e.features[0].properties.endDate;
+//   const gMapsLink = e.features[0].properties.gMapsLink;
+//   const regLink = e.features[0].properties.regLink;
+
+
+//   // Ensure that if the map is zoomed out such that
+//   // multiple copies of the feature are visible, the
+//   // popup appears over the copy being pointed to.
+//   while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+//       coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+//   }
+
+// //   let popup = new mapboxgl.Popup()
+// //       .setLngLat(coordinates)
+// //       .setHTML(` <div class="popUp">
+// //           <div class="popUp-title">${type}</div>
+// //               <div class="waiting-time-big sans-bold">
+// //                       ${event}
+// //                       <div>
+// //                       ${description}
+// //                       </div>
+// //                   <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
+// //                   <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
+// //                   <div class="comparison-data">
                       
-                  </div>
-              </div>
+// //                   </div>
+// //               </div>
 
-              <div class="popUp-footer flex-display-center-sb">
-                  <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
-                  <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
-              </div>
-          </div>`
-      )
-      .setMaxWidth("80%")
-      .addTo(map);
+// //               <div class="popUp-footer flex-display-center-sb">
+// //                   <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
+// //                   <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
+// //               </div>
+// //           </div>`
+// //       )
+// //       .setMaxWidth("80%")
+// //       .addTo(map);
 
-  map.flyTo({
-      center: e.features[0].geometry.coordinates
-  });
+//   map.flyTo({
+//       center: e.features[0].geometry.coordinates
+//   });
 
-  // LINK HIDDEN IF VALUE NOT PRESENT
-  if(!regLink){
-      $(".cancello").hide();
-  }
-});
+//   // LINK HIDDEN IF VALUE NOT PRESENT
+//   if(!regLink){
+//       $(".cancello").hide();
+//   }
+// });
 
-// TRACK LOCATION OF USER
-map.addControl(
-    new mapboxgl.GeolocateControl({
-        positionOptions: {
-            enableHighAccuracy: true
-        },
-        // When active the map will receive updates to the device's location as it changes.
-        trackUserLocation: true,
-        // Draw an arrow next to the location dot to indicate which direction the device is heading.
-        showUserHeading: true
-    }), 'bottom-right'
-);
+
 
 var scrocco = document.getElementById("Scrocco");
 var design = document.getElementById("Design");
@@ -439,3 +541,96 @@ $(monday).on('click', function() {
     //     console.log(combinedFilter)
     // }
 })
+
+
+// OPEN BOTH FILTER MODALS
+$('.filter-btn').on('click', function(){
+    let modalClass = '#' + $(this).attr('id') + '-filter';
+    console.log(modalClass);
+
+    $(modalClass).removeClass('hidden')
+
+    setTimeout(() => {
+        $(modalClass).css({
+            "-webkit-transform":"translate(-50%,-50%)"
+        });
+    }, 100);
+});
+
+
+// CLOSE FILTER MODAL
+$('.close-modal').on('click', function(){
+    
+    $(this).closest('.filter-card-container').css({
+        "-webkit-transform":"translate(-50%, 50vh)"
+    });
+    setTimeout(() => {
+        $(this).closest('.filter-card-container').addClass('hidden');
+    }, 400);
+})
+
+
+// EXPAND FAVORITES TAB
+let isExpnd = false;
+function expandFav() {
+    let expandBtn = document.getElementById('expand-btn');
+    let favoritesContainer = document.getElementsByClassName('favorites-container')[0];
+    let favEveCont = document.getElementsByClassName('favorites-events-content')[0];
+
+    isExpnd ? collps() : expnd();
+    function expnd() {
+        isExpnd = true;
+        expandBtn.innerHTML = "collapse";
+        favoritesContainer.style.height = '70vh';
+        $(favEveCont).addClass('fav-eve-cont-up');
+    }
+    function collps() {
+        isExpnd = false;
+        expandBtn.innerHTML = "expand";
+        favoritesContainer.style.height = '42px';
+        $(favEveCont).removeClass('fav-eve-cont-up');
+    }
+}
+
+// TRACK LOCATION OF USER
+map.addControl(
+    new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        // When active the map will receive updates to the device's location as it changes.
+        trackUserLocation: true,
+        // Draw an arrow next to the location dot to indicate which direction the device is heading.
+        showUserHeading: true
+    }), 'bottom-right'
+);
+
+
+
+// CUSTOM USER GEOLOCATION
+// $('.filter-date').on('click', function(){
+//     console.log('geolocation is available');
+//     navigator.geolocation.getCurrentPosition(position => {
+//         const userCoordinates = [position.coords.longitude, position.coords.latitude];
+//         console.log(userCoordinates);
+
+//         map.flyTo({
+//             center: [position.coords.longitude, position.coords.latitude],
+//             zoom: 15,  // Adjust zoom level as needed
+//             speed: 1.5, // Adjust speed (higher is faster)
+//             curve: 1, // Controls the flight path curvature
+//             essential: true // this animation is considered essential with respect to prefers-reduced-motion
+//         });
+
+//         if (window.userMarker) {
+//             window.userMarker.remove();
+//         }
+
+//         // Add a new blue marker for user location
+//         window.userMarker = new mapboxgl.Marker({
+//             color: "blue" // Blue dot effect
+//         })
+//             .setLngLat(userCoordinates)
+//             .addTo(map);
+//     });
+// });

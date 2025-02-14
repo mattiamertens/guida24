@@ -297,7 +297,7 @@
     {
       "type": "Feature",
       "properties": {
-        "event": "ASRTESANOS",
+        "event": "ARTESANOS",
         "startDate": "15/04/2024",
         "startHour": "",
         "endDate": "21/04/2024",
@@ -344,7 +344,7 @@
         "startHour": "17:00",
         "endDate": "16/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Stecca+3.0,+Via+Gaetano+de+Castillia,+26,+20124+Milano+MI,+Italia",
-        "regLink": "https://dice.fm/event/akweq-anna-molly-x-milano-design-week-opening-party-16th-apr-stecca-30-milano-tickets?sharer_id=5ea1de0bdf6eb50001f462c4&amp;_branch_match_id=1283824799429704146&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fdISQn0Sk1zTfNMsi%2FOSCxKLYrPTLE1TU00TEk1SEpJM0tNMjUwMDBMMzEzSjYBADtX5jZDAAAA\">https://dice.fm/event/akweq-anna-molly-x-milano-design-week-opening-party-16th-apr-stecca-30-milano-tickets?sharer_id=5ea1de0bdf6eb50001f462c4&amp;_branch_match_id=1283824799429704146&amp;_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fdISQn0Sk1zTfNMsi%2FOSCxKLYrPTLE1TU00TEk1SEpJM0tNMjUwMDBMMzEzSjYBADtX5jZDAAAA",
+        "regLink": "https://dice.fm/event/akweq-anna-molly-x-milano-design-week-opening-party-16th-apr-stecca-30-milano-tickets",
         "type": "Serata",
         "description": ""
       },
