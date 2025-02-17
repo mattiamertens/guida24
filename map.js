@@ -4,6 +4,7 @@ let savedEventsArray = JSON.parse(localStorage.getItem('savedEvents')) || [];
 fetch(geoJ).then(response => response.json())
 .then(data => {
 
+    // ASSING ID TO EACH FEATURE
     const places = data.features;
     places.forEach((place, i) => {
         place.properties.id = i + 1;
@@ -18,7 +19,10 @@ fetch(geoJ).then(response => response.json())
             place.properties.color = 'var(--event_green)';
         }
     });
-    // console.log(places);
+
+
+
+
 
     map.on('load', () => {
         map.loadImage('assets/icons/pinD.png', 
@@ -45,28 +49,57 @@ fetch(geoJ).then(response => response.json())
             
         map.addSource('events', {
             type: 'geojson',
-            // Use a URL for the value for the `data` property.
             data: data,
-            cluster: false,
-            clusterRadius: 50,
-            clusterMaxZoom: 11,
+            cluster: true,
+            clusterRadius: 8,
+            clusterMaxZoom: 20
         });
             
-
-        // LIVELLO UNICO
+        // CLUSTER LAYER
         map.addLayer({
-            'id': 'eventini',
-            'type': 'symbol',
-            'source': 'events',
+            id: 'clusters',
+            type: 'circle',
+            source: 'events',
+            filter: ['has', 'point_count'],
+            paint: {
+                'circle-color': 'white',
+                'circle-stroke-color': '#C9CFEC',
+                'circle-stroke-width': 1,
+                'circle-radius': 14
+            }
+        });
+
+        // CLUSTER COUNT
+        map.addLayer({
+            id: 'cluster-count',
+            type: 'symbol',
+            source: 'events',
+            filter: ['has', 'point_count'],
+            layout: {
+                'text-field': ['get', 'point_count_abbreviated'],
+                'text-font': ['Arial Unicode MS Bold', 'DIN Offc Pro Medium'],
+                'text-size': 12,
+
+            },
+            paint: {
+                "text-color": "black"
+            }
+        })
+
+        // LIVELLO UNICO - UNCLUSTERED EVENTS
+        map.addLayer({
+            id: 'eventini',
+            type: 'symbol',
+            source: 'events',
+            filter: ['!', ['has', 'point_count']],
             'layout': {
-                'icon-image': 'pin', // [così forse si può distinguere tra i vari tipi di eventi]
+                'icon-image': 'pin',
                 'icon-image': [
                     'match',
                     ['get', 'type'],
                     'Scrocco', 'pinSc',
                     'Design', 'pinD',
                     'Serata', 'pinSe',
-                    'Altro', 'pin',
                     'random'
                 ],
                 'icon-size': 0.4,
@@ -83,7 +116,9 @@ map.on('click', 'clusters', (e) => {
     const features = map.queryRenderedFeatures(e.point, {
         layers: ['clusters']
     });
+
     const clusterId = features[0].properties.cluster_id;
+    var clusterSource = map.getSource('events');
     map.getSource('events').getClusterExpansionZoom(
         clusterId,
         (err, zoom) => {
@@ -95,6 +130,17 @@ map.on('click', 'clusters', (e) => {
             });
         }
     );
+
+    clusterSource.getClusterChildren(clusterId, (err, features) => {
+        if (err) return;
+        console.log(features);
+    });
+    clusterSource.getClusterLeaves(clusterId, 10, 0, (err, features) => {
+        if (err) return;
+        console.log(features);
+    });
+
+    console.log('click cluster');
 });
 
 
@@ -110,6 +156,9 @@ map.on('click', 'eventini', function poppinUp(e){
   const regLink = e.features[0].properties.regLink;
   const dataId = e.features[0].properties.id;
   const color = e.features[0].properties.color;
+
+  console.log('click eventini');
+  
 
     // Ensure that if the map is zoomed out such that
     // multiple copies of the feature are visible, the
@@ -189,8 +238,7 @@ map.on('click', 'eventini', function poppinUp(e){
     // CHECK IF EVENT IS ALREADY SAVED
     if(savedEventsArray.some(e => e.id === dataId)){
         console.log('Event is already saved');
-        $('#bookmark').css('mask-image', 'var(--icon-favorites-filled)');
-        
+        $('#bookmark').css('mask-image', 'var(--icon-favorites-filled)');  
     };
 
 
@@ -199,10 +247,6 @@ map.on('click', 'eventini', function poppinUp(e){
         let eventData = {id: dataId, type: type, title: event, startDate: startDate, endDate: endDate, gMapsLink: gMapsLink, rsvp: regLink, color: color};
 
        saveEvents(eventData);
-
-        // let favContainer = $('.favorites-events-content');
-        // $(favContainer).addClass('flex-display-start-center h-100');
-
     });
 });
 
@@ -581,13 +625,15 @@ function expandFav() {
     function expnd() {
         isExpnd = true;
         expandBtn.innerHTML = "collapse";
-        favoritesContainer.style.height = '70vh';
+        // favoritesContainer.style.height = '70vh';
+        $(favoritesContainer).addClass('expnd');
         $(favEveCont).addClass('fav-eve-cont-up');
     }
     function collps() {
         isExpnd = false;
         expandBtn.innerHTML = "expand";
-        favoritesContainer.style.height = '42px';
+        // favoritesContainer.style.height = '42px';
+        $(favoritesContainer).removeClass('expnd');
         $(favEveCont).removeClass('fav-eve-cont-up');
     }
 }

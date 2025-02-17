@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <title>I migliori eventi del fuorisalone 2024</title>
@@ -17,68 +17,6 @@
     </div>
 
     <div class="map-container flex-display-start-start column">
-
-
-        <!-- <div class="checkbox-container flex-display-center-sb column">
-            <div class="type flex-display-center-sb">  
-                
-                <div class="checkbox pointer">
-                    <label class="switch pointer flex-display-center-center column">
-                        <input type="checkbox" id="Design" class="control" checked>
-                        <span class="checkbox-slider giallo"></span>
-                        Design
-                    </label>
-                </div>
-                
-                <div class="checkbox pointer">
-                    <label class="switch pointer flex-display-center-center column">
-                        <input type="checkbox" id="Serata" class="control" checked>
-                        <span class="checkbox-slider aqua"></span>
-                        Serata
-                    </label>
-                </div>
-                
-                <div class="checkbox pointer">
-                    <label class="switch pointer flex-display-center-center column">
-                        <input type="checkbox" id="Scrocco" class="control" checked>
-                        <span class="checkbox-slider"></span>
-                        Scrocco
-                    </label>
-                </div>
-            </div>
-
-            <div class="weekday flex-display-center-sb">
-                <div>
-                    <input type="checkbox" id="monday" name="monday" class="weekControl" value="15/04/2024" checked>
-                    <label for="monday"> Mon </label>
-                </div>
-                <div>
-                    <input type="checkbox" id="tuesday" name="tuesday" class="weekControl" value="16/04/2024" checked>
-                    <label for="tuesday"> Tue </label>
-                </div>
-                <div>
-                    <input type="checkbox" id="wednesday" name="wednesday" class="weekControl" value="17/04/2024" checked>
-                    <label for="wednesday"> Wed </label>
-                </div>
-                <div>
-                    <input type="checkbox" id="thursday" name="thursday" class="weekControl" value="18/04/2024" checked>
-                    <label for="thursday"> Thu </label>
-                </div>
-                <div>
-                    <input type="checkbox" id="friday" name="friday" class="weekControl" value="19/04/2024" checked>
-                    <label for="friday"> Fri </label>
-                </div>
-                <div>
-                    <input type="checkbox" id="saturday" name="saturday" class="weekControl" value="20/04/2024" checked>
-                    <label for="saturday"> Sat </label>
-                </div>
-                <div>
-                    <input type="checkbox" id="sunday" name="sunday" class="weekControl" value="21/04/2024" checked>
-                    <label for="sunday"> Sun </label>
-                </div>
-            </div>
-
-        </div> -->
 
         
         <div id='map'></div>
@@ -229,7 +167,7 @@
 
 
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Vya2k0IiwiYSI6ImNsMTJpMmZ1MDAzZzAzb3F1Y2oweWR6dHoifQ.yb-y9ERCBNJHyAh-5e1qwg';
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Vya2k0IiwiYSI6ImNsMTJpNWluMTAyamYzanFremVrcGxwZmIifQ.iXZ5OIerg1Tnq8eRy4rmtw';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/dark-v10',

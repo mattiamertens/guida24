@@ -711,13 +711,18 @@ input:checked + .day-selector{
     background-color: var(--violet);
     padding: 8px 16px;
     height: 42px;
-    height: 40vh;
+    /* height: 40vh; */
     border-radius: 12px 12px 0 0;
     position: fixed;
     bottom: 0;
-    transition: height 0.4s ease;
+    transition: all 0.4s ease;
     pointer-events: all;
 }
+.expnd{
+    height: 70vh;
+    background-color: var(--neutral_white);
+}
+
 .fav-disclaimer{
     border-radius: 6px;
     padding: 12px;
@@ -728,7 +733,7 @@ input:checked + .day-selector{
 .fav-popUp{
     padding: 12px;
     z-index: 10;
-    background-color: var(--neutral_white);
+    background-color: var(--violet);
     border-radius: 6px;
 }
 .fav-eve-cont-up{
