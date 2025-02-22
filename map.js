@@ -1,6 +1,13 @@
 var geoJ = 'assets/features.geojson';
 let savedEventsArray = JSON.parse(localStorage.getItem('savedEvents')) || [];
 
+
+// map.on('zoom', function(){
+//     var zoom = map.getZoom();
+//     console.log(zoom);
+// });
+
+
 fetch(geoJ).then(response => response.json())
 .then(data => {
 
@@ -51,8 +58,8 @@ fetch(geoJ).then(response => response.json())
             type: 'geojson',
             data: data,
             cluster: true,
-            clusterRadius: 8,
-            clusterMaxZoom: 20
+            clusterRadius: 40,
+            clusterMaxZoom: 16
         });
             
         // CLUSTER LAYER
@@ -110,6 +117,10 @@ fetch(geoJ).then(response => response.json())
     });
 });
 
+map.on('zoom', function(){
+    // var zoom = map.getZoom();
+    // console.log(zoom);
+});
 
 // inspect a cluster on click
 map.on('click', 'clusters', (e) => {
@@ -119,25 +130,94 @@ map.on('click', 'clusters', (e) => {
 
     const clusterId = features[0].properties.cluster_id;
     var clusterSource = map.getSource('events');
-    map.getSource('events').getClusterExpansionZoom(
-        clusterId,
-        (err, zoom) => {
-            if (err) return;
+    map.getSource('events').getClusterExpansionZoom(clusterId, (err, zoom) => {
+        if (err) return;
 
+        if(zoom>=map.getMaxZoom()){
+            // check against the zoom setting in index.html
+            console.log('max zoom reached');
+
+            clusterSource.getClusterLeaves(clusterId, 10, 0, (err, features_events) => {
+                if (err) return;
+                
+                function appendSingleEvents(){
+                    let content = `
+                    <div class="cluster-popup-container flex column g-s">
+                        <div class="cluster-header flex-display-center-sb"> 
+                            <div class="card-title"> ${features_events.length} EVENTS </div>
+                            <button class="remove-cluster-popup"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
+                        </div>`;
+                     
+        
+                    features_events.forEach(event => {
+                        content += `
+                            <div class="event-card">
+
+                                <div class="popUp flex column g-m" data-id="${event.properties.dataId}">
+                                    <div class="popUp-header flex-display-center-sb">
+                                        <div class="event-type">${event.properties.type}</div>
+                                        <div class="popUp-icons flex-display-center-center g-xs">
+                                            <div class="icon icon-m" alt="favorites" id="bookmark" style="mask-image: var(--icon-favorites);"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="event-title bold"> ${event.properties.event} </div>
+
+                                    <div class="popUp-time flex column g-xs">
+                                        <div class="day-type flex v-center g-xs muted-text"> 
+                                            <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
+                                            This is a one-day event
+                                        </div>
+
+                                        <div class="event-dates flex v-center g-s">
+                                            <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.properties.startDate} </span></div> 
+                                            <div class="divider"></div>
+                                            <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${event.properties.endDate}</span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="popUp-footer flex-display-center-sb">
+                                        <button class="primary-btn"><a href="${event.properties.gMapsLink}" class="btn-text">Google maps</a></button>
+                                        
+                                        <button class="secondary-btn no-link">
+                                            <a href="${event.properties.regLink}" class="btn-text flex v-center underlined">
+                                                RSVP
+                                                <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+
+                    content += `</div>`; // Close container
+                    return content;
+
+                }
+
+                let cluster_card = new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(
+                    appendSingleEvents()
+                    
+                )
+                .setMaxWidth("80%").addTo(map);
+                
+                map.flyTo({
+                    center: features[0].geometry.coordinates,
+                    zoom: zoom
+                });  
+            });
+
+            
+            
+        } else{
             map.easeTo({
                 center: features[0].geometry.coordinates,
                 zoom: zoom
             });
         }
-    );
-
-    clusterSource.getClusterChildren(clusterId, (err, features) => {
-        if (err) return;
-        console.log(features);
-    });
-    clusterSource.getClusterLeaves(clusterId, 10, 0, (err, features) => {
-        if (err) return;
-        console.log(features);
     });
 
     console.log('click cluster');
