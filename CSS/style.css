@@ -415,6 +415,9 @@ a {
 .vis{
     opacity: 1;
 }
+.no-vis{
+    visibility: hidden;
+}
 
 /* DATA */
 .graph-wrapper{
@@ -466,7 +469,7 @@ a {
 }
 @media screen and (max-width: 480px) {
     .mapboxgl-popup{
-        width: 80%;
+        width: 90%;
     }
     .weekday{
         justify-content: flex-start;

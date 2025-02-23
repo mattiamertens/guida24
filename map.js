@@ -27,6 +27,8 @@ fetch(geoJ).then(response => response.json())
         }
     });
 
+    // console.log(data);
+
 
 
 
@@ -141,23 +143,27 @@ map.on('click', 'clusters', (e) => {
                 if (err) return;
                 
                 function appendSingleEvents(){
-                    let content = `
-                    <div class="cluster-popup-container flex column g-s">
+                    let content = 
+                    `<div class="cluster-popup-container flex column g-s">
                         <div class="cluster-header flex-display-center-sb"> 
                             <div class="card-title"> ${features_events.length} EVENTS </div>
                             <button class="remove-cluster-popup"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
-                        </div>`;
+                        </div>
+                    `;
                      
         
                     features_events.forEach(event => {
+                        // console.log(event.properties);
+                        let linkClass = event.properties.regLink ? "" : "no-vis";
+
                         content += `
                             <div class="event-card">
 
-                                <div class="popUp flex column g-m" data-id="${event.properties.dataId}">
+                                <div class="popUp flex column g-m" data-id="${event.properties.id}">
                                     <div class="popUp-header flex-display-center-sb">
-                                        <div class="event-type">${event.properties.type}</div>
+                                        <div class="event-type" style="background-color: ${event.properties.color}">${event.properties.type}</div>
                                         <div class="popUp-icons flex-display-center-center g-xs">
-                                            <div class="icon icon-m" alt="favorites" id="bookmark" style="mask-image: var(--icon-favorites);"></div>
+                                            <div class="icon icon-m bookmark-cluster" id="bookmark" alt="favorites" style="mask-image: var(--icon-favorites);"></div>
                                         </div>
                                     </div>
                                     
@@ -179,7 +185,7 @@ map.on('click', 'clusters', (e) => {
                                     <div class="popUp-footer flex-display-center-sb">
                                         <button class="primary-btn"><a href="${event.properties.gMapsLink}" class="btn-text">Google maps</a></button>
                                         
-                                        <button class="secondary-btn no-link">
+                                        <button class="secondary-btn no-link-selector ${linkClass}">
                                             <a href="${event.properties.regLink}" class="btn-text flex v-center underlined">
                                                 RSVP
                                                 <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
@@ -200,18 +206,53 @@ map.on('click', 'clusters', (e) => {
                 .setLngLat(e.lngLat)
                 .setHTML(
                     appendSingleEvents()
-                    
                 )
-                .setMaxWidth("80%").addTo(map);
+                .setMaxWidth("90%").addTo(map);
                 
                 map.flyTo({
                     center: features[0].geometry.coordinates,
                     zoom: zoom
                 });  
+                
+                //REMOVE POPUP
+                $('.remove-cluster-popup').on('click', function(){
+                    cluster_card.remove();
+                });
+
+                // ADD EVENT TO FAVORITES
+                var bookmark_cluster = document.querySelectorAll('.bookmark-cluster');
+                $(bookmark_cluster).on('click', function(){
+                    const dataId = $(this).closest('.popUp').attr('data-id');
+                    const clickedEvent = features_events.find(e => e.properties.id == dataId);
+                    let eventData = {
+                        id: clickedEvent.properties.id,
+                        type: clickedEvent.properties.type,
+                        title: clickedEvent.properties.event,
+                        startDate: clickedEvent.properties.startDate,
+                        endDate: clickedEvent.properties.endDate,
+                        gMapsLink: clickedEvent.properties.gMapsLink,
+                        rsvp: clickedEvent.properties.regLink,
+                        color: clickedEvent.properties.color
+                    };
+                    saveEvents(eventData, this);
+                });
+                
+
+                // check if event is already saved
+                features_events.forEach(event => {
+                    if(savedEventsArray.some(e => e.id === event.properties.id)){
+                        $(`[data-id="${event.properties.id}"] .bookmark-cluster`).css('mask-image', 'var(--icon-favorites-filled)');
+                        console.log('Event is already saved');
+                        
+                    }
+                });
             });
 
-            
-            
+            // if(savedEventsArray.some(e => e.id === dataId)){
+            //     console.log('Event is already saved');
+            //     $('#bookmark').css('mask-image', 'var(--icon-favorites-filled)');  
+            // };
+
         } else{
             map.easeTo({
                 center: features[0].geometry.coordinates,
@@ -238,6 +279,8 @@ map.on('click', 'eventini', function poppinUp(e){
   const color = e.features[0].properties.color;
 
   console.log('click eventini');
+
+  let linkClass = regLink ? "" : "no-vis";
   
 
     // Ensure that if the map is zoomed out such that
@@ -250,7 +293,7 @@ map.on('click', 'eventini', function poppinUp(e){
       .setLngLat(coordinates)
       .setHTML(`<div class="popUp flex column g-m" data-id="${dataId}">
         <div class="popUp-header flex-display-center-sb">
-            <div class="event-type">${type}</div>
+            <div class="event-type" style="background-color: ${color}">${type}</div>
             <div class="popUp-icons flex-display-center-center g-xs">
                 <div class="icon icon-m" alt="favorites" id="bookmark" style="mask-image: var(--icon-favorites);"></div>
                 <button class="remove-popup"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
@@ -275,7 +318,7 @@ map.on('click', 'eventini', function poppinUp(e){
         <div class="popUp-footer flex-display-center-sb">
             <button class="primary-btn"><a href="${gMapsLink}" class="btn-text">Google maps</a></button>
             
-            <button class="secondary-btn no-link">
+            <button class="secondary-btn no-link ${linkClass}">
                 <a href="${regLink}" class="btn-text flex v-center underlined">
                     RSVP
                     <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
@@ -283,32 +326,26 @@ map.on('click', 'eventini', function poppinUp(e){
             </button>
         </div>
     </div>`
-      ).setMaxWidth("80%").addTo(map);
+      ).setMaxWidth("90%").addTo(map);
 
     map.flyTo({
         center: e.features[0].geometry.coordinates
     });
     
-
-    // LINK HIDDEN IF VALUE NOT PRESENT
-    if(!regLink){
-        $(".no-link").hide();
-    }
-    
     // CHANGE COLOR OF PILL BASED ON TYPE
-    var eventPill = document.querySelector('.mapboxgl-popup-content .event-type');
-    if(type == "Scrocco"){
-        console.log("Scrocco");
-        $(eventPill).css('background-color', color);
-    }
-    else if(type == "Design"){
-        console.log("Design");
-        $(eventPill).css('background-color', color);
-    }
-    else if(type == "Serata"){
-        console.log("Serata");
-        $(eventPill).css('background-color', color);  
-    }
+    // var eventPill = document.querySelector('.mapboxgl-popup-content .event-type');
+    // if(type == "Scrocco"){
+    //     console.log("Scrocco");
+    //     $(eventPill).css('background-color', color);
+    // }
+    // else if(type == "Design"){
+    //     console.log("Design");
+    //     $(eventPill).css('background-color', color);
+    // }
+    // else if(type == "Serata"){
+    //     console.log("Serata");
+    //     $(eventPill).css('background-color', color);  
+    // }
 
     //REMOVE POPUP
     $('.remove-popup').on('click', function(){
@@ -326,18 +363,17 @@ map.on('click', 'eventini', function poppinUp(e){
     $('#bookmark').on('click', function(){
         let eventData = {id: dataId, type: type, title: event, startDate: startDate, endDate: endDate, gMapsLink: gMapsLink, rsvp: regLink, color: color};
 
-       saveEvents(eventData);
+       saveEvents(eventData, this);
     });
 });
 
 
-function saveEvents(event){
-    // let savedEventsArray = JSON.parse(localStorage.getItem('savedEvents')) || [];
+function saveEvents(event, element){
     // console.log(savedEventsArray);
 
     // CEHCK IF SAVED IN CASE: DON'T SAVE IF ALREADY PRESENT ---- first e.id is the one in the array, second is the one we are trying to save
     if(!savedEventsArray.some(e => e.id === event.id)){
-        $('#bookmark').css('mask-image', 'var(--icon-favorites-filled)');
+        $(element).css('mask-image', 'var(--icon-favorites-filled)');
 
         // PUSH TO ARRAY
         savedEventsArray.unshift(event);
@@ -350,7 +386,7 @@ function saveEvents(event){
 
     }
     else{
-        $('#bookmark').css('mask-image', 'var(--icon-favorites)');
+        $(element).css('mask-image', 'var(--icon-favorites)');
 
         // REMOVE FROM ARRAY
         savedEventsArray = savedEventsArray.filter(e => e.id !== event.id);
@@ -366,6 +402,8 @@ function renderSavedEvents(event){
     let favContainer = $('.favorites-events-content');
     $('.placebo').hide();
     $(favContainer).addClass('flex-display-start-center h-100');
+
+    let linkClass = event.regLink ? "" : "no-vis";
 
     $(favContainer).prepend(
         `<div class="fav-popUp w-100 flex column g-m" data-id="${event.id}">
@@ -394,7 +432,7 @@ function renderSavedEvents(event){
             <div class="popUp-footer flex-display-center-sb">
                 <button class="primary-btn"><a href="${event.gMapsLink}" class="btn-text">Google maps</a></button>
                 
-                <button class="secondary-btn">
+                <button class="secondary-btn ${linkClass}">
                     <a href="${event.rsvp}" class="btn-text flex v-center underlined">
                         RSVP
                         <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
