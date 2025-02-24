@@ -9,7 +9,7 @@
         "endDate": "16/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Garofalo,+31,+20133+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -30,7 +30,7 @@
         "endDate": "20/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Molise,+62,+Milano",
         "regLink": "https://bulma.rsvp/bsr-mdw-2024",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -51,7 +51,7 @@
         "endDate": "18/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+felice+casati+3,+Milano",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -93,7 +93,7 @@
         "endDate": "16/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazzale+Luigi+Cadorna,+5,+20123+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -156,7 +156,7 @@
         "endDate": "19/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=V.+Ambrogio+Bergognone+da+Fossano,+34,+20144+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -240,7 +240,7 @@
         "endDate": "19/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+dell'Aprica+12,+20158+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -261,7 +261,7 @@
         "endDate": "19/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Risorgimento+8,+Milano",
         "regLink": "https://gcagencyevents.typeform.com/MODESmdw24",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -282,7 +282,7 @@
         "endDate": "19/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco,+Piazza+Castello,+20121+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -324,7 +324,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=V.+Ambrogio+Bergognone+da+Fossano,+34,+20144+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -345,7 +345,7 @@
         "endDate": "16/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Stecca+3.0,+Via+Gaetano+de+Castillia,+26,+20124+Milano+MI,+Italia",
         "regLink": "https://dice.fm/event/akweq-anna-molly-x-milano-design-week-opening-party-16th-apr-stecca-30-milano-tickets",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -387,7 +387,7 @@
         "endDate": "18/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Vincenzo+Monti,+21,+Milano",
         "regLink": "https://6taehw03lhu.typeform.com/to/xjvGm14c?typeform-source=l.instagram.com",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -408,7 +408,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Sammartini+38",
         "regLink": "",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -429,7 +429,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+santa+margherita+4,+Milano",
         "regLink": "",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": "Registrazione all'ingresso"
       },
       "geometry": {
@@ -450,7 +450,7 @@
         "endDate": "20/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=via+g.b.+sammartini+38+milano",
         "regLink": "https://zero.eu/it/sponsor/campari-soda-senza-etichette/",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": "Camparini maledetti, più info con link registrazione (mille eventi)"
       },
       "geometry": {
@@ -471,7 +471,7 @@
         "endDate": "18/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Diaz+5,+Milano",
         "regLink": "mailto:showroom@spaziodiazmilano.com",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": "Mandare mail per invito"
       },
       "geometry": {
@@ -534,7 +534,7 @@
         "endDate": "20/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Black+Hole,+Viale+Umbria,+118,+20135+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -555,7 +555,7 @@
         "endDate": "19/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Privata+Gaetano+Sbodio,+30/3,+Milano",
         "regLink": "https://www.eventbrite.it/e/nm3-opal-milan-design-week-2024-with-higher-intelligence-agency-live-tickets-880195467337?utm_experiment=test_share_listing&aff=ebdsshios",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -576,7 +576,7 @@
         "endDate": "17/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=V.+Ambrogio+Bergognone+da+Fossano,+34,+20144+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -639,7 +639,7 @@
         "endDate": "20/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=V.+Ambrogio+Bergognone+da+Fossano,+34,+20144+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -681,7 +681,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Largo+gemelli+1,+Milano",
         "regLink": "https://docs.google.com/forms/d/e/1FAIpQLScUd3edY0gmCM9PQCOQsLVSzwCZ59bnm1hJD5qvKXlftGKYfw/viewform",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -702,7 +702,7 @@
         "endDate": "17/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Galleria+vittorio+emanuele+II",
         "regLink": "",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -723,7 +723,7 @@
         "endDate": "20/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco,+Piazza+Castello,+20121+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -765,7 +765,7 @@
         "endDate": "20/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+privata+Rezia+2,+Milano",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -786,7 +786,7 @@
         "endDate": "17/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Arca+Milano,+Via+Rimini,+38,+20142+Milano+MI,+Italia",
         "regLink": "https://dice.fm/event/9v8b6-arca-design-week-acme-abitare-gli-spazi-16th-apr-arca-milano-tickets?_branch_referrer=H4sIAAAAAAAAAw3O4VKCMAAA4Lfpn7I13Vh3XTeTSEpBuVnbn90GAyaYypCsp6%2FvCb5mGM7%2BIQg699VOS1fYaXUMqvA9T1JRL1fmqTJF58rHjDEtM%2F7Nb5NexRdGT686pRJBn5Aq5lHXbp%2FZBcw3LV2Fb24fyU8z7HLC644Ipe1RMfOCUwRzr8dy04x0OWbD4SM6XWO0c%2Bo3WUiPyT5eC7YIpSjq4gC2BMHJzJ79z%2Fqai5Tf%2BUb3tlf%2FHwzRDANbWouBuQcAwDkmFJI%2FLl2KStAAAAA%3D&amp%3Bfbclid=PAAaZPUwUx-r_GqA9oHaO9Z31sJ7fGUElkQCAq05Nk9I8KiVEZXbtRS7Ugl7Y_aem_AbF6O31SsavdNhv9DvPtjWEouG3Ri_zJBZs67VGMYAB8ZYcgcj0Q731-4epsyMuSYOU&amp%3Bsharer_id=613460edee60b20001567917&amp%3B_branch_match_id=1300139747002140348%22%3Ehttps%3A%2F%2Fdice.fm%2Fevent%2F9v8b6-arca-design-week-acme-abitare-gli-spazi-16th-apr-arca-milano-tickets",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -849,7 +849,7 @@
         "endDate": "20/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazzale+Stazione+genova+4,+Milano",
         "regLink": "",
-        "type": "Scrocco"
+        "type": "Freebies"
       },
       "geometry": {
         "coordinates": [
@@ -869,7 +869,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+senato+14,+Milano",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -995,7 +995,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Ex+Macello",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1037,7 +1037,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tortona+58,+Milano",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": "Programming below:\nTuesday 16th | Threes productions presents Lorenzo Senni (djset) w/ RPM & Yas reven Wednesday 17th | Burro Studio Radio presents Bulma Brief w/ Acidgigi & Riccardo BHI Thursday 18th | Akeem presents Erica Gal w/ Marvely, Miro & Davide Dev Friday 19th | Ciao! Discoteca Italiana Saturday 20th | Slipmode presents ninafterdark, acideyes, Amazon, Miss jay & Sukubratz"
       },
       "geometry": {
@@ -1058,7 +1058,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Bar+Nico,+Via+Cesare+Saldini,+2,+20133+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1121,7 +1121,7 @@
         "endDate": "15/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco,+Piazza+Castello,+20121+Milano+MI,+Italia",
         "regLink": "https://www.eventbrite.it/e/b-in-the-park-milano-design-week-parco-sempione-tickets-875998684647",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1142,7 +1142,7 @@
         "endDate": "18/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco,+Piazza+Castello,+20121+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1163,7 +1163,7 @@
         "endDate": "16/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco,+Piazza+Castello,+20121+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1247,7 +1247,7 @@
         "endDate": "17/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Mario+Giuriati,+6,+Milano",
         "regLink": "https://www.eventbrite.it/e/biglietti-marimar-club-book-your-private-view-863669708347",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": "Già preso 3 biglietti per le 16.00"
       },
       "geometry": {
@@ -1268,7 +1268,7 @@
         "endDate": "17/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco,+Piazza+Castello,+20121+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1289,7 +1289,7 @@
         "endDate": "17/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+dell'aprica+12,+Milano",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1352,7 +1352,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+savona+54,+Milano",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1367,13 +1367,13 @@
     {
       "type": "Feature",
       "properties": {
-        "event": "One shot (serata)",
+        "event": "One shot",
         "startDate": "18/04/2024",
         "startHour": "",
         "endDate": "18/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+rimini+38,+Milano",
         "regLink": "https://dice.fm/event/dyv5q-arca-design-week-one-shot-18th-apr-arca-milano-tickets",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": "Line up non dichiarata"
       },
       "geometry": {
@@ -1394,7 +1394,7 @@
         "endDate": "15/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Foro+Buonaparte+18,+Milano",
         "regLink": "",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -1436,7 +1436,7 @@
         "endDate": "15/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Super+attico,+Via+Bartolomeo+Eustachi,+40,+20129+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1520,7 +1520,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Montello+8,+Milano",
         "regLink": "",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": "Martedì è su invito"
       },
       "geometry": {
@@ -1541,7 +1541,7 @@
         "endDate": "17/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Gorani+4,+Milano",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1562,7 +1562,7 @@
         "endDate": "20/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+dell'Aprica+12,+20158+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1583,7 +1583,7 @@
         "endDate": "16/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Tunnel+Club,+Via+Giovanni+Battista+Sammartini,+30,+20125+Milano+MI,+Italia",
         "regLink": "https://dice.fm/partner/outpump/event/38p2x-outpump-fuorinatura-15th-apr-tunnel-club-milano-tickets?dice_id=2790277&amp%3Bdice_channel=web&amp%3Bdice_tags=organic&amp%3Bdice_campaign=Outpump&amp%3Bdice_feature=mio_marketing&amp%3B_branch_referrer=H4sIAAAAAAAAAwXBYRNCMAAA0F%2BEdIl113WrrpAunCa%2BONbGYipbc%2Fz63muk%2FIiNYXSsb%2FUnw0Sn3IgWFBBrTdfAsXe0wh17bkMIy2z2uUjbixWnaRXXtbLwNKNo7n1P3qAMH2KRQx8NwbRUUvFbOb67Ee%2F5tSgJLyA1U6yic3bwItcSQhI3HhrTuYNjaH%2B5f5x%2B1wcLkpIhqrUo4eQkNZKpzgSoyl%2FAPq3%2BS80cua4AAAA%3D&amp%3Bfbclid=PAAaYzJmsWkK5RWWbRggv5cyzVQznJItOAtPXs0ZAJVrLy2vtvmOawolwcBmM_aem_Af1WcvQGYCIQH5ssteHRrh18U9DP7qmJDyuMXiLTaiVf-kVTmeFt-eYvl19VbZj97F4&amp%3B_branch_match_id=1300139747002140348%22%3Ehttps%3A%2F%2Fdice.fm%2Fpartner%2Foutpump%2Fevent%2F38p2x-outpump-fuorinatura-15th-apr-tunnel-club-milano-tickets",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1688,7 +1688,7 @@
         "endDate": "19/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+dell'Aprica,+20158+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -1709,7 +1709,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+della+Pergola+11/4,+Milano",
         "regLink": "",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -1751,7 +1751,7 @@
         "endDate": "17/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Parco+ex+Area+Pozzi,+Via+Alzaia+Trento,+20094+Corsico+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1771,7 +1771,7 @@
         "endDate": "16/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+dell'Aprica,+12,+20158+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1813,7 +1813,7 @@
         "endDate": "19/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Turati+6,+Milano",
         "regLink": "",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -1854,7 +1854,7 @@
         "endDate": "21/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Parco+ex+Area+Pozzi,+Via+Alzaia+Trento,+.,+20094+Corsico+MI,+Italia",
         "regLink": "https://www.corsicosummerfestival.com/event-details/design-week-anna-molly-3",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1895,7 +1895,7 @@
         "endDate": "16/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Park+Hub,+Via+Garofalo+31,+Milan",
         "regLink": "https://vuotosette.splashthat.com/",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1916,7 +1916,7 @@
         "endDate": "12/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Vigevano,+8,+20144+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -1937,7 +1937,7 @@
         "endDate": "17/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Garibaldi+70,+Milano",
         "regLink": "https://go.millerknoll.com/Salone_Cocktail_Party_RSVP",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -1979,7 +1979,7 @@
         "endDate": "18/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazzale+stazione+genova+4,+Milano",
         "regLink": "https://www.eventbrite.it/e/don-papa-masskara-party-fuorisalone-2024-tickets-868516966627?aff=oddtdtcreator",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -2021,7 +2021,7 @@
         "endDate": "18/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=V.+Ambrogio+Bergognone+da+Fossano,+34,+20144+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {
@@ -2042,7 +2042,7 @@
         "endDate": "18/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Balestrieri+5,+Milano",
         "regLink": "mailto:info@trep-trepiu.com",
-        "type": "Scrocco",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
@@ -2063,7 +2063,7 @@
         "endDate": "20/04/2024",
         "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+dell'Aprica,+12,+20158+Milano+MI,+Italia",
         "regLink": "",
-        "type": "Serata",
+        "type": "Club/gigs",
         "description": ""
       },
       "geometry": {

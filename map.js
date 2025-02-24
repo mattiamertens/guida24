@@ -16,21 +16,16 @@ fetch(geoJ).then(response => response.json())
     places.forEach((place, i) => {
         place.properties.id = i + 1;
 
-        if(place.properties.type == "Scrocco"){
+        if(place.properties.type == "Freebies"){
             place.properties.color = 'var(--event_orange)';
         }
         else if(place.properties.type == "Design"){
             place.properties.color = 'var(--event_blue)';
         }
-        else if(place.properties.type == "Serata"){
+        else if(place.properties.type == "Club/gigs"){
             place.properties.color = 'var(--event_green)';
         }
     });
-
-    // console.log(data);
-
-
-
 
 
     map.on('load', () => {
@@ -106,9 +101,9 @@ fetch(geoJ).then(response => response.json())
                 'icon-image': [
                     'match',
                     ['get', 'type'],
-                    'Scrocco', 'pinSc',
+                    'Freebies', 'pinSc',
                     'Design', 'pinD',
-                    'Serata', 'pinSe',
+                    'Club/gigs', 'pinSe',
                     'random'
                 ],
                 'icon-size': 0.4,
@@ -119,10 +114,30 @@ fetch(geoJ).then(response => response.json())
     });
 });
 
-map.on('zoom', function(){
-    // var zoom = map.getZoom();
-    // console.log(zoom);
-});
+function updateClusters(){
+    let source = map.getSource('events');
+    if (source) {
+        source.setData(source._data);
+    }
+    console.log('clusters updated');
+
+    const visibilityCl = map.getLayoutProperty('clusters', 'visibility');
+
+    if (visibilityCl === 'visible') {
+        map.setLayoutProperty('clusters', 'visibility', 'none');
+    } else {
+        map.setLayoutProperty('clusters', 'visibility', 'visible');
+    }
+    
+    const visibilityCo = map.getLayoutProperty('cluster-count', 'visibility');
+
+    if (visibilityCo === 'visible') {
+        map.setLayoutProperty('cluster-count', 'visibility', 'none');
+    } else {
+        map.setLayoutProperty('cluster-count', 'visibility', 'visible');
+    }
+    
+}
 
 // inspect a cluster on click
 map.on('click', 'clusters', (e) => {
@@ -142,7 +157,7 @@ map.on('click', 'clusters', (e) => {
             clusterSource.getClusterLeaves(clusterId, 10, 0, (err, features_events) => {
                 if (err) return;
                 
-                function appendSingleEvents(){
+                function appendSingleEvents(){                    
                     let content = 
                     `<div class="cluster-popup-container flex column g-s">
                         <div class="cluster-header flex-display-center-sb"> 
@@ -203,7 +218,7 @@ map.on('click', 'clusters', (e) => {
                 }
 
                 let cluster_card = new mapboxgl.Popup()
-                .setLngLat(e.lngLat)
+                .setLngLat(features[0].geometry.coordinates)
                 .setHTML(
                     appendSingleEvents()
                 )
@@ -283,9 +298,7 @@ map.on('click', 'eventini', function poppinUp(e){
   let linkClass = regLink ? "" : "no-vis";
   
 
-    // Ensure that if the map is zoomed out such that
-    // multiple copies of the feature are visible, the
-    // popup appears over the copy being pointed to.
+    // Ensure that if the map is zoomed out such that multiple copies of the feature are visible, the popup appears over the copy being pointed to.
     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
     }
@@ -331,21 +344,6 @@ map.on('click', 'eventini', function poppinUp(e){
     map.flyTo({
         center: e.features[0].geometry.coordinates
     });
-    
-    // CHANGE COLOR OF PILL BASED ON TYPE
-    // var eventPill = document.querySelector('.mapboxgl-popup-content .event-type');
-    // if(type == "Scrocco"){
-    //     console.log("Scrocco");
-    //     $(eventPill).css('background-color', color);
-    // }
-    // else if(type == "Design"){
-    //     console.log("Design");
-    //     $(eventPill).css('background-color', color);
-    // }
-    // else if(type == "Serata"){
-    //     console.log("Serata");
-    //     $(eventPill).css('background-color', color);  
-    // }
 
     //REMOVE POPUP
     $('.remove-popup').on('click', function(){
@@ -357,7 +355,6 @@ map.on('click', 'eventini', function poppinUp(e){
         console.log('Event is already saved');
         $('#bookmark').css('mask-image', 'var(--icon-favorites-filled)');  
     };
-
 
     // ADD EVENT TO FAVORITES
     $('#bookmark').on('click', function(){
@@ -397,7 +394,7 @@ function saveEvents(event, element){
 };
 
 function renderSavedEvents(event){
-    console.log(savedEventsArray);
+    // console.log(savedEventsArray);
 
     let favContainer = $('.favorites-events-content');
     $('.placebo').hide();
@@ -463,7 +460,6 @@ $(document).ready(function(){
     console.log('Document ready');
     loadSavedEvents();
 
-
     var deleteFav = document.querySelectorAll('.fav-bookmark');
     for (let i = 0; i < deleteFav.length; i++) {
         deleteFav[i].addEventListener('click', function(){
@@ -485,230 +481,55 @@ $(document).ready(function(){
 });
 
 
-// NON TOCCARE è OLD
-// map.on('click', 'Scrocco', (e) => {
-//     const coordinates = e.features[0].geometry.coordinates.slice();
-//     const type = e.features[0].properties.type;
-//     const event = e.features[0].properties.event;
-//     const description = e.features[0].properties.description;
-//     const startDate = e.features[0].properties.startDate;
-//     const endDate = e.features[0].properties.endDate;
-//     const gMapsLink = e.features[0].properties.gMapsLink;
-//     const regLink = e.features[0].properties.regLink;
-
-
-//     // Ensure that if the map is zoomed out such that
-//     // multiple copies of the feature are visible, the
-//     // popup appears over the copy being pointed to.
-//     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-//         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-//     }
-
-//     let popup = new mapboxgl.Popup()
-//         .setLngLat(coordinates)
-//         .setHTML(` <div class="popUp">
-//             <div class="popUp-title">${type}</div>
-//                 <div class="waiting-time-big sans-bold">
-//                         ${event}
-//                         <div>
-//                         ${description}
-//                         </div>
-//                     <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
-//                     <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
-//                     <div class="comparison-data">
-                        
-//                     </div>
-//                 </div>
-
-//                 <div class="popUp-footer flex-display-center-sb">
-//                     <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
-//                     <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
-//                 </div>
-//             </div>`
-//         )
-//         .setMaxWidth("80%")
-//         .addTo(map);
-
-//     map.flyTo({
-//         center: e.features[0].geometry.coordinates
-//     });
-
-//     // LINK HIDDEN IF VALUE NOT PRESENT
-//     if(!regLink){
-//         $(".cancello").hide();
-//     }
-// });
-
-// map.on('click', 'Serata', (e) => {
-//   const coordinates = e.features[0].geometry.coordinates.slice();
-//   const type = e.features[0].properties.type;
-//   const event = e.features[0].properties.event;
-//   const description = e.features[0].properties.description;
-//   const startDate = e.features[0].properties.startDate;
-//   const endDate = e.features[0].properties.endDate;
-//   const gMapsLink = e.features[0].properties.gMapsLink;
-//   const regLink = e.features[0].properties.regLink;
-
-
-//   // Ensure that if the map is zoomed out such that
-//   // multiple copies of the feature are visible, the
-//   // popup appears over the copy being pointed to.
-//   while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-//       coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-//   }
-
-// //   let popup = new mapboxgl.Popup()
-// //       .setLngLat(coordinates)
-// //       .setHTML(` <div class="popUp">
-// //           <div class="popUp-title">${type}</div>
-// //               <div class="waiting-time-big sans-bold">
-// //                       ${event}
-// //                       <div>
-// //                       ${description}
-// //                       </div>
-// //                   <div class="next-spot sans-regular"> Inizio <span class="sans-bold"> ${startDate} </span></div>
-// //                   <div class="next-spot sans-regular"> Fine <span class="sans-bold"> ${endDate} </span></div>
-// //                   <div class="comparison-data">
-                      
-// //                   </div>
-// //               </div>
-
-// //               <div class="popUp-footer flex-display-center-sb">
-// //                   <a href="${gMapsLink}" class="stream-button list-btn btn-text">Google maps</a>
-// //                   <a href="${regLink}" class="btn-text sans-bold underlined cancello">Registrati</a>
-// //               </div>
-// //           </div>`
-// //       )
-// //       .setMaxWidth("80%")
-// //       .addTo(map);
-
-//   map.flyTo({
-//       center: e.features[0].geometry.coordinates
-//   });
-
-//   // LINK HIDDEN IF VALUE NOT PRESENT
-//   if(!regLink){
-//       $(".cancello").hide();
-//   }
-// });
-
-
-
-var scrocco = document.getElementById("Scrocco");
-var design = document.getElementById("Design");
-var serata = document.getElementById("Serata");
-
 // FILTRI TIPOLOGIA EVENTI
 var check = document.querySelectorAll('.control')
 var combinedFilter = ["all"];
 
-for (let i = 0; i < check.length; i++) {
-    var selectedLayer = check[i];
-  
-    $(selectedLayer).on('click', function() {
-        var selType = this.id;
-        var typeFilter = ['!=', ['get', 'type'], selType];
-  
-        //  combinedFilter.splice(1, 1, typeFilter);
-        combinedFilter.push(typeFilter)
-        console.log(combinedFilter[1][2]);
-        // map.setFilter('eventini', typeFilter); // USE COMBINED-FILTER
-        map.setFilter('eventini', combinedFilter);
+$(check).on('click', function() {
+    var id = this.id;
+    
+    let eventTypeFilter = ['!=', ['get', 'type'], id];
 
-    })
-}
+    if($(this).is(':checked')) {
+        // SHOW EVENTS
+        combinedFilter = combinedFilter.filter(filter => JSON.stringify(filter) !== JSON.stringify(eventTypeFilter));
+        console.log('gigs visible');
+    } else{
+        // HIDE EVENTS
+        combinedFilter.push(eventTypeFilter);
+        console.log('gigs hidden');
+    }
+
+    map.setFilter('eventini', combinedFilter);
+    updateClusters();
+    console.log(combinedFilter)
+})
 
 // DAYS FILTER
-var dayFilter = ['!=', ['get', 'startDate']];
-var monday = document.getElementById("monday");
-
 var weekCheck = document.querySelectorAll('.weekControl')
-for (let i = 0; i < weekCheck.length; i++) {
-  var selectedLayer = weekCheck[i];
+$(weekCheck).on('click', function() {
+    var selectedDay = this.value;
+    var dayFilter = ['!=', ['get', 'startDate'], selectedDay];
 
-  $(selectedLayer).on('click', function() {
-    var selDay = this.value;
-    var dayFilter = ['!=', ['get', 'startDate'], selDay];
-    combinedFilter.push(dayFilter)
-    console.log(combinedFilter);
+    console.log(selectedDay)
+
+    if($(this).is(':checked')) {
+        // SHOW EVENTS
+        combinedFilter = combinedFilter.filter(filter => JSON.stringify(filter) !== JSON.stringify(dayFilter));
+        console.log('gigs visible');
+    } else{
+        // HIDE EVENTS
+        combinedFilter.push(dayFilter);
+        console.log('gigs hidden');
+    }
+
     map.setFilter('eventini', combinedFilter);
-
-    if($(this).is(':checked')) {
-        for (var i = combinedFilter.length - 1; i >= 0; --i) {
-            if (combinedFilter[i][2] == this.value) {
-                combinedFilter.splice(i,1);
-            }
-        }
-
-        map.setFilter('eventini', combinedFilter);
-        // console.log('Scrocco is now visible')
-        console.log(combinedFilter)
-    }
-    
-    }
-)}
-
-
-// SPLICE FILTERS TO REMOVE FROM ARRAY
-$(scrocco).on('click', function() {
-    if($(this).is(':checked')) {
-
-        for (var i = combinedFilter.length - 1; i >= 0; --i) {
-            if (combinedFilter[i][2] == "Scrocco") {
-                combinedFilter.splice(i,1);
-            }
-        }
-        map.setFilter('eventini', combinedFilter);
-        // console.log('Scrocco is now visible')
-        console.log(combinedFilter)
-    }
-})
-
-$(design).on('click', function() {
-    if($(this).is(':checked')) {
-        for (var i = combinedFilter.length - 1; i >= 0; --i) {
-            if (combinedFilter[i][2] == "Design") {
-                combinedFilter.splice(i,1);
-            }
-        }
-
-        map.setFilter('eventini', combinedFilter);
-        console.log(combinedFilter)
-    }
-})
-
-$(serata).on('click', function() {
-    if($(this).is(':checked')) {
-        for (var i = combinedFilter.length - 1; i >= 0; --i) {
-            if (combinedFilter[i][2] == "Serata") {
-                combinedFilter.splice(i,1);
-            }
-        }
-
-        map.setFilter('eventini', combinedFilter);
-        // console.log('Scrocco is now visible')
-        console.log(combinedFilter)
-    }
-})
-$(monday).on('click', function() {
-    // if($(this).is(':checked')) {
-    //     for (var i = combinedFilter.length - 1; i >= 0; --i) {
-    //         if (combinedFilter[i][2] == this.value) {
-    //             combinedFilter.splice(i,1);
-    //         }
-    //     }
-
-    //     map.setFilter('eventini', combinedFilter);
-    //     // console.log('Scrocco is now visible')
-    //     console.log(combinedFilter)
-    // }
+    console.log(combinedFilter)
 })
 
 
-// OPEN BOTH FILTER MODALS
 $('.filter-btn').on('click', function(){
     let modalClass = '#' + $(this).attr('id') + '-filter';
-    console.log(modalClass);
 
     $(modalClass).removeClass('hidden')
 
