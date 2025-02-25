@@ -1,5 +1,6 @@
 var geoJ = 'assets/features.geojson';
 let savedEventsArray = JSON.parse(localStorage.getItem('savedEvents')) || [];
+let originalGeoJSON;
 
 
 // map.on('zoom', function(){
@@ -50,6 +51,9 @@ fetch(geoJ).then(response => response.json())
             map.addImage('random', image);
         });
 
+        
+
+
             
         map.addSource('events', {
             type: 'geojson',
@@ -58,6 +62,9 @@ fetch(geoJ).then(response => response.json())
             clusterRadius: 40,
             clusterMaxZoom: 16
         });
+
+        originalGeoJSON = map.getSource('events')._data;
+        console.log(originalGeoJSON);
             
         // CLUSTER LAYER
         map.addLayer({
@@ -114,7 +121,7 @@ fetch(geoJ).then(response => response.json())
     });
 });
 
-function updateClusters(){
+function updatexsxsClusters(){
     let source = map.getSource('events');
     if (source) {
         source.setData(source._data);
@@ -138,6 +145,41 @@ function updateClusters(){
     }
     
 }
+function updateClusters() {
+    let filteredFeatures = originalGeoJSON.features.filter(feature => {
+        let eventType = feature.properties.type;
+        let eventDate = feature.properties.startDate;
+
+        // Check if the event type is allowed
+        let typeAllowed = checkTypeFilter(eventType);
+        let dateAllowed = checkDateFilter(eventDate);
+
+        return typeAllowed && dateAllowed;
+    });
+
+    // Create a new GeoJSON object with filtered features
+    let newGeoJSON = {
+        type: "FeatureCollection",
+        features: filteredFeatures
+    };
+
+    // Update the Mapbox source with the new filtered data
+    map.getSource('events').setData(newGeoJSON);
+    console.log(newGeoJSON);
+    
+}
+
+// Helper function to check if the event type should be displayed
+function checkTypeFilter(eventType) {
+    return !combinedFilter.some(filter => filter[2] === eventType);
+}
+
+// Helper function to check if the event date should be displayed
+function checkDateFilter(eventDate) {
+    return !combinedFilter.some(filter => filter[2] === eventDate);
+}
+
+
 
 // inspect a cluster on click
 map.on('click', 'clusters', (e) => {
@@ -500,9 +542,9 @@ $(check).on('click', function() {
         console.log('gigs hidden');
     }
 
-    map.setFilter('eventini', combinedFilter);
+    // map.setFilter('eventini', combinedFilter);
     updateClusters();
-    console.log(combinedFilter)
+    // console.log(combinedFilter)
 })
 
 // DAYS FILTER
@@ -523,7 +565,8 @@ $(weekCheck).on('click', function() {
         console.log('gigs hidden');
     }
 
-    map.setFilter('eventini', combinedFilter);
+    // map.setFilter('eventini', combinedFilter);
+    updateClusters();
     console.log(combinedFilter)
 })
 
