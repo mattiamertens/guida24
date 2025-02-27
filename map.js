@@ -121,30 +121,7 @@ fetch(geoJ).then(response => response.json())
     });
 });
 
-function updatexsxsClusters(){
-    let source = map.getSource('events');
-    if (source) {
-        source.setData(source._data);
-    }
-    console.log('clusters updated');
 
-    const visibilityCl = map.getLayoutProperty('clusters', 'visibility');
-
-    if (visibilityCl === 'visible') {
-        map.setLayoutProperty('clusters', 'visibility', 'none');
-    } else {
-        map.setLayoutProperty('clusters', 'visibility', 'visible');
-    }
-    
-    const visibilityCo = map.getLayoutProperty('cluster-count', 'visibility');
-
-    if (visibilityCo === 'visible') {
-        map.setLayoutProperty('cluster-count', 'visibility', 'none');
-    } else {
-        map.setLayoutProperty('cluster-count', 'visibility', 'visible');
-    }
-    
-}
 function updateClusters() {
     let filteredFeatures = originalGeoJSON.features.filter(feature => {
         let eventType = feature.properties.type;

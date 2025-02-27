@@ -45,6 +45,7 @@
     --icon-extLink: url('../assets/icons/type=out_link.svg');
     --icon-alert: url('../assets/icons/type=alert.svg');
     --icon-list: url('../assets/icons/type=list.svg');
+    --icon-map: url('../assets/icons/type=location.svg');
 
 
     --yellow: #F9FD60;
@@ -184,6 +185,21 @@ a {
     text-shadow: var(--text-shadow);
 }
 
+/* PADDING */
+.p-8{
+    padding: 8px;
+}
+.p-8-16{
+    padding: 8px 16px;
+}
+.p-16{
+    padding: 16px;
+}
+
+.border-12{
+    border-radius: 12px;
+}
+
 /* SVG ICONS */
 .icon{
     background-color: var(--neutral_black);
@@ -248,7 +264,9 @@ a {
 .absolute{
     position: absolute;
 }
-
+.fixed{
+    position: fixed;
+}
 
 
 
@@ -367,8 +385,10 @@ a {
 
 .event-title{
     font-size: 22px;
-    line-height: normal;
+    line-height: 100%;
     font-family: var(--bold-font);
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .comparison-data{
@@ -551,7 +571,7 @@ button{
 .primary-btn{
     border: 1px solid black;
     border-radius: 4px;
-    padding: 8px 12px;
+    padding: 7px 12px;
 }
 .primary-btn-s{
     padding: 4px 10px;
@@ -651,14 +671,14 @@ input:checked + .checkbox-slider.giallo:before {
     padding-top: var(--navbar-height);
     height: 100vh;
     width: 100vw;
-    background-color: rgba(200, 100, 0, 0.14);
-    pointer-events: none;
+    /* background-color: rgba(200, 100, 0, 0.14);
+    pointer-events: none; */
 }
 
 
 /* FILTERS */
 .filter-button-container{
-    margin: 32px 0 0 16px;
+    margin: 32px 16px 0;
     pointer-events: all;
 }
 .filter-btn{
@@ -748,4 +768,19 @@ input:checked + .day-selector{
 .fav-eve-cont-up{
     height: 100%;
     justify-content: start;
+}
+
+
+/* LIST */
+.date-section{
+    white-space: nowrap;
+}
+
+.date-divider-line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--neutral_dk-grey);
+}
+.white-bg{
+    background-color: var(--neutral_white);
 }
