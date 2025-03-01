@@ -1,6 +1,8 @@
-// DA RIATTIVARE --> messo in index.html
-document.querySelector('.destinations').addEventListener('scroll', function(){
-  scrollDetection();
-  $('.scroll-cue').css('visibility', 'hidden')
+$('.weekControl').on('click', function(){
+  if (this.checked) {
+    console.log('checked');
+  } else {
+    console.log('unchecked');
+  }
+  
 });
-

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <title>I migliori eventi del fuorisalone 2024</title>
@@ -16,13 +16,7 @@
         <a href="about.html" class="nav-title underlined">ABOUT</a>
     </div>
 
-    <div class="map-container flex-display-start-start column">        
-        <div id='map'></div>
-    </div>
-
-
-
-    <div class="ui-elements-container z-10">
+    <div class="ui-elements-container z-10 flex-display-center-start g-l column">
         <div class="filter-button-container z-10 flex-display-center-center g-m">
             <div class="filter-btn filter-event-type pill pointer flex-display-center-center" id="event-type">Event category</div>
             <div class="filter-btn filter-date pill pointer flex-display-center-center" id="date">Date</div>
@@ -41,24 +35,24 @@
                     <div class="event-type min-w-92px flex-display-center-center" style="background-color: var(--event_green);">Clubs/gigs</div>
                     <div class="checkbox pointer">
                         <label class="switch pointer flex-display-center-center column">
-                            <input type="checkbox" id="Club/gigs" class="control" checked>
+                            <input type="checkbox" id="Design" class="control" checked>
                             <span class="checkbox-slider giallo"></span>
                         </label>
                     </div>
                 </div>
     
                 <div class="filter-row flex-display-center-sb">
-                    <div class="event-type min-w-92px flex-display-center-center" style="background-color: var(--event_orange);">Freebies</div>
+                    <div class="event-type min-w-92px flex-display-center-center" style="background-color: var(--event_blue);">Freebies</div>
                     <div class="checkbox pointer">
                         <label class="switch pointer flex-display-center-center column">
-                            <input type="checkbox" id="Freebies" class="control" checked>
+                            <input type="checkbox" id="Design" class="control" checked>
                             <span class="checkbox-slider giallo"></span>
                         </label>
                     </div>
                 </div>
     
                 <div class="filter-row flex-display-center-sb">
-                    <div class="event-type min-w-92px flex-display-center-center" style="background-color: var(--event_blue);">Design</div>
+                    <div class="event-type min-w-92px flex-display-center-center" style="background-color: var(--event_orange);">Design</div>
                     <div class="checkbox pointer">
                         <label class="switch pointer flex-display-center-center column">
                             <input type="checkbox" id="Design" class="control" checked>
@@ -92,32 +86,32 @@
                         7 Apr
                     </div>
                     <div class="flex-display-center-center column g-xs xs-text">
-                        <input type="checkbox" id="tuesday" name="tuesday" class="weekControl hidden-input" value="16/04/2024" checked>
+                        <input type="checkbox" id="tuesday" name="tuesday" class="weekControl hidden-input" value="15/04/2024" checked>
                         <label for="tuesday" class="day-selector flex-display-center-center">T</label>
                         8 Apr
                     </div>
                     <div class="flex-display-center-center column g-xs xs-text">
-                        <input type="checkbox" id="wednesday" name="wednesday" class="weekControl hidden-input" value="17/04/2024" checked>
+                        <input type="checkbox" id="wednesday" name="wednesday" class="weekControl hidden-input" value="15/04/2024" checked>
                         <label for="wednesday" class="day-selector flex-display-center-center">W</label>
                         9 Apr
                     </div>
                     <div class="flex-display-center-center column g-xs xs-text">
-                        <input type="checkbox" id="thursday" name="thursday" class="weekControl hidden-input" value="18/04/2024" checked>
+                        <input type="checkbox" id="thursday" name="thursday" class="weekControl hidden-input" value="15/04/2024" checked>
                         <label for="thursday" class="day-selector flex-display-center-center">T</label>
                         10 Apr
                     </div>
                     <div class="flex-display-center-center column g-xs xs-text">
-                        <input type="checkbox" id="friday" name="friday" class="weekControl hidden-input" value="19/04/2024" checked>
+                        <input type="checkbox" id="friday" name="friday" class="weekControl hidden-input" value="15/04/2024" checked>
                         <label for="friday" class="day-selector flex-display-center-center">F</label>
                         11 Apr
                     </div>
                     <div class="flex-display-center-center column g-xs xs-text">
-                        <input type="checkbox" id="saturday" name="saturday" class="weekControl hidden-input" value="20/04/2024" checked>
+                        <input type="checkbox" id="saturday" name="saturday" class="weekControl hidden-input" value="15/04/2024" checked>
                         <label for="saturday" class="day-selector flex-display-center-center">S</label>
                         12 Apr
                     </div>
                     <div class="flex-display-center-center column g-xs xs-text">
-                        <input type="checkbox" id="sunday" name="sunday" class="weekControl hidden-input" value="21/04/2024" checked>
+                        <input type="checkbox" id="sunday" name="sunday" class="weekControl hidden-input" value="15/04/2024" checked>
                         <label for="sunday" class="day-selector flex-display-center-center">S</label>
                         13 Apr
                     </div>
@@ -133,13 +127,8 @@
     
         </div>
 
-        <a href="list.html" class="view-switcher primary-btn primary-btn-bg filter-btn fit-content flex-display-center-center g-s absolute">
-            <div class="icon colored-icon icon-m" alt="day-type" style="mask-image: var(--icon-list);"></div>
-            List
-        </a>
-
-        <div class="favorites-container w-100 flex-display-center-sb column g-s">
-
+        <!-- FAVORITES -->
+        <div class="w-100 flex-display-center-sb column g-s p-8-16" style="background-color: var(--neutral_white);">
             <div class="favorites-header w-100 flex-display-center-sb">
                 <div class="favorites-header-text flex baseline g-xs">
                     <div class="favorites-title card-title">YOUR FAVORITES</div>
@@ -147,40 +136,69 @@
                 </div>
                 <button class="secondary-btn" alt="expand" id="expand-btn" onclick="expandFav()">expand</button>
             </div>
-
             <div class="favorites-events-content overflow-y w-100 flex-display-center-center column g-s">
                 <div class="placebo flex-display-center-center h-100 w-100">
                     <div class="fav-disclaimer medium m-text muted-text flex-display-center-center">There are no events bookmarked as favorite at the moment. Saved events will appear here.</div>
                 </div>
             </div>
-
             <div class="no-sync-disclaimer w-100 flex-display-start-center g-xs">
                 <div class="icon icon-s muted-icon" alt="alert" style="mask-image: var(--icon-alert); "></div>
                 <div class="muted-text xs-text" style="width: fit-content;">The events you marked as favorite will <span class="bold muted-text">NOT</span> sync across different devices. They are locally stored on this device.</div>
-
             </div>
         </div>
+
+        <!-- ALL EVENTS -->
+        <div class="w-100 flex-display-center-sb column g-s p-16" style="background-color: var(--violet);">
+            <div class="favorites-header w-100 flex-display-center-sb">
+                <div class="favorites-header-text flex baseline g-xs">
+                    <div class="favorites-title card-title">ALL EVENTS</div>
+                    <div class="nr-all-events muted-text xs-text"></div>
+                </div>
+            </div>
+
+            
+            <div class="all-events-content overflow-y w-100 flex-display-center-center column g-s">
+                <div class="date-section w-100 flex column g-l">
+                   
+
+                    <div class="date-card-container flex column g-s">
+                        <div class="date-divider xs-text muted-text w-100 flex-display-center-center g-xs baseline" value="15/04/2024">
+                            15 April 2024
+                            <div class="date-divider-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="date-card-container flex column g-s">
+                        <div class="date-divider xs-text muted-text w-100 flex-display-center-center g-xs baseline" value="16/04/2024">
+                            16 April 2024
+                            <div class="date-divider-line"></div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="date-divider xs-text muted-text w-100 flex-display-center-center g-xs baseline" value="17/04/2024">
+                        17 April 2024
+                        <div class="date-divider-line"></div>
+                    </div>
+
+                    <div class="date-divider xs-text muted-text w-100 flex-display-center-center g-xs baseline" value="18/04/2024">
+                        18 April 2024
+                        <div class="date-divider-line"></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="view-switcher primary-btn primary-btn-bg filter-btn fit-content flex-display-center-center g-s fixed">
+            <div class="icon colored-icon icon-m" alt="day-type" style="mask-image: var(--icon-map);"></div>
+            Map
+        </a>
+        
     </div>
-
-
-
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Vya2k0IiwiYSI6ImNsMTJpMmZ1MDAzZzAzb3F1Y2oweWR6dHoifQ.yb-y9ERCBNJHyAh-5e1qwg';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/dark-v10',
-            center:[9.19547994071335, 45.47106013361857],
-            zoom: 13,
-            maxZoom: 15
-        });
-        this.map.once('load', () => {
-            this.map.resize()
-        })
-    </script>
 
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.js" integrity="sha512-iiZOijMkLFQSa43AyuzD6p176GJlnhWXEv7loEZFkCDpFQvZCijZLE6U8IRpAIb53KagIIwhSwHWTgsDlci/jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="map.js"></script>
+<!-- <script type="text/javascript" src="map.js"></script> -->
+<script type="text/javascript" src="list.js"></script>
 </body>
 </html>

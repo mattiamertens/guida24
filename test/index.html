@@ -1,7 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <title>Component test</title>
+</head>
 <body>
-    <h1>Test</h1>
+
+
+    <div class="popUp flex column g-m">
+        <div class="popUp-header flex-display-center-sb">
+            <div class="popUp-title">${type}</div>
+            <div class="popUp-icons flex-display-center-center g-xs">
+                <div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-favorites);"></div>
+                <button class="remove-popup"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
+            </div>
+        </div>
+        
+        <div class="event-title bold"> ${event} </div>
+
+        <div class="popUp-time flex column g-xs">
+            <div class="day-type flex v-center g-xs muted"> 
+                <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
+                This is a one-day event
+            </div>
+
+            <div class="event-dates flex v-center g-s">
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${startDate} </span></div> 
+                <div class="divider"></div>
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${endDate}</span></div>
+            </div>
+        </div>
+
+        <div class="popUp-footer flex-display-center-sb">
+            <button class="primary-btn"><a href="${gMapsLink}" class="btn-text">Google maps</a></button>
+            
+            <button class="secondary-btn no-link">
+                <a href="${regLink}" class="btn-text flex v-center underlined">
+                    RSVP
+                    <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
+                </a>
+            </button>
+        </div>
+    </div>
+
+
+    
+
+    <div class="filter-category-container">
+        <div class="card-header flex-display-center-sb">
+            <div class="card-title">Event category</div>
+            <div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div>
+        </div>
+
+        <div class="filter-content-container flex column g-m">
+
+            <div class="filter-row flex-display-center-sb">
+                <div class="event-type min-w-92px flex-display-center-center" style="background-color: var(--event_green);">Clubs/gigs</div>
+                <div class="checkbox pointer">
+                    <label class="switch pointer flex-display-center-center column">
+                        <input type="checkbox" id="Design" class="control" checked>
+                        <span class="checkbox-slider giallo"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-row flex-display-center-sb">
+                <div class="event-type min-w-92px flex-display-center-center" style="background-color: var(--event_blue);">Freebies</div>
+                <div class="checkbox pointer">
+                    <label class="switch pointer flex-display-center-center column">
+                        <input type="checkbox" id="Design" class="control" checked>
+                        <span class="checkbox-slider giallo"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-row flex-display-center-sb">
+                <div class="event-type min-w-92px flex-display-center-center" style="background-color: var(--event_orange);">Design</div>
+                <div class="checkbox pointer">
+                    <label class="switch pointer flex-display-center-center column">
+                        <input type="checkbox" id="Design" class="control" checked>
+                        <span class="checkbox-slider giallo"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer flex-display-center-sb">
+            <button class="secondary-btn flex-display-center-center">reset</button>
+
+            <button class="primary-btn primary-btn-s btn-text">Confirm</button>
+        </div>
+
+    </div>
+
+    
+    <div class="favorites-container flex-display-center-sb column g-s">
+
+        <div class="favorites-header w-100 flex-display-center-sb">
+            <div class="favorites-header-text flex baseline g-xs">
+                <div class="favorites-title card-title">YOUR FAVORITES</div>
+                <div class="nr-fav-events muted-text xs-text">Dynamically filled</div>
+            </div>
+            <button class="secondary-btn" alt="day-type">expand</button>
+        </div>
+
+        <div class="favorites-events-content flex-display-center-center">
+            <div class="fav-disclaimer medium m-text muted-text flex-display-center-center">There are no events bookmarked as favorite at the moment. Saved events will appear here.</div>
+        </div>
+
+        <div class="no-sync-disclaimer w-100 flex-display-start-start g-xs">
+            <div class="icon icon-s muted-icon" alt="alert" style="mask-image: var(--icon-alert); "></div>
+            <div class="muted-text" style="width: fit-content;">The events you marked as favorite will <span class="bold muted-text">NOT</span> sync across different devices. They are locally stored on this device.</div>
+
+        </div>
+    </div>
+
+    <div class="filter-card-container z-10 flex column g-l">
+        <div class="card-header flex-display-center-sb">
+            <div class="card-title">DATE</div>
+            <button class="close-modal"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
+        </div>
+
+        <div class="filter-content-container flex column g-m">
+
+            <div class="filter-row flex-display-center-sb">
+                <div class="flex-display-center-center column g-xs xs-text">
+                    <input type="checkbox" id="monday" name="monday" class="weekControl hidden-input" value="15/04/2024" checked>
+                    <label for="monday" class="day-selector flex-display-center-center">M</label>
+                    7 Apr
+                </div>
+                <div class="flex-display-center-center column g-xs xs-text">
+                    <input type="checkbox" id="tuesday" name="tuesday" class="weekControl hidden-input" value="15/04/2024" checked>
+                    <label for="tuesday" class="day-selector flex-display-center-center">T</label>
+                    8 Apr
+                </div>
+                <div class="flex-display-center-center column g-xs xs-text">
+                    <input type="checkbox" id="wednesday" name="wednesday" class="weekControl hidden-input" value="15/04/2024" checked>
+                    <label for="wednesday" class="day-selector flex-display-center-center">W</label>
+                    9 Apr
+                </div>
+                <div class="flex-display-center-center column g-xs xs-text">
+                    <input type="checkbox" id="thursday" name="thursday" class="weekControl hidden-input" value="15/04/2024" checked>
+                    <label for="thursday" class="day-selector flex-display-center-center">T</label>
+                    10 Apr
+                </div>
+                <div class="flex-display-center-center column g-xs xs-text">
+                    <input type="checkbox" id="friday" name="friday" class="weekControl hidden-input" value="15/04/2024" checked>
+                    <label for="friday" class="day-selector flex-display-center-center">F</label>
+                    11 Apr
+                </div>
+                <div class="flex-display-center-center column g-xs xs-text">
+                    <input type="checkbox" id="saturday" name="saturday" class="weekControl hidden-input" value="15/04/2024" checked>
+                    <label for="saturday" class="day-selector flex-display-center-center">S</label>
+                    12 Apr
+                </div>
+                <div class="flex-display-center-center column g-xs xs-text">
+                    <input type="checkbox" id="sunday" name="sunday" class="weekControl hidden-input" value="15/04/2024" checked>
+                    <label for="sunday" class="day-selector flex-display-center-center">S</label>
+                    13 Apr
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-footer flex-display-center-sb">
+            <button class="secondary-btn flex-display-center-center">reset</button>
+
+            <button class="primary-btn primary-btn-s btn-text close-modal">Confirm</button>
+        </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="../main.js"></script>    
+<!-- <div class="mapboxgl-ctrl-bottom-right">
+        <div class="mapboxgl-ctrl mapboxgl-ctrl-group">
+            <button class="mapboxgl-ctrl-geolocate" type="button" aria-label="Find my location" aria-pressed="false">
+                <span class="mapboxgl-ctrl-icon" aria-hidden="true" title="Find my location"></span>
+            </button>
+        </div>
+        <div class="mapboxgl-ctrl mapboxgl-ctrl-attrib mapboxgl-compact">
+            <button class="mapboxgl-ctrl-attrib-button" type="button" aria-label="Toggle attribution">
+                <span class="mapboxgl-ctrl-icon" aria-hidden="true" title="Toggle attribution"></span>
+            </button>
+            <div class="mapboxgl-ctrl-attrib-inner" role="list">
+                <a href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox" aria-label="Mapbox">© Mapbox</a>
+                <a href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap" aria-label="OpenStreetMap">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=mapbox&amp;id=dark-v10&amp;access_token=pk.eyJ1IjoiZ3Vya2k0IiwiYSI6ImNsMTJpNWluMTAyamYzanFremVrcGxwZmIifQ.iXZ5OIerg1Tnq8eRy4rmtw" target="_blank" aria-label="Map feedback" rel="noopener nofollow">Improve this map</a>
+            </div>
+        </div>
+    </div> -->
+
 </body>
 </html>

@@ -67,24 +67,3 @@ $('.statistics-btn').on('click', function(){
     }
 })
 
-// SINGLE CAMERA STREAM
-$('.location-menu').on('click', function(){
-    $('.location-dropdown').toggleClass('hidden')
-    $(this).find('img').toggleClass('rotate')
-})
-
-$('.location').on('click', function(){
-    // $('.location-dropdown').addClass('hidden')
-    $(this).find('.check').toggleClass('vis')
-})
-
-// CAMERA STREAMS
-
-$('.single-stream-card').on('mouseover', function(){
-    $(this).find('.player-single-str').addClass('noBW');
-    $(this).find('.location-name, .waiting-time-big').removeClass('hidden');
-
-}).on('mouseleave', function(){
-    $(this).find('.player-single-str').removeClass('noBW')
-    $(this).find('.location-name, .waiting-time-big').addClass('hidden'); 
-})
