@@ -1,3 +1,4 @@
 {
-    "editor.semanticHighlighting.enabled": false
+    "editor.semanticHighlighting.enabled": false,
+    "liveServer.settings.port": 5501
 }
