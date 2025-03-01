@@ -183,6 +183,7 @@ map.on('click', 'clusters', (e) => {
                             <div class="card-title"> ${features_events.length} EVENTS </div>
                             <button class="remove-cluster-popup"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
                         </div>
+                        <div class="overflow-y flex column g-s">
                     `;
                      
         
@@ -231,7 +232,7 @@ map.on('click', 'clusters', (e) => {
                         `;
                     });
 
-                    content += `</div>`; // Close container
+                    content += `</div></div>`; // Close container
                     return content;
 
                 }
