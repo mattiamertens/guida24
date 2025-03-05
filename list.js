@@ -3,6 +3,7 @@ d3.json('assets/features.geojson')
 
     // ASSING ID TO EACH FEATURE
     let events = data.features;
+    
     events.forEach((event, i) => {
         event.properties.id = i + 1;
 
@@ -15,66 +16,15 @@ d3.json('assets/features.geojson')
         else if(event.properties.type == "Club/gigs"){
             event.properties.color = 'var(--event_green)';
         }
+        
     });
+    console.log(events);
     $('.nr-all-events').text(events.length + ' events');
     
     let linkClass = d => d.properties.regLink ? "" : "no-vis";
 
 
     var dateFinder = document.querySelectorAll('.date-divider');
-    // let selectedDates = Array.from(dateFinder).map(date => date.getAttribute('value'));
-
-    dateFinder.forEach(date => {
-        // console.log(selectedDates);
-        // console.log(dateFinder);
-
-        let eventContainer = date.closest('.date-card-container');
-
-        // let dateCard = d3.select(eventContainer)
-        // .selectAll('div')
-        // .data(events)
-        // .enter()
-        // .filter(d => selectedDates.includes(d.properties.startDate))
-        // .append('div')
-        // .html(d => 
-        //     `<div class="popUp flex column g-m white-bg" data-id="${d.properties.id}">
-        //         <div class="popUp-header flex-display-center-sb">
-        //             <div class="event-type" style="background-color: ${d.properties.color}">${d.properties.type}</div>
-        //             <div class="popUp-icons flex-display-center-center g-xs">
-        //                 <div class="icon icon-m" alt="favorites" id="bookmark" style="mask-image: var(--icon-favorites);"></div>
-        //                 <button class="remove-popup"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
-        //             </div>
-        //         </div>
-                
-        //         <div class="event-title bold"> ${d.properties.event} </div>
-    
-        //         <div class="popUp-time flex column g-xs">
-        //             <div class="day-type flex v-center g-xs muted-text"> 
-        //                 <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
-        //                 This is a one-day event
-        //             </div>
-    
-        //             <div class="event-dates flex v-center g-s">
-        //                 <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${d.properties.startDate} </span></div> 
-        //                 <div class="divider"></div>
-        //                 <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${d.properties.endDate}</span></div>
-        //             </div>
-        //         </div>
-    
-        //         <div class="popUp-footer flex-display-center-sb">
-        //             <button class="primary-btn"><a href="${d.properties.gMapsLink}" class="btn-text">Google maps</a></button>
-                    
-        //             <button class="secondary-btn no-link ${linkClass(d)}">
-        //                 <a href="${d.properties.regLink}" class="btn-text flex v-center underlined">
-        //                     RSVP
-        //                     <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
-        //                 </a>
-        //             </button>
-        //         </div>
-        //     </div>`
-        // )
-
-    });
 
     for (let i = 0; i < dateFinder.length; i++) {
         console.log(dateFinder[i]);
@@ -93,8 +43,7 @@ d3.json('assets/features.geojson')
             <div class="popUp-header flex-display-center-sb">
                 <div class="event-type" style="background-color: ${d.properties.color}">${d.properties.type}</div>
                 <div class="popUp-icons flex-display-center-center g-xs">
-                <div class="icon icon-m" alt="favorites" id="bookmark" style="mask-image: var(--icon-favorites);"></div>
-                <button class="remove-popup"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
+                <div class="icon icon-m bookmark-list" alt="favorites" id="bookmark" style="mask-image: var(--icon-favorites);"></div>
                 </div>
             </div>
             
@@ -127,6 +76,23 @@ d3.json('assets/features.geojson')
         )
         
     }
+
+    let saveBtn = document.querySelectorAll('.bookmark-list');
+
+    $(saveBtn).each(function() {
+        $(this).on('click', function(){
+            alert('ashhs');
+
+            let eventId = $(this).closest('.popUp').data('id');
+            let event = events.find(e => e.properties.id === eventId).properties;
+
+            let eventData = {id: event.id, type: event.type, title: event.event, startDate: event.startDate, endDate: event.endDate, gMapsLink: event.gMapsLink, rsvp: event.regLink, color: event.color};
+
+            console.log(eventData);
+            
+            saveEvents(eventData, this);
+        });
+    });
 
 
 
@@ -176,7 +142,7 @@ function renderSavedEvents(event){
     let linkClass = event.regLink ? "" : "no-vis";
 
     $(favContainer).prepend(
-        `<div class="fav-popUp w-100 flex column g-m" data-id="${event.id}">
+        `<div class="fav-popUp w-100 flex column g-m white-bg" data-id="${event.id}">
             <div class="popUp-header flex-display-center-sb">
                 <div class="event-type" style="background-color: ${event.color}" >${event.type}</div>
                 <div class="popUp-icons flex-display-center-center g-xs">
@@ -251,3 +217,26 @@ $(document).ready(function(){
         });
     }
 });
+
+let isExpnd = false;
+function expandFav() {
+    let expandBtn = document.getElementById('expand-btn');
+    let favoritesContainer = document.getElementsByClassName('favorites-container')[0];
+    let favEveCont = document.getElementsByClassName('favorites-events-content')[0];
+
+    isExpnd ? collps() : expnd();
+    function expnd() {
+        isExpnd = true;
+        expandBtn.innerHTML = "collapse";
+        // favoritesContainer.style.height = '70vh';
+        $(favoritesContainer).addClass('expnd');
+        $(favEveCont).addClass('fav-eve-cont-up');
+    }
+    function collps() {
+        isExpnd = false;
+        expandBtn.innerHTML = "expand";
+        // favoritesContainer.style.height = '42px';
+        $(favoritesContainer).removeClass('expnd');
+        $(favEveCont).removeClass('fav-eve-cont-up');
+    }
+}
