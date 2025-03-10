@@ -798,3 +798,13 @@ input:checked + .day-selector{
     height: 1px;
     background-color: var(--neutral_dk-grey);
 }
+
+
+@media screen and (min-width: 768px){
+    .mapboxgl-popup{
+        width: 35%;
+    }
+    .filter-card-container{
+        width: 50%;
+    }
+}

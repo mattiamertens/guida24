@@ -1,3 +1,6 @@
+.content-holder{
+    width: 50%;
+}
 .about{
     padding: 80px 16px 0;
     gap: 48px;
@@ -5,8 +8,7 @@
 }
 .about-title{
     font-size: 104px;
-    line-height: 104px;
-    text-align: center;
+    line-height: 100%;
 }
 .bp-title{
     font-size: 32px;
@@ -25,6 +27,37 @@
 .bullet-point p{
     font-size: 16px;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+.person{
+    line-height: 100%;
+}
 .img{
-    width: 33%;
+    height: 300px;
+    object-fit: cover;
+}
+.chips{
+    max-width: 50vw;
+}
+
+@media screen and (max-width: 768px){
+    .content-holder{
+        width: 100%;
+    }
+    .about-title{
+        text-align: center;
+    }
+    .chips{
+        max-width: 100vw;
+    }
+    .img{
+        height: 150px;
+    }
+    
 }
