@@ -85,6 +85,9 @@ a {
 .vh-100{
     height: 100vh;
 }
+.dvh{
+    height: 100dvh;
+}
 .min-w-92px{
     min-width: 92px;
 }
@@ -479,7 +482,7 @@ a {
 .map-container{
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     /* padding-top: var(--navbar-height); */
 }
 #map{
@@ -745,6 +748,7 @@ input:checked + .day-selector{
     bottom: 58px;
     left: 16px;
     pointer-events: all;
+    position: fixed;
 }
 
 /* FAVORITES */
