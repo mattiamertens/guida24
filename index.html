@@ -8,7 +8,7 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
-    <title>I migliori eventi del fuorisalone 2024</title>
+    <title>Guida fuorisalone 2025 :)</title>
 </head>
 <body>
     <div class="topnav hidden-nav flex-display-center-sb">
@@ -23,9 +23,13 @@
 
 
     <div class="ui-elements-container z-10 vh-100 no-pointer">
-        <div class="filter-button-container z-10 flex-display-center-center g-m">
-            <div class="filter-btn filter-event-type pill pointer flex-display-center-center" id="event-type">Event category</div>
-            <div class="filter-btn filter-date pill pointer flex-display-center-center" id="date">Date</div>
+        <div class="filter-button-container z-10 flex-display-center-sb g-m">
+            <div class="flex-display-center-center g-m">
+                <div class="filter-btn filter-event-type pill pointer flex-display-center-center" id="event-type">Event category</div>
+                <div class="filter-btn filter-date pill pointer flex-display-center-center" id="date">Date</div>
+            </div>
+            
+            <div class="filter-btn filter-date pill pointer flex-display-center-center" id="instructions" style="min-width: unset;">?</div>
         </div>
 
         <!-- EVENT TYPE FILTER -->
@@ -131,6 +135,22 @@
                 <button class="primary-btn primary-btn-s btn-text close-modal">Confirm</button>
             </div>
     
+        </div>
+
+        <!-- INSTRUCTIONS FOR THE USER -->
+        <div class="filter-card-container z-10 flex column g-l hidden" id="instructions-filter">
+            <div class="card-header flex-display-center-sb">
+                <div class="card-title">INSTRUCTIONS</div>
+                <button class="close-modal"><div class="icon icon-m" alt="day-type" style="mask-image: var(--icon-close);"></div></button>
+            </div>
+
+            <ol>
+                A quick heads up on how to use this site:
+                <li>You can filter the events shown on the map based on 3 categories and the days of the week.</li>
+                <li>You can bookmark/save the events you are more interested in, by clicking the heart icon on the event card. You will then find the saved events in the panel on the bottom. </li>
+                <li>If you prefer, you can see the complete list of all the events in the database by clicking on “List”, here they are divided by date.</li>
+                <li>For any bugs, malfunctions or improvements you can report them to <a href="mailto:mattianc@hotmail.it" class="shadow-deco">mattianc@hotmail.it</a>.</li>
+            </ol>
         </div>
 
         <a href="list.html" class="view-switcher primary-btn primary-btn-bg filter-btn fit-content flex-display-center-center g-s absolute">

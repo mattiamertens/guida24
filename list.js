@@ -18,11 +18,13 @@ d3.json('assets/features.geojson')
         }
         
     });
-    console.log(events);
     $('.nr-all-events').text(events.length + ' events');
     
     let linkClass = d => d.properties.regLink ? "" : "no-vis";
+    let startTime = d => d.properties.startHour ? d.properties.startHour : "19:00";
 
+    console.log(events);
+    
 
     var dateFinder = document.querySelectorAll('.date-divider');
 
@@ -58,7 +60,7 @@ d3.json('assets/features.geojson')
                 <div class="event-dates flex v-center g-s">
                 <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${d.properties.startDate} </span></div> 
                 <div class="divider"></div>
-                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${d.properties.endDate}</span></div>
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime(d)}</span></div>
                 </div>
             </div>
         
@@ -81,12 +83,12 @@ d3.json('assets/features.geojson')
 
     $(saveBtn).each(function() {
         $(this).on('click', function(){
-            alert('ashhs');
+            // alert('ashhs');
 
             let eventId = $(this).closest('.popUp').data('id');
             let event = events.find(e => e.properties.id === eventId).properties;
 
-            let eventData = {id: event.id, type: event.type, title: event.event, startDate: event.startDate, endDate: event.endDate, gMapsLink: event.gMapsLink, rsvp: event.regLink, color: event.color};
+            let eventData = {id: event.id, type: event.type, title: event.event, startDate: event.startDate, startHour: event.startHour, endDate: event.endDate, gMapsLink: event.gMapsLink, rsvp: event.regLink, color: event.color};
 
             console.log(eventData);
             
@@ -140,6 +142,7 @@ function renderSavedEvents(event){
     $(favContainer).addClass('flex-display-start-center h-100');
 
     let linkClass = event.regLink ? "" : "no-vis";
+    let startTime = event.startHour ? event.startHour : "19:00";
 
     $(favContainer).prepend(
         `<div class="fav-popUp w-100 flex column g-m white-bg" data-id="${event.id}">
@@ -161,7 +164,7 @@ function renderSavedEvents(event){
                 <div class="event-dates flex v-center g-s">
                     <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.startDate} </span></div> 
                     <div class="divider"></div>
-                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${event.endDate}</span></div>
+                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime}</span></div>
                 </div>
             </div>
 

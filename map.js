@@ -190,6 +190,7 @@ map.on('click', 'clusters', (e) => {
                     features_events.forEach(event => {
                         // console.log(event.properties);
                         let linkClass = event.properties.regLink ? "" : "no-vis";
+                        let startTime = event.properties.startHour ? event.startHour : "19:00";
 
                         content += `
                             <div class="event-card">
@@ -213,7 +214,7 @@ map.on('click', 'clusters', (e) => {
                                         <div class="event-dates flex v-center g-s">
                                             <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.properties.startDate} </span></div> 
                                             <div class="divider"></div>
-                                            <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${event.properties.endDate}</span></div>
+                                            <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime(d)}</span></div>
                                         </div>
                                     </div>
 
@@ -265,6 +266,7 @@ map.on('click', 'clusters', (e) => {
                         title: clickedEvent.properties.event,
                         startDate: clickedEvent.properties.startDate,
                         endDate: clickedEvent.properties.endDate,
+                        startHour: clickedEvent.properties.startHour,
                         gMapsLink: clickedEvent.properties.gMapsLink,
                         rsvp: clickedEvent.properties.regLink,
                         color: clickedEvent.properties.color
@@ -307,6 +309,7 @@ map.on('click', 'eventini', function poppinUp(e){
   const event = e.features[0].properties.event;
   const description = e.features[0].properties.description;
   const startDate = e.features[0].properties.startDate;
+  const startHour = e.features[0].properties.startHour;
   const endDate = e.features[0].properties.endDate;
   const gMapsLink = e.features[0].properties.gMapsLink;
   const regLink = e.features[0].properties.regLink;
@@ -316,6 +319,7 @@ map.on('click', 'eventini', function poppinUp(e){
   console.log('click eventini');
 
   let linkClass = regLink ? "" : "no-vis";
+  let startTime = e => startHour ? startHour : "19:00";
   
 
     // Ensure that if the map is zoomed out such that multiple copies of the feature are visible, the popup appears over the copy being pointed to.
@@ -344,7 +348,7 @@ map.on('click', 'eventini', function poppinUp(e){
             <div class="event-dates flex v-center g-s">
                 <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${startDate} </span></div> 
                 <div class="divider"></div>
-                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${endDate}</span></div>
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime(e)}</span></div>
             </div>
         </div>
 
@@ -378,7 +382,7 @@ map.on('click', 'eventini', function poppinUp(e){
 
     // ADD EVENT TO FAVORITES
     $('#bookmark').on('click', function(){
-        let eventData = {id: dataId, type: type, title: event, startDate: startDate, endDate: endDate, gMapsLink: gMapsLink, rsvp: regLink, color: color};
+        let eventData = {id: dataId, type: type, title: event, startDate: startDate, startHour:startHour, endDate: endDate, gMapsLink: gMapsLink, rsvp: regLink, color: color};
 
        saveEvents(eventData, this);
     });
@@ -421,6 +425,7 @@ function renderSavedEvents(event){
     $(favContainer).addClass('flex-display-start-center h-100');
 
     let linkClass = event.regLink ? "" : "no-vis";
+    let startTime = event.startHour ? event.startHour : "19:00";
 
     $(favContainer).prepend(
         `<div class="fav-popUp w-100 flex column g-m" data-id="${event.id}">
@@ -442,7 +447,7 @@ function renderSavedEvents(event){
                 <div class="event-dates flex v-center g-s">
                     <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.startDate} </span></div> 
                     <div class="divider"></div>
-                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${event.endDate}</span></div>
+                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime}</span></div>
                 </div>
             </div>
 

@@ -2,7 +2,7 @@
     width: 50%;
 }
 .about{
-    padding: 80px 16px 0;
+    padding: 80px 16px 16px;
     gap: 48px;
     overflow-x: hidden;
 }
@@ -14,15 +14,6 @@
     font-size: 32px;
     line-height: 34px;
     font-family: var(--bold-font);
-}
-.shadow-deco{
-    text-shadow: 0px 0px 11px #6D86FF;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
 }
 .bullet-point p{
     font-size: 16px;
