@@ -122,6 +122,12 @@ a {
     align-items: center; /* all children on cross axis - vertical center*/
     justify-content: space-between; /* main axis of conatiner - H */
 }
+.flex-display-center-end{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: center; /* all children on cross axis - vertical center*/
+    justify-content: flex-end; /* main axis of conatiner - H */
+}
 .flex-display-start-center{
     display: flex;
     align-content: flex-start; /* cross axis of container - V */
@@ -452,6 +458,9 @@ a {
 }
 .no-vis{
     visibility: hidden;
+}
+.no-display{
+    display: none;
 }
 
 /* DATA */

@@ -1,4 +1,4 @@
-d3.json('assets/features.geojson')
+d3.json('assets/features2025.geojson')
 .then(function(data){
 
     // ASSING ID TO EACH FEATURE
@@ -21,10 +21,6 @@ d3.json('assets/features.geojson')
     $('.nr-all-events').text(events.length + ' events');
     
     let linkClass = d => d.properties.regLink ? "" : "no-vis";
-    let startTime = d => d.properties.startHour ? d.properties.startHour : "19:00";
-
-    console.log(events);
-    
 
     var dateFinder = document.querySelectorAll('.date-divider');
 
@@ -54,13 +50,13 @@ d3.json('assets/features.geojson')
             <div class="popUp-time flex column g-xs">
                 <div class="day-type flex v-center g-xs muted-text"> 
                 <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
-                This is a one-day event
+                ${d.properties.Multiday}
                 </div>
         
                 <div class="event-dates flex v-center g-s">
-                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${d.properties.startDate} </span></div> 
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${d.properties.displayDate} April </span></div> 
                 <div class="divider"></div>
-                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime(d)}</span></div>
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${d.properties.startHour}</span></div>
                 </div>
             </div>
         
@@ -83,12 +79,11 @@ d3.json('assets/features.geojson')
 
     $(saveBtn).each(function() {
         $(this).on('click', function(){
-            // alert('ashhs');
 
             let eventId = $(this).closest('.popUp').data('id');
             let event = events.find(e => e.properties.id === eventId).properties;
 
-            let eventData = {id: event.id, type: event.type, title: event.event, startDate: event.startDate, startHour: event.startHour, endDate: event.endDate, gMapsLink: event.gMapsLink, rsvp: event.regLink, color: event.color};
+            let eventData = {id: event.id, type: event.type, title: event.event, displayDate: event.displayDate, startHour: event.startHour, endDate: event.endDate, gMapsLink: event.gMapsLink, rsvp: event.regLink, color: event.color, multiday: event.Multiday};
 
             console.log(eventData);
             
@@ -142,7 +137,6 @@ function renderSavedEvents(event){
     $(favContainer).addClass('flex-display-start-center h-100');
 
     let linkClass = event.regLink ? "" : "no-vis";
-    let startTime = event.startHour ? event.startHour : "19:00";
 
     $(favContainer).prepend(
         `<div class="fav-popUp w-100 flex column g-m white-bg" data-id="${event.id}">
@@ -158,13 +152,13 @@ function renderSavedEvents(event){
             <div class="popUp-time flex column g-xs">
                 <div class="day-type flex v-center g-xs muted-text"> 
                     <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
-                    This is a one-day event
+                    ${event.multiday}
                 </div>
 
                 <div class="event-dates flex v-center g-s">
-                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.startDate} </span></div> 
+                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.displayDate} April </span></div> 
                     <div class="divider"></div>
-                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime}</span></div>
+                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${event.startHour}</span></div>
                 </div>
             </div>
 

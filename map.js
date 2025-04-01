@@ -1,4 +1,4 @@
-var geoJ = 'assets/features.geojson';
+var geoJ = 'assets/features2025.geojson';
 let savedEventsArray = JSON.parse(localStorage.getItem('savedEvents')) || [];
 let originalGeoJSON;
 
@@ -60,7 +60,7 @@ fetch(geoJ).then(response => response.json())
             data: data,
             cluster: true,
             clusterRadius: 40,
-            clusterMaxZoom: 16
+            clusterMaxZoom: 15
         });
 
         originalGeoJSON = map.getSource('events')._data;
@@ -76,7 +76,7 @@ fetch(geoJ).then(response => response.json())
                 'circle-color': 'white',
                 'circle-stroke-color': '#C9CFEC',
                 'circle-stroke-width': 1,
-                'circle-radius': 14
+                'circle-radius': 13
             }
         });
 
@@ -190,7 +190,7 @@ map.on('click', 'clusters', (e) => {
                     features_events.forEach(event => {
                         // console.log(event.properties);
                         let linkClass = event.properties.regLink ? "" : "no-vis";
-                        let startTime = event.properties.startHour ? event.startHour : "19:00";
+                        // let startTime = event.properties.startHour ? event.startHour : "19:00";
 
                         content += `
                             <div class="event-card">
@@ -208,13 +208,13 @@ map.on('click', 'clusters', (e) => {
                                     <div class="popUp-time flex column g-xs">
                                         <div class="day-type flex v-center g-xs muted-text"> 
                                             <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
-                                            This is a one-day event
+                                            ${event.properties.Multiday}
                                         </div>
 
                                         <div class="event-dates flex v-center g-s">
-                                            <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.properties.startDate} </span></div> 
+                                            <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.properties.displayDate} April</span></div> 
                                             <div class="divider"></div>
-                                            <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime(d)}</span></div>
+                                            <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${event.properties.startHour}</span></div>
                                         </div>
                                     </div>
 
@@ -265,11 +265,13 @@ map.on('click', 'clusters', (e) => {
                         type: clickedEvent.properties.type,
                         title: clickedEvent.properties.event,
                         startDate: clickedEvent.properties.startDate,
+                        displayDate: clickedEvent.properties.displayDate,
                         endDate: clickedEvent.properties.endDate,
                         startHour: clickedEvent.properties.startHour,
                         gMapsLink: clickedEvent.properties.gMapsLink,
                         rsvp: clickedEvent.properties.regLink,
-                        color: clickedEvent.properties.color
+                        color: clickedEvent.properties.color,
+                        isMultipleDaysday: clickedEvent.properties.Multiday
                     };
                     saveEvents(eventData, this);
                 });
@@ -309,17 +311,29 @@ map.on('click', 'eventini', function poppinUp(e){
   const event = e.features[0].properties.event;
   const description = e.features[0].properties.description;
   const startDate = e.features[0].properties.startDate;
+  const displayDate = e.features[0].properties.displayDate;
   const startHour = e.features[0].properties.startHour;
   const endDate = e.features[0].properties.endDate;
   const gMapsLink = e.features[0].properties.gMapsLink;
   const regLink = e.features[0].properties.regLink;
   const dataId = e.features[0].properties.id;
   const color = e.features[0].properties.color;
+  const isMultipleDays = e.features[0].properties.Multiday;
 
-  console.log('click eventini');
+  console.log(isMultipleDays);
 
   let linkClass = regLink ? "" : "no-vis";
-  let startTime = e => startHour ? startHour : "19:00";
+
+
+  function isnot(){
+    console.log('this is a one-day event');    
+  }
+
+    function test(){
+        console.log('this is a multi-day event');
+        $('.day-type').html('This is a multi-day event');
+    }
+//   let startTime = e => startHour ? startHour : "N/A";
   
 
     // Ensure that if the map is zoomed out such that multiple copies of the feature are visible, the popup appears over the copy being pointed to.
@@ -342,13 +356,13 @@ map.on('click', 'eventini', function poppinUp(e){
         <div class="popUp-time flex column g-xs">
             <div class="day-type flex v-center g-xs muted-text"> 
                 <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
-                This is a one-day event
+                ${isMultipleDays}
             </div>
 
             <div class="event-dates flex v-center g-s">
-                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${startDate} </span></div> 
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${displayDate} April</span></div> 
                 <div class="divider"></div>
-                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime(e)}</span></div>
+                <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startHour}</span></div>
             </div>
         </div>
 
@@ -382,7 +396,7 @@ map.on('click', 'eventini', function poppinUp(e){
 
     // ADD EVENT TO FAVORITES
     $('#bookmark').on('click', function(){
-        let eventData = {id: dataId, type: type, title: event, startDate: startDate, startHour:startHour, endDate: endDate, gMapsLink: gMapsLink, rsvp: regLink, color: color};
+        let eventData = {id: dataId, type: type, title: event, displayDate: displayDate, startHour:startHour, endDate: endDate, gMapsLink: gMapsLink, rsvp: regLink, color: color, multiday: isMultipleDays};
 
        saveEvents(eventData, this);
     });
@@ -425,7 +439,7 @@ function renderSavedEvents(event){
     $(favContainer).addClass('flex-display-start-center h-100');
 
     let linkClass = event.regLink ? "" : "no-vis";
-    let startTime = event.startHour ? event.startHour : "19:00";
+    // let startTime = event.startHour ? event.startHour : "19:00";
 
     $(favContainer).prepend(
         `<div class="fav-popUp w-100 flex column g-m" data-id="${event.id}">
@@ -441,13 +455,13 @@ function renderSavedEvents(event){
             <div class="popUp-time flex column g-xs">
                 <div class="day-type flex v-center g-xs muted-text"> 
                     <div class="mask-image icon icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-dayType);"></div> 
-                    This is a one-day event
+                    ${event.multiday}
                 </div>
 
                 <div class="event-dates flex v-center g-s">
-                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.startDate} </span></div> 
+                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-date);"></div><span class="bold"> ${event.displayDate} April</span></div> 
                     <div class="divider"></div>
-                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${startTime}</span></div>
+                    <div class="flex v-center g-xs"><div class="mask-image icon-s muted-icon" alt="day-type" style="mask-image: var(--icon-time);"></div> <span>${event.startHour}</span></div>
                 </div>
             </div>
 
@@ -493,7 +507,7 @@ $(document).ready(function(){
             let removingId = $(this).closest('.fav-popUp').attr('data-id');
             savedEventsArray = savedEventsArray.filter(e => e.id !== Number(removingId));
             
-            console.log(savedEventsArray);
+            // console.log(savedEventsArray);
             localStorage.setItem('savedEvents', JSON.stringify(savedEventsArray));
             if (savedEventsArray.length == 0){
                 $('.placebo').show();
@@ -518,11 +532,9 @@ $(check).on('click', function() {
     if($(this).is(':checked')) {
         // SHOW EVENTS
         combinedFilter = combinedFilter.filter(filter => JSON.stringify(filter) !== JSON.stringify(eventTypeFilter));
-        console.log('gigs visible');
     } else{
         // HIDE EVENTS
         combinedFilter.push(eventTypeFilter);
-        console.log('gigs hidden');
     }
 
     // map.setFilter('eventini', combinedFilter);
@@ -615,33 +627,3 @@ map.addControl(
         showUserHeading: true
     }), 'bottom-right'
 );
-
-
-
-// CUSTOM USER GEOLOCATION
-// $('.filter-date').on('click', function(){
-//     console.log('geolocation is available');
-//     navigator.geolocation.getCurrentPosition(position => {
-//         const userCoordinates = [position.coords.longitude, position.coords.latitude];
-//         console.log(userCoordinates);
-
-//         map.flyTo({
-//             center: [position.coords.longitude, position.coords.latitude],
-//             zoom: 15,  // Adjust zoom level as needed
-//             speed: 1.5, // Adjust speed (higher is faster)
-//             curve: 1, // Controls the flight path curvature
-//             essential: true // this animation is considered essential with respect to prefers-reduced-motion
-//         });
-
-//         if (window.userMarker) {
-//             window.userMarker.remove();
-//         }
-
-//         // Add a new blue marker for user location
-//         window.userMarker = new mapboxgl.Marker({
-//             color: "blue" // Blue dot effect
-//         })
-//             .setLngLat(userCoordinates)
-//             .addTo(map);
-//     });
-// });
