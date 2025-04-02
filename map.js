@@ -50,10 +50,6 @@ fetch(geoJ).then(response => response.json())
             if (error) throw error;
             map.addImage('random', image);
         });
-
-        
-
-
             
         map.addSource('events', {
             type: 'geojson',
