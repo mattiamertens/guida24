@@ -4,233 +4,9 @@
       "type": "Feature",
       "properties": {
         "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Museo della Permanente",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Museo+della+Permanente",
-        "Coordinates MB": "",
-        "event": "Kia: Eclipse of Perceptions",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.195517,
-          45.476574
-        ],
-        "type": "Point"
-      },
-      "id": "0a319b4e83b08d6fa241a3f556e38ce2"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "11:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Villa Borsani",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Villa+Borsani",
-        "Coordinates MB": "",
-        "event": "ALCOVA",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.148875,
-          45.597184
-        ],
-        "type": "Point"
-      },
-      "id": "14af0e7ace901363683ae1956a17a39c"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "6:00 PM - 11:00 PM",
-        "endDate": "08/04/2025",
-        "displayDate": "08",
-        "regLink": "",
-        "luogo": "Via Maroncelli 12/A, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Maroncelli+12/A,+Milano",
-        "Coordinates MB": "",
-        "event": "Trame di Luce",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.183578,
-          45.482917
-        ],
-        "type": "Point"
-      },
-      "id": "15d4881a482b9d1122674fa04ce99b21"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "6:00 PM - 9:00 PM",
-        "endDate": "10/04/2025",
-        "displayDate": "10",
-        "regLink": "",
-        "luogo": "Via Milazzo 8, Milano",
-        "startDate": "10/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Milazzo+8,+Milano",
-        "Coordinates MB": "",
-        "event": "Dynamic Design Experience",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.187795,
-          45.479329
-        ],
-        "type": "Point"
-      },
-      "id": "1c59e2fda78b5c262bf6fc0953c8a2f2"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 PM - 2:00 AM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Sammartini 40, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Sammartini+40,+Milano",
-        "Coordinates MB": "",
-        "event": "Hundebiss",
-        "type": "Club/gigs",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.209683,
-          45.492885
-        ],
-        "type": "Point"
-      },
-      "id": "1da940869d7ca2b5bee4c8dd163d487c"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "11:00 AM - 7:00 PM",
-        "endDate": "11/04/2025",
-        "displayDate": "07 – 11",
-        "regLink": "",
-        "luogo": "Via Biella, 8, 20143 Milano MI",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Biella,+8,+20143+Milano+MI",
-        "Coordinates MB": "",
-        "event": "Labò by The Design Blender",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.155136,
-          45.439817
-        ],
-        "type": "Point"
-      },
-      "id": "1e1ba36c669c5fda64624771157113e9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "7:00 AM - 10:30 PM",
-        "endDate": "09/04/2025",
-        "displayDate": "09",
-        "regLink": "",
-        "luogo": "Giopato & Coombes Gallery",
-        "startDate": "09/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Giopato+&+Coombes+Gallery",
-        "Coordinates MB": "",
-        "event": "Scarabei - Cocktail party",
-        "type": "Freebies",
-        "description": "Registrazione all'ingresso"
-      },
-      "geometry": {
-        "coordinates": [
-          9.183083,
-          45.462662
-        ],
-        "type": "Point"
-      },
-      "id": "202ebf0bcbce079a7d5872fc0886b992"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "6:00 PM - 2:00 AM ???",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Porpora 126, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Porpora+126,+Milano",
-        "Coordinates MB": "",
-        "event": "Comune",
-        "type": "Design"
-      },
-      "geometry": {
-        "coordinates": [
-          9.228515,
-          45.485836
-        ],
-        "type": "Point"
-      },
-      "id": "203c2a2cd839e465a285b7e7d932a052"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "6:00 PM - 10:00 PM",
-        "endDate": "08/04/2025",
-        "displayDate": "08",
-        "regLink": "",
-        "luogo": "Via Lecco 18, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Lecco+18,+Milano",
-        "Coordinates MB": "",
-        "event": "Monogrid Open studio",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.205488,
-          45.478155
-        ],
-        "type": "Point"
-      },
-      "id": "20a0eaecbb28ede5a6b4ec98866b39a9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
         "startHour": "6:00 PM - 11:00 PM",
         "endDate": "13/04/2025",
-        "displayDate": "08 – 13",
+        "Display date": "08 – 13",
         "regLink": "",
         "luogo": "Palazzo Citterio, Milano",
         "startDate": "08/04/2025",
@@ -247,1057 +23,7 @@
         ],
         "type": "Point"
       },
-      "id": "227670a0b5498c5e7382575ad57d1b06"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "8:00 PM - 2:00 AM",
-        "endDate": "10/04/2025",
-        "displayDate": "10",
-        "regLink": "https://www.supermodular.com/it/mdw_the-spot_party/",
-        "luogo": "Via Borgogna 5B, Milano",
-        "startDate": "10/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Borgogna+5B,+Milano",
-        "Coordinates MB": "",
-        "event": "The Spot - Closing Party",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.199539,
-          45.465899
-        ],
-        "type": "Point"
-      },
-      "id": "23981d1911ddbc8d7dfbe54e37bacdb1"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 8:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Corso Magenta 24, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Magenta+24,+Milano",
-        "Coordinates MB": "",
-        "event": "MoscaPartners Variations",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.178186,
-          45.465934
-        ],
-        "type": "Point"
-      },
-      "id": "241a47916fb24956dbb4d0383f197351"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "6:00 PM – 10:00 PM",
-        "endDate": "12/04/2025",
-        "displayDate": "11 – 12",
-        "regLink": "",
-        "luogo": "Via Carducci 23/A, Milano",
-        "startDate": "11/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Carducci+23/A,+Milano",
-        "Coordinates MB": "",
-        "event": "Dàmeda",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.175024,
-          45.464499
-        ],
-        "type": "Point"
-      },
-      "id": "28de3ea58caea38797a92a085607ce23"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:30 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Paolo Frisi 3, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Paolo+Frisi+3,+Milano",
-        "Coordinates MB": "",
-        "event": "Deoron Elevating objects",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.208887,
-          45.475024
-        ],
-        "type": "Point"
-      },
-      "id": "2bdfe1f24135edbe5ab57aa64eba34e0"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 10:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "08 – 13",
-        "regLink": "https://www.gucci.com/it/it/nst/bamboo-encounters",
-        "luogo": "Chiostro Grande di San Simpliciano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Chiostro+Grande+di+San+Simpliciano",
-        "Coordinates MB": "",
-        "event": "Gucci | Bamboo encounters",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.18589,
-          45.473916
-        ],
-        "type": "Point"
-      },
-      "id": "3444e0d212ec878397169224e256241a"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 8:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Rosolino Pilo 14, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Rosolino+Pilo+14,+Milano",
-        "Coordinates MB": "",
-        "event": "Convey",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.212425,
-          45.473312
-        ],
-        "type": "Point"
-      },
-      "id": "34bd6b123e98c5203959ce43a434ffe3"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 8:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Cesare Battisti 1, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Cesare+Battisti+1,+Milano",
-        "Coordinates MB": "",
-        "event": "A matter of colors",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.200537,
-          45.462736
-        ],
-        "type": "Point"
-      },
-      "id": "357981798ff970cfb78429b1881848d8"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "09:30 AM - 7:00 PM",
-        "endDate": "12/04/2025",
-        "displayDate": "08 – 12",
-        "regLink": "",
-        "luogo": "Via Statuto, 8, 20121 Milano MI",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Statuto,+8,+20121+Milano+MI",
-        "Coordinates MB": "",
-        "event": "Original 1227 Desk Lamp: from office staple to style icon",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.186268,
-          45.476241
-        ],
-        "type": "Point"
-      },
-      "id": "35ac6798af1fd26b4a1bd109e1962250"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "6:00 PM - 10:00 PM",
-        "endDate": "10/04/2025",
-        "displayDate": "10",
-        "regLink": "",
-        "luogo": "Corso Monforte 4, Milano",
-        "startDate": "10/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Monforte+4,+Milano",
-        "Coordinates MB": "",
-        "event": "Let's Play Terrazzo by Agglotech",
-        "type": "Freebies",
-        "description": "Registrazione all'ingresso"
-      },
-      "geometry": {
-        "coordinates": [
-          9.199224,
-          45.466627
-        ],
-        "type": "Point"
-      },
-      "id": "3b712303b6e7ae92a720fbbd774ee4ad"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "10:00 AM - 3:00 PM",
-        "endDate": "12/04/2025",
-        "displayDate": "12",
-        "regLink": "",
-        "luogo": "Via Paolo Sarpi 42, Milano",
-        "startDate": "12/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Paolo+Sarpi+42,+Milano",
-        "Coordinates MB": "",
-        "event": "Circolo Outpump",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.17444,
-          45.481373
-        ],
-        "type": "Point"
-      },
-      "id": "3c8d541eaaca0bf46cb63b647746b8b7"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:00 PM",
-        "endDate": "12/04/2025",
-        "displayDate": "07 – 12",
-        "regLink": "",
-        "luogo": "Piscina Cozzi",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piscina+Cozzi",
-        "Coordinates MB": "",
-        "event": "TWO - FOLD SILENCE EXHIBITION",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.201286,
-          45.479063
-        ],
-        "type": "Point"
-      },
-      "id": "3db44c6afb20289a8d9021a75bf82301"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "All day",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Piazza Morbegno, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Morbegno,+Milano",
-        "Coordinates MB": "",
-        "event": "Birra Messina | Edicola Meraviglia",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.216256,
-          45.493206
-        ],
-        "type": "Point"
-      },
-      "id": "401a0d4414392812f296539a9d938de8"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "08 – 13",
-        "regLink": "https://connect.eventtia.com/en/public/events/artemest/registration/attendees?attendee_type=156444",
-        "luogo": "Via Gaetano Donizzetti, 48, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Gaetano+Donizzetti,+48,+Milano",
-        "Coordinates MB": "",
-        "event": "L'Appartamento by Artemest",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.204721,
-          45.467196
-        ],
-        "type": "Point"
-      },
-      "id": "439720611114f7b62ad16920ff959bdb"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "All day",
-        "endDate": "13/04/2025",
-        "displayDate": "08 – 13",
-        "regLink": "",
-        "luogo": "MC Selvini",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=MC+Selvini",
-        "Coordinates MB": "",
-        "event": "House of Finn Juhl",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.210031,
-          45.468669
-        ],
-        "type": "Point"
-      },
-      "id": "4d1bee8a434026030e7231a74c314177"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "5:30 PM - 7:30 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "via Sammartini 40, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=via+Sammartini+40,+Milano",
-        "Coordinates MB": "",
-        "event": "Dropcity",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.209683,
-          45.492885
-        ],
-        "type": "Point"
-      },
-      "id": "4e01cb891f5ffdc17043b583c9f24a6f"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "09:00 AM - 09:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Brera 28, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Brera+28,+Milano",
-        "Coordinates MB": "",
-        "event": "Es Devlin. Library of Light",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.188462,
-          45.471966
-        ],
-        "type": "Point"
-      },
-      "id": "4e233b6a5463a7128b82948d2a10b638"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "11:00 AM - 8:00 PM",
-        "endDate": "11/04/2025",
-        "displayDate": "08 – 11",
-        "regLink": "https://www.thebalvenie.com/news/samuel-ross/",
-        "luogo": "V. Genova Thaon di Revel, 28, 20159 Milano MI",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=V.+Genova+Thaon+di+Revel,+28,+20159+Milano+MI",
-        "Coordinates MB": "",
-        "event": "Transposition",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.188317,
-          45.493111
-        ],
-        "type": "Point"
-      },
-      "id": "4f25489c2150ea122027abde0d67b0dc"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "6:00 PM - 10:00 PM",
-        "endDate": "09/04/2025",
-        "displayDate": "09",
-        "regLink": "",
-        "luogo": "RIVIERA - creative space",
-        "startDate": "09/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=RIVIERA+-+creative+space",
-        "Coordinates MB": "",
-        "event": "24Hours Show",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.181212,
-          45.464645
-        ],
-        "type": "Point"
-      },
-      "id": "51b126050815014f49748f1235f8c0d9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "9:00 AM - 7:30 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "09 – 13",
-        "regLink": "",
-        "luogo": "Via Ercole Oldofredi 41, Milano",
-        "startDate": "09/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Ercole+Oldofredi+41,+Milano",
-        "Coordinates MB": "",
-        "event": "Jil Sander - Friends and Family",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.197581,
-          45.492014
-        ],
-        "type": "Point"
-      },
-      "id": "521100fcaf36e8a637c92f03f1352290"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "7:00 PM - 2:00 AM",
-        "endDate": "08/04/2025",
-        "displayDate": "08",
-        "regLink": "https://dice.fm/event/8eyq75-sabotage-bluesquare-takover-design-week-special-8th-apr-bluesquare-milano-milan-tickets",
-        "luogo": "Via Tortona 33, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tortona+33,+Milano",
-        "Coordinates MB": "",
-        "event": "Sabotage bluesquare takeover",
-        "type": "Club/gigs",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.161447,
-          45.451252
-        ],
-        "type": "Point"
-      },
-      "id": "561260ef4ea1370878d1315c8fc4c03e"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "6:30 PM - 10:00 PM",
-        "endDate": "07/04/2025",
-        "displayDate": "07",
-        "regLink": "https://eventos.porcelanosagrupo.com/events/poetics_of_bonds/#form",
-        "luogo": "Porcelanosa Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Porcelanosa+Milano",
-        "Coordinates MB": "",
-        "event": "[Re]Connecting Afterwork",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.178229,
-          45.469394
-        ],
-        "type": "Point"
-      },
-      "id": "5abfe4cf527a4824282e5779a1907e05"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 6:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Chiesa del Carmine",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Chiesa+del+Carmine",
-        "Coordinates MB": "",
-        "event": "Aesop - The Second Skin",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.185687,
-          45.470647
-        ],
-        "type": "Point"
-      },
-      "id": "5c12fd27f8fbdd2b934d0e8bc5dfdc63"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "7:00 PM - 0:00 AM",
-        "endDate": "12/04/2025",
-        "displayDate": "12",
-        "regLink": "https://xceed.me/it/milano/event/fdw-25-day-4-toy-tonics-jam-feat-kapote-sam-ruffillo-fimiani-zsa-zsa-1--184536/channel--fabbrica-design-week-25",
-        "luogo": "Via Giulio Cesare Procaccini, 4, 20154 Milano",
-        "startDate": "12/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Giulio+Cesare+Procaccini,+4,+20154+Milano",
-        "Coordinates MB": "",
-        "event": "Toy Tonics Jam",
-        "type": "Club/gigs",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.175146,
-          45.484804
-        ],
-        "type": "Point"
-      },
-      "id": "5ffc44163354b5c9465b4f86abbf2356"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "All day",
-        "endDate": "13/04/2025",
-        "displayDate": "13",
-        "regLink": "",
-        "luogo": "Via Filippino Lippi, 31, 20131 Milano MI",
-        "startDate": "13/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Filippino+Lippi,+31,+20131+Milano+MI",
-        "Coordinates MB": "",
-        "event": "Saturated Spaces",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.221006,
-          45.482572
-        ],
-        "type": "Point"
-      },
-      "id": "60c547290f7307db6e8e911ed0dfabee"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "6:00 PM - 0:00 AM",
-        "endDate": "08/04/2025",
-        "displayDate": "08",
-        "regLink": "mailto:officina@breraofficina.it",
-        "luogo": "Via Felice Cavallotti 13, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Felice+Cavallotti+13,+Milano",
-        "Coordinates MB": "",
-        "event": "Brera Officina",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.196791,
-          45.463862
-        ],
-        "type": "Point"
-      },
-      "id": "635ea3a47099aa547511fbc3de72d216"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "08 – 13",
-        "regLink": "",
-        "luogo": "Piazza santo Stefano 10, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+santo+Stefano+10,+Milano",
-        "Coordinates MB": "",
-        "event": "Ways of seeing",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.194633,
-          45.461933
-        ],
-        "type": "Point"
-      },
-      "id": "6e2aa1bd26f03d8a966cf08ead180c6b"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "9:00 AM - 6:00 PM",
-        "endDate": "11/04/2025",
-        "displayDate": "07 – 11",
-        "regLink": "",
-        "luogo": "Via Melzo 30, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Melzo+30,+Milano",
-        "Coordinates MB": "",
-        "event": "Gaggia Open House",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.208047,
-          45.475241
-        ],
-        "type": "Point"
-      },
-      "id": "6ebd0faa2aa69875b0fa2971c4955aec"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 8:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Rosolino Pilo 14, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Rosolino+Pilo+14,+Milano",
-        "Coordinates MB": "",
-        "event": "Convey",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.212425,
-          45.473312
-        ],
-        "type": "Point"
-      },
-      "id": "6fbabf16964e6db4e090cadb4b44c985"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:30 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Studio Penta",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Studio+Penta",
-        "Coordinates MB": "",
-        "event": "Romantic Brutalism",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.165441,
-          45.463832
-        ],
-        "type": "Point"
-      },
-      "id": "72ea54fccfc5f4b615a7cbc2bace8381"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 8:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Cenacolo Vinciano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Cenacolo+Vinciano",
-        "Coordinates MB": "",
-        "event": "Graffito di Luce",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.1706,
-          45.466185
-        ],
-        "type": "Point"
-      },
-      "id": "757f0bdc75fbe994f702724997aaef5c"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "9:30 AM - 5:30 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "08 – 13",
-        "regLink": "",
-        "luogo": "Via Archimede, 26, 20129 Milano MI",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Archimede,+26,+20129+Milano+MI",
-        "Coordinates MB": "",
-        "event": "Google",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.212448,
-          45.465251
-        ],
-        "type": "Point"
-      },
-      "id": "7cdfa10f9acd43323f7cd97266017029"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "9:30 AM - 7:30 PM",
-        "endDate": "12/04/2025",
-        "displayDate": "08 – 12",
-        "regLink": "",
-        "luogo": "Corso Garibaldi, 117, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Garibaldi,+117,+Milano",
-        "Coordinates MB": "",
-        "event": "Seletti",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.185685,
-          45.479415
-        ],
-        "type": "Point"
-      },
-      "id": "7d4a9687a4864c9b33cb5030c67b7ccd"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "6:00 PM - 8:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Tortona 14, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tortona+14,+Milano",
-        "Coordinates MB": "",
-        "event": "Hisense - Live in beauty",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.168577,
-          45.453808
-        ],
-        "type": "Point"
-      },
-      "id": "7ddf8e4de9be98aa9cf0961163b6091a"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "2:30 PM - 8:00 PM",
-        "endDate": "10/04/2025",
-        "displayDate": "10",
-        "regLink": "",
-        "luogo": "Viale Abruzzi 32, Milano",
-        "startDate": "10/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Abruzzi+32,+Milano",
-        "Coordinates MB": "",
-        "event": "Ditroit Open studio",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.217424,
-          45.478042
-        ],
-        "type": "Point"
-      },
-      "id": "7e80c13ad1a0282fbaefc0e6faad97f9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "6:30 AM - 10:00 PM",
-        "endDate": "09/04/2025",
-        "displayDate": "09",
-        "regLink": "",
-        "luogo": "Piazza San Simpliciano, Milano",
-        "startDate": "09/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Simpliciano,+Milano",
-        "Coordinates MB": "",
-        "event": "Hong Kong Walk On",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.183966,
-          45.473728
-        ],
-        "type": "Point"
-      },
-      "id": "818999112af901b33c832c73e5e9b1d9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "11:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Ex stabilimento SNIA Viscosa",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Ex+stabilimento+SNIA+Viscosa",
-        "Coordinates MB": "",
-        "event": "ALCOVA",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.150824,
-          45.594535
-        ],
-        "type": "Point"
-      },
-      "id": "82df82c073c4f165184fad76c9cee214"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "6:30 PM - 10:00 PM",
-        "endDate": "10/04/2025",
-        "displayDate": "09 – 10",
-        "regLink": "mailto:rosales@cufmilano.com ",
-        "luogo": "Cuf Milano",
-        "startDate": "09/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Cuf+Milano",
-        "Coordinates MB": "",
-        "event": "Take a break ",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.187983,
-          45.481318
-        ],
-        "type": "Point"
-      },
-      "id": "84f3d1bb80f5f12c0c867c9e7fdeeb04"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Corso Garibaldi, 85, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Garibaldi,+85,+Milano",
-        "Coordinates MB": "",
-        "event": "La Marzocco x House of Negroni",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.183774,
-          45.476463
-        ],
-        "type": "Point"
-      },
-      "id": "8566e080cec54607442789a07a978cd5"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "08 – 13",
-        "regLink": "",
-        "luogo": "Via Tortona 14, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tortona+14,+Milano",
-        "Coordinates MB": "",
-        "event": "Soul and soil",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.168577,
-          45.453808
-        ],
-        "type": "Point"
-      },
-      "id": "87c1477b5c4a42e164009f57b3493373"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Santa Marta, 10, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Santa+Marta,+10,+Milano",
-        "Coordinates MB": "",
-        "event": "Margraf - Crash",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.183321,
-          45.462403
-        ],
-        "type": "Point"
-      },
-      "id": "8d672ce883813b7e1a9ed40b522ecd7c"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "All day",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via dell'Aprica 12, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+dell'Aprica+12,+Milano",
-        "Coordinates MB": "",
-        "event": "Studio Proba X Very simple kitchen",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.180293,
-          45.493689
-        ],
-        "type": "Point"
-      },
-      "id": "90de73daa4b9cd8c9e8a85b8d30142ff"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "7:30 PM - 0:00 AM",
-        "endDate": "09/04/2025",
-        "displayDate": "09",
-        "regLink": "https://lu.ma/sushjeji?locale=it",
-        "luogo": "Via Privata Vivarini, 7, Milano",
-        "startDate": "09/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Privata+Vivarini,+7,+Milano",
-        "Coordinates MB": "",
-        "event": "About: Griglie",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.180181,
-          45.438627
-        ],
-        "type": "Point"
-      },
-      "id": "9242aa62bae7fed896dd328b6d7178a6"
+      "id": "01c457b51ce92769543e3d890b511561"
     },
     {
       "type": "Feature",
@@ -1305,7 +31,7 @@
         "Multiday": "This is a multi-day event",
         "startHour": "10:00 AM - 12:00 PM",
         "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
+        "Display date": "07 – 13",
         "regLink": "",
         "luogo": "Via Vigevano 18, Milano",
         "startDate": "07/04/2025",
@@ -1322,157 +48,7 @@
         ],
         "type": "Point"
       },
-      "id": "984bbe239e5a6128e1817bcebc099873"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "9:00 PM - 2:00 AM",
-        "endDate": "08/04/2025",
-        "displayDate": "08",
-        "regLink": "https://www2.cc-tapis.com/l/826533/2025-03-17/4z425m",
-        "luogo": "Via Fantoli 15/5, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Fantoli+15/5,+Milano",
-        "Coordinates MB": "",
-        "event": "Hypercode",
-        "type": "Club/gigs",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.25232,
-          45.45415
-        ],
-        "type": "Point"
-      },
-      "id": "9ad08b6c378f2987260d4c00861553b2"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "9:30 AM - 4:00 PM",
-        "endDate": "08/04/2025",
-        "displayDate": "06 – 08",
-        "regLink": "https://prada-frames.com/event-details",
-        "luogo": "Stazione Centrale Milano",
-        "startDate": "06/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Stazione+Centrale+Milano",
-        "Coordinates MB": "",
-        "event": "Prada Frames",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.206096,
-          45.48397
-        ],
-        "type": "Point"
-      },
-      "id": "9af1b98426b1d06adcca94254e1d7bf9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "6:30 PM - 10:00 PM",
-        "endDate": "10/04/2025",
-        "displayDate": "10",
-        "regLink": "https://eventos.porcelanosagrupo.com/events/poetics_of_bonds/#form",
-        "luogo": "Porcelanosa Milano",
-        "startDate": "10/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Porcelanosa+Milano",
-        "Coordinates MB": "",
-        "event": "The Gather",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.178229,
-          45.469394
-        ],
-        "type": "Point"
-      },
-      "id": "9d8c304c6b2aea978672c424baec4fb0"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "7:00 AM - 10:30 PM",
-        "endDate": "09/04/2025",
-        "displayDate": "09",
-        "regLink": "",
-        "luogo": "Via Santa Marta, 10, Milano",
-        "startDate": "09/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Santa+Marta,+10,+Milano",
-        "Coordinates MB": "",
-        "event": "Margraf - Crash",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.183321,
-          45.462403
-        ],
-        "type": "Point"
-      },
-      "id": "9ddcafd27084720b4faa595006de4ccf"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 9:00 PM",
-        "endDate": "12/04/2025",
-        "displayDate": "08 – 12",
-        "regLink": "",
-        "luogo": "Piazzale Lavater, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazzale+Lavater,+Milano",
-        "Coordinates MB": "9.1845623, 45.4723644",
-        "event": "C41 Magazine X Rayban",
-        "type": "Club/gigs",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.21061,
-          45.476552
-        ],
-        "type": "Point"
-      },
-      "id": "9ef8325de9661c08f75f17c53a75e1df"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "7:00 PM - 9:30 PM",
-        "endDate": "09/04/2025",
-        "displayDate": "09",
-        "regLink": "https://form.typeform.com/to/uvQhXbA5?typeform-source=www.fuorisalone.it",
-        "luogo": "Golab Agency, Via Fatebefratelli 5, Milano",
-        "startDate": "09/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Golab+Agency,+Via+Fatebefratelli+5,+Milano",
-        "Coordinates MB": "",
-        "event": "Il Nucleo del Design",
-        "type": "Freebies",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.190418,
-          45.473294
-        ],
-        "type": "Point"
-      },
-      "id": "a31486317a45c1c3d1c7efd52431d93b"
+      "id": "03394e4f4c3f6e9e74e8049b3b999e2f"
     },
     {
       "type": "Feature",
@@ -1480,7 +56,7 @@
         "Multiday": "This is a multi-day event",
         "startHour": "6:00 PM - 10:00 PM",
         "endDate": "10/04/2025",
-        "displayDate": "7 – 10",
+        "Display date": "7 – 10",
         "regLink": "",
         "luogo": "Via Borgogna 8, Milano",
         "startDate": "07/04/2025",
@@ -1497,7 +73,32 @@
         ],
         "type": "Point"
       },
-      "id": "a45104d0dd4299e91103aae6d82a3a4a"
+      "id": "0601256499fe98818e620419813f5018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:30 PM",
+        "endDate": "11/04/2025",
+        "Display date": "11",
+        "regLink": "",
+        "luogo": "Via Zuretti 35, Milano",
+        "startDate": "11/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Zuretti+35,+Milano",
+        "Coordinates MB": "",
+        "event": "REJECTED! RESURRECTED",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.208117,
+          45.493986
+        ],
+        "type": "Point"
+      },
+      "id": "087362947a0350c0f5060a12533648ed"
     },
     {
       "type": "Feature",
@@ -1505,7 +106,7 @@
         "Multiday": "This is a multi-day event",
         "startHour": "11:00 AM - 7:00 PM",
         "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
+        "Display date": "07 – 13",
         "regLink": "",
         "luogo": "Serre di Pasino",
         "startDate": "07/04/2025",
@@ -1522,357 +123,57 @@
         ],
         "type": "Point"
       },
-      "id": "a7e151569b9814ea662a0e5ddc357fce"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "6:00 PM - 9:00 PM",
-        "endDate": "07/04/2025",
-        "displayDate": "07",
-        "regLink": "",
-        "luogo": "Via della Spiga 42, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+della+Spiga+42,+Milano",
-        "Coordinates MB": "",
-        "event": "Adaptive Ground - Marsèll",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.195914,
-          45.471131
-        ],
-        "type": "Point"
-      },
-      "id": "a8ba79cf0395bf7827a5abb657b2f58f"
+      "id": "099402f5fa4d825741635dc4a431ed4d"
     },
     {
       "type": "Feature",
       "properties": {
         "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM",
+        "startHour": "10:00 AM - 6:00 PM",
         "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
+        "Display date": "07 – 13",
         "regLink": "",
-        "luogo": "Via Palermo 11, Milano",
+        "luogo": "Chiesa del Carmine",
         "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Palermo+11,+Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Chiesa+del+Carmine",
         "Coordinates MB": "",
-        "event": "La Marzocco",
+        "event": "Aesop - The Second Skin",
         "type": "Design",
         "description": ""
       },
       "geometry": {
         "coordinates": [
-          9.185087,
-          45.475189
+          9.185687,
+          45.470647
         ],
         "type": "Point"
       },
-      "id": "aa0fb0bcf9d5c34731ee2e260a2588c2"
+      "id": "0ad12244131a8212456aa1be92920b2e"
     },
     {
       "type": "Feature",
       "properties": {
         "Multiday": "This is a one-day event",
-        "startHour": "6:00 PM - 12 AM",
-        "endDate": "08/04/2025",
-        "displayDate": "08",
-        "regLink": "https://www.cofactorydesignweek2025.com/event-details/ape-opening-design-week",
-        "luogo": "Via Polidoro da Caravaggio 30B, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Polidoro+da+Caravaggio+30B,+Milano",
-        "Coordinates MB": "",
-        "event": "Ape Opening",
-        "type": "Club/gigs",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.135736,
-          45.500136
-        ],
-        "type": "Point"
-      },
-      "id": "ab62a03cf97c7616033741405cb76f32"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "11:00 AM - 7:00 PM",
-        "endDate": "12/04/2025",
-        "displayDate": "07 – 12",
-        "regLink": "",
-        "luogo": "Via S. Vittore al teatro, 30 Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+S.+Vittore+al+teatro,+30+Milano",
-        "Coordinates MB": "",
-        "event": "Boon_Editions x A-N-D",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.182609,
-          45.465308
-        ],
-        "type": "Point"
-      },
-      "id": "ae46554273e9b387f6153058107da96f"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Tadino 20, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tadino+20,+Milano",
-        "Coordinates MB": "",
-        "event": "Apartamento Magazine",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.207629,
-          45.478912
-        ],
-        "type": "Point"
-      },
-      "id": "b00b307c4f92eecd7c3a3fe745fa7f37"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "6:00 PM - 10:00 PM",
+        "startHour": "9:00 PM - 1:00 AM",
         "endDate": "09/04/2025",
-        "displayDate": "09",
+        "Display date": "09",
         "regLink": "",
-        "luogo": "Via Gorani, 4, 20123 Milano MI",
-        "startDate": "09/04/2024",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Gorani,+4,+20123+Milano+MI",
-        "Coordinates MB": "9.1783767, 45.4661897",
-        "event": "24Hours Show",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.181621,
-          45.464804
-        ],
-        "type": "Point"
-      },
-      "id": "b561be980c16e975f1644167e1bdbc18"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "5:00 PM - 12:00 AM",
-        "endDate": "07/04/2025",
-        "displayDate": "07",
-        "regLink": "",
-        "luogo": "Viale Abruzzi 28, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Abruzzi+28,+Milano",
-        "Coordinates MB": "",
-        "event": "Isaak - A vision by Ditroit",
-        "type": "Club/gigs",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.217363,
-          45.477653
-        ],
-        "type": "Point"
-      },
-      "id": "b7709da27146d0f2378aeb71123ddea9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a one-day event",
-        "startHour": "7:00 PM - 10:00 PM",
-        "endDate": "09/04/2025",
-        "displayDate": "09",
-        "regLink": "https://www.boon-editions.com/mdw-rsvp",
-        "luogo": "Via S. Vittore al teatro, 30 Milano",
+        "luogo": "Viale Pasubio 2, 20154 Milano",
         "startDate": "09/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+S.+Vittore+al+teatro,+30+Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Pasubio+2,+20154+Milano",
         "Coordinates MB": "",
-        "event": "Boon_Editions x A-N-D - Cocktail party",
+        "event": "BurroStudio x Signorvino+Alessi",
         "type": "Freebies",
         "description": ""
       },
       "geometry": {
         "coordinates": [
-          9.182609,
-          45.465308
+          9.186044,
+          45.48132
         ],
         "type": "Point"
       },
-      "id": "ba9006ef499fd9af33c84d6c8571f623"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 8:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "08 – 13",
-        "regLink": "",
-        "luogo": "Mimmo Scognamiglio Artecontemporanea",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Mimmo+Scognamiglio+Artecontemporanea",
-        "Coordinates MB": "",
-        "event": "Less is home",
-        "type": "Design",
-        "description": "Registrazione all'ingresso"
-      },
-      "geometry": {
-        "coordinates": [
-          9.189293,
-          45.474494
-        ],
-        "type": "Point"
-      },
-      "id": "bc86f27ce6be20f18c9743e20fa4c5c1"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 10:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "08 – 13",
-        "regLink": "",
-        "luogo": "Via della Moscova 33, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+della+Moscova+33,+Milano",
-        "Coordinates MB": "",
-        "event": "Loro Piana - Cortile della seta",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.187265,
-          45.477011
-        ],
-        "type": "Point"
-      },
-      "id": "c4b49e801c2d29f3b5d4baf3f0e70145"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Ciovasso 11, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Ciovasso+11,+Milano",
-        "Coordinates MB": "",
-        "event": "Modbar Espresso Atelier",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.186556,
-          45.469785
-        ],
-        "type": "Point"
-      },
-      "id": "c5d1f4e18d369cdbf60e1739526cbd03"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "5:00 PM - 12:00 AM",
-        "endDate": "12/04/2025",
-        "displayDate": "08 – 12",
-        "regLink": "",
-        "luogo": "Via Ludovico di Breme 52, Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Ludovico+di+Breme+52,+Milano",
-        "Coordinates MB": "",
-        "event": "Social Machines for empathetic spaces",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.138817,
-          45.49953
-        ],
-        "type": "Point"
-      },
-      "id": "c86077fdd85e52cb862d13ade1fd9910"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "6:00 PM - 2:00 AM",
-        "endDate": "12/04/2025",
-        "displayDate": "08 – 12",
-        "regLink": "",
-        "luogo": "Ex-Macello",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Ex-Macello",
-        "Coordinates MB": "",
-        "event": "VOCLA - Design by night",
-        "type": "Club/gigs",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.224461,
-          45.45649
-        ],
-        "type": "Point"
-      },
-      "id": "d2ed056726fd93462b977469245df57e"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 8:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Garofalo 31, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Garofalo+31,+Milano",
-        "Coordinates MB": "",
-        "event": "PAFF PAFF - Finemateria",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.219121,
-          45.481074
-        ],
-        "type": "Point"
-      },
-      "id": "d348860b32dbf7dd61a7b1d2091926b1"
+      "id": "0e22a57dbbbee040c25a4ef4a23d5d86"
     },
     {
       "type": "Feature",
@@ -1880,32 +181,7 @@
         "Multiday": "This is a multi-day event",
         "startHour": "All day",
         "endDate": "11/04/2025",
-        "displayDate": "08 – 11",
-        "regLink": "",
-        "luogo": "Via Vezza d'Oglio, 14 Milano",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Vezza+d'Oglio,+14+Milano",
-        "Coordinates MB": "",
-        "event": "Levis by Highsnobiety",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.205265,
-          45.441211
-        ],
-        "type": "Point"
-      },
-      "id": "dbc4b90726a84f57827528bb94c71fb5"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "All day",
-        "endDate": "11/04/2025",
-        "displayDate": "10 – 11",
+        "Display date": "10 – 11",
         "regLink": "",
         "luogo": "Via Pavia 3, Milano",
         "startDate": "10/04/2025",
@@ -1922,82 +198,32 @@
         ],
         "type": "Point"
       },
-      "id": "dc873ac9798a4631c33910c74a0cd848"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "Not specified",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Via Achille Maiocchi 7, Milano",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Achille+Maiocchi+7,+Milano",
-        "Coordinates MB": "",
-        "event": "Capsule Plaza",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.212409,
-          45.475057
-        ],
-        "type": "Point"
-      },
-      "id": "e05eb6e8eeced875e60afba13a305664"
+      "id": "0eff168b4f600bb8cb4422e97b91e30e"
     },
     {
       "type": "Feature",
       "properties": {
         "Multiday": "This is a one-day event",
-        "startHour": "8:30 PM - 10:30 PM",
-        "endDate": "10/04/2025",
-        "displayDate": "10",
-        "regLink": "https://lu.ma/xu9prj6k?tk=aisz8E",
-        "luogo": "Via Tommaso da Cazzaniga, 4-6",
-        "startDate": "10/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tommaso+da+Cazzaniga,+4-6",
-        "Coordinates MB": "",
-        "event": "Waves of Innovation | Light Art Installation",
-        "type": "Club/gigs",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.182402,
-          45.476508
-        ],
-        "type": "Point"
-      },
-      "id": "e39eb343109720768f05503a13ffc2bc"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "11:00 AM - 7:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
+        "startHour": "7:00 AM - 10:30 PM",
+        "endDate": "09/04/2025",
+        "Display date": "09",
         "regLink": "",
-        "luogo": "Villa Bagatti Valsecchi",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Villa+Bagatti+Valsecchi",
+        "luogo": "Via Santa Marta, 10, Milano",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Santa+Marta,+10,+Milano",
         "Coordinates MB": "",
-        "event": "ALCOVA",
-        "type": "Design",
+        "event": "Margraf - Crash",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
         "coordinates": [
-          9.159425,
-          45.59695
+          9.183321,
+          45.462403
         ],
         "type": "Point"
       },
-      "id": "e458eb97b4ea62e05a1bc7fa58170188"
+      "id": "0f046d4304dcc6fa198991d08b490e69"
     },
     {
       "type": "Feature",
@@ -2005,74 +231,124 @@
         "Multiday": "This is a multi-day event",
         "startHour": "10:00 AM - 8:00 PM",
         "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
+        "Display date": "07 – 13",
         "regLink": "",
-        "luogo": "Casa degli artisti, Milano",
+        "luogo": "Cenacolo Vinciano",
         "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Casa+degli+artisti,+Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Cenacolo+Vinciano",
         "Coordinates MB": "",
-        "event": "House of Switzerland Milano",
+        "event": "Graffito di Luce",
         "type": "Design",
         "description": ""
       },
       "geometry": {
         "coordinates": [
-          9.183823,
-          45.476623
+          9.1706,
+          45.466185
         ],
         "type": "Point"
       },
-      "id": "e77a570b621de762c3a1dfc62966486e"
+      "id": "136aff7ed4b6bf82990e10c94bab32fe"
     },
     {
       "type": "Feature",
       "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 10:00 PM",
-        "endDate": "13/04/2025",
-        "displayDate": "07 – 13",
-        "regLink": "",
-        "luogo": "Orto Botanico di Brera",
-        "startDate": "07/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Orto+Botanico+di+Brera",
-        "Coordinates MB": "",
-        "event": "INTERNI CreAction",
-        "type": "Design",
-        "description": ""
-      },
-      "geometry": {
-        "coordinates": [
-          9.189183,
-          45.470914
-        ],
-        "type": "Point"
-      },
-      "id": "e9f01f4c5eade020b6a642d75df1f215"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Multiday": "This is a multi-day event",
-        "startHour": "10:00 AM - 7:00 PM",
-        "endDate": "12/04/2025",
-        "displayDate": "08 – 12",
-        "regLink": "",
-        "luogo": "Istituto ciechi di Milano",
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 0:00 AM",
+        "endDate": "08/04/2025",
+        "Display date": "08",
+        "regLink": "mailto:officina@breraofficina.it",
+        "luogo": "Via Felice Cavallotti 13, Milano",
         "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Istituto+ciechi+di+Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Felice+Cavallotti+13,+Milano",
         "Coordinates MB": "",
-        "event": "Poetica by Wonderglass",
+        "event": "Brera Officina",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.196791,
+          45.463862
+        ],
+        "type": "Point"
+      },
+      "id": "16f865394f159e34839f1754017774ba"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 9:00 PM",
+        "endDate": "12/04/2025",
+        "Display date": "12",
+        "regLink": "",
+        "luogo": "V.le Emilio Caldara 51 20122",
+        "startDate": "12/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=V.le+Emilio+Caldara+51+20122",
+        "Coordinates MB": "",
+        "event": "This is my world",
         "type": "Design",
         "description": ""
       },
       "geometry": {
         "coordinates": [
-          9.203665,
-          45.468879
+          9.204189,
+          45.457248
         ],
         "type": "Point"
       },
-      "id": "ee280e63d7339e08a1a6159b087e8d41"
+      "id": "18db9776a357f982f6dc4de3b4f87452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "11:00 AM - 8:00 PM",
+        "endDate": "11/04/2025",
+        "Display date": "08 – 11",
+        "regLink": "https://www.thebalvenie.com/news/samuel-ross/",
+        "luogo": "V. Genova Thaon di Revel, 28, 20159 Milano MI",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=V.+Genova+Thaon+di+Revel,+28,+20159+Milano+MI",
+        "Coordinates MB": "",
+        "event": "Transposition",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.188317,
+          45.493111
+        ],
+        "type": "Point"
+      },
+      "id": "190336e6a164c29e14af3db142cafe82"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:30 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Paolo Frisi 3, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Paolo+Frisi+3,+Milano",
+        "Coordinates MB": "",
+        "event": "Deoron Elevating objects",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.208887,
+          45.475024
+        ],
+        "type": "Point"
+      },
+      "id": "1e03d9b2d511bd1d650e2a5e45cc7588"
     },
     {
       "type": "Feature",
@@ -2080,7 +356,7 @@
         "Multiday": "This is a multi-day event",
         "startHour": "10:00 AM - 10:00 PM",
         "endDate": "12/04/2025",
-        "displayDate": "08 – 12",
+        "Display date": "08 – 12",
         "regLink": "mailto:manuela@bicisrl.it",
         "luogo": "BI.CI. Progetti e Arredamento",
         "startDate": "08/04/2025",
@@ -2097,32 +373,32 @@
         ],
         "type": "Point"
       },
-      "id": "f099224e331b585f1551e04e1ba73f18"
+      "id": "1efd0dc46cc28489bb48826b229769bc"
     },
     {
       "type": "Feature",
       "properties": {
         "Multiday": "This is a one-day event",
-        "startHour": "6:00 PM - 2:00 AM",
-        "endDate": "08/04/2025",
-        "displayDate": "08",
-        "regLink": "https://bulma.rsvp/bsr-k7-records-dj-kicks-8-apr-25",
-        "luogo": "Via Carlo Boncompagni, 51/10, 20139 Milano MI",
-        "startDate": "08/04/2025",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Carlo+Boncompagni,+51/10,+20139+Milano+MI",
+        "startHour": "7:00 PM - 9:30 PM",
+        "endDate": "09/04/2025",
+        "Display date": "09",
+        "regLink": "https://form.typeform.com/to/uvQhXbA5?typeform-source=www.fuorisalone.it",
+        "luogo": "Golab Agency, Via Fatebefratelli 5, Milano",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Golab+Agency,+Via+Fatebefratelli+5,+Milano",
         "Coordinates MB": "",
-        "event": "BurroStudio Radio x !K7",
-        "type": "Club/gigs",
+        "event": "Il Nucleo del Design",
+        "type": "Freebies",
         "description": ""
       },
       "geometry": {
         "coordinates": [
-          9.232318,
-          45.439113
+          9.190418,
+          45.473294
         ],
         "type": "Point"
       },
-      "id": "f0b1dc72987fc71dcc3914cd6271d845"
+      "id": "2122db8dadd030588328eae6020439a9"
     },
     {
       "type": "Feature",
@@ -2130,7 +406,7 @@
         "Multiday": "This is a one-day event",
         "startHour": "6:00 PM",
         "endDate": "09/04/2025",
-        "displayDate": "09",
+        "Display date": "09",
         "regLink": "",
         "luogo": "Via Gattamelata, 34, Milano",
         "startDate": "09/04/2025",
@@ -2147,7 +423,2081 @@
         ],
         "type": "Point"
       },
-      "id": "f7042fe4cb586415ae82dad00452d450"
+      "id": "24820e41a008ab990af00ef11516ffb5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Ciovasso 11, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Ciovasso+11,+Milano",
+        "Coordinates MB": "",
+        "event": "Modbar Espresso Atelier",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.186556,
+          45.469785
+        ],
+        "type": "Point"
+      },
+      "id": "2529fe041f369328ec28e94e5d37c9b8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "12/04/2025",
+        "Display date": "07 – 12",
+        "regLink": "",
+        "luogo": "Piscina Cozzi",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piscina+Cozzi",
+        "Coordinates MB": "",
+        "event": "TWO - FOLD SILENCE",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.201286,
+          45.479063
+        ],
+        "type": "Point"
+      },
+      "id": "26bb8ccc9cb2f1479b2608700de8444d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "12/04/2025",
+        "Display date": "08 – 12",
+        "regLink": "",
+        "luogo": "Istituto ciechi di Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Istituto+ciechi+di+Milano",
+        "Coordinates MB": "",
+        "event": "Poetica by Wonderglass",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.203665,
+          45.468879
+        ],
+        "type": "Point"
+      },
+      "id": "27ff7520995a822caea18dd2e1f911de"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "9:00 AM - 6:00 PM",
+        "endDate": "11/04/2025",
+        "Display date": "07 – 11",
+        "regLink": "",
+        "luogo": "Via Melzo 30, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Melzo+30,+Milano",
+        "Coordinates MB": "",
+        "event": "Gaggia Open House",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.208047,
+          45.475241
+        ],
+        "type": "Point"
+      },
+      "id": "2921f2c5ae7493f5252b7cafb62598ac"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "11:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Villa Bagatti Valsecchi",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Villa+Bagatti+Valsecchi",
+        "Coordinates MB": "",
+        "event": "ALCOVA",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.159425,
+          45.59695
+        ],
+        "type": "Point"
+      },
+      "id": "292acb655e4d39efafb26777301cce22"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 8:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Corso Magenta 24, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Magenta+24,+Milano",
+        "Coordinates MB": "",
+        "event": "MoscaPartners Variations",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.178186,
+          45.465934
+        ],
+        "type": "Point"
+      },
+      "id": "29b8adfaaaad581eed38f2d1142fd1c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "7:00 PM - 10:00 PM",
+        "endDate": "09/04/2025",
+        "Display date": "09",
+        "regLink": "https://www.boon-editions.com/mdw-rsvp",
+        "luogo": "Via S. Vittore al teatro, 30 Milano",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+S.+Vittore+al+teatro,+30+Milano",
+        "Coordinates MB": "",
+        "event": "Boon_Editions x A-N-D - Cocktail party",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.182609,
+          45.465308
+        ],
+        "type": "Point"
+      },
+      "id": "2c895b5e6213e3eebcf68142251ddc81"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "All day",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via dell'Aprica 12, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+dell'Aprica+12,+Milano",
+        "Coordinates MB": "",
+        "event": "Studio Proba X Very simple kitchen",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.180293,
+          45.493689
+        ],
+        "type": "Point"
+      },
+      "id": "2e44d868140dd2574d814d2ecfb1495d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Garibaldi 99, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Garibaldi+99,+Milano",
+        "Coordinates MB": "",
+        "event": "Woa Studio",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.183812,
+          45.477425
+        ],
+        "type": "Point"
+      },
+      "id": "2eaa818c32df7a0817a1e47f9c8b1e91"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 9:00 PM",
+        "endDate": "10/04/2025",
+        "Display date": "10",
+        "regLink": "",
+        "luogo": "Via Milazzo 8, Milano",
+        "startDate": "10/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Milazzo+8,+Milano",
+        "Coordinates MB": "",
+        "event": "Dynamic Design Experience",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.187795,
+          45.479329
+        ],
+        "type": "Point"
+      },
+      "id": "316c2504f8906093d89ce57133528453"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 PM - 2:00 AM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Sammartini 40, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Sammartini+40,+Milano",
+        "Coordinates MB": "",
+        "event": "Hundebiss",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.209683,
+          45.492885
+        ],
+        "type": "Point"
+      },
+      "id": "31761b529f0ec5db2aedd20cd1e66570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Palermo 11, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Palermo+11,+Milano",
+        "Coordinates MB": "",
+        "event": "La Marzocco",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.185087,
+          45.475189
+        ],
+        "type": "Point"
+      },
+      "id": "31ed7fce859dd1675b731b720b6d39f0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 8:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Rosolino Pilo 14, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Rosolino+Pilo+14,+Milano",
+        "Coordinates MB": "",
+        "event": "Convey",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.212425,
+          45.473312
+        ],
+        "type": "Point"
+      },
+      "id": "32871e21c3b52a6bdc6dce2b68628930"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "All day",
+        "endDate": "12/04/2025",
+        "Display date": "12",
+        "regLink": "",
+        "luogo": "Piazza Morbegno",
+        "startDate": "12/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Morbegno",
+        "Coordinates MB": "",
+        "event": "Save the Duck",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.216256,
+          45.493206
+        ],
+        "type": "Point"
+      },
+      "id": "331e27be89c40ed7a3dbc90d02a23215"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "10:00 AM - 3:00 PM",
+        "endDate": "12/04/2025",
+        "Display date": "12",
+        "regLink": "",
+        "luogo": "Via Paolo Sarpi 42, Milano",
+        "startDate": "12/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Paolo+Sarpi+42,+Milano",
+        "Coordinates MB": "",
+        "event": "Circolo Outpump",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.17444,
+          45.481373
+        ],
+        "type": "Point"
+      },
+      "id": "34a4376c82f845f9b9b243210a3e2986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "All day",
+        "endDate": "13/04/2025",
+        "Display date": "08 – 13",
+        "regLink": "",
+        "luogo": "MC Selvini",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=MC+Selvini",
+        "Coordinates MB": "",
+        "event": "House of Finn Juhl",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.210031,
+          45.468669
+        ],
+        "type": "Point"
+      },
+      "id": "3a58d774717d46972c7846cb6b78d3e8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "9:00 AM - 7:30 PM",
+        "endDate": "13/04/2025",
+        "Display date": "09 – 13",
+        "regLink": "",
+        "luogo": "Via Ercole Oldofredi 41, Milano",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Ercole+Oldofredi+41,+Milano",
+        "Coordinates MB": "",
+        "event": "Jil Sander - Friends and Family",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.197581,
+          45.492014
+        ],
+        "type": "Point"
+      },
+      "id": "3c74c13c45a82d1375099805a817e18d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Corso Garibaldi, 85, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Garibaldi,+85,+Milano",
+        "Coordinates MB": "",
+        "event": "La Marzocco x House of Negroni",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.183774,
+          45.476463
+        ],
+        "type": "Point"
+      },
+      "id": "443a939fb57a23d71f2f9be55334c840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM",
+        "endDate": "09/04/2025",
+        "Display date": "09",
+        "regLink": "https://dice.fm/event/53q3e8-le-cannibale-moab-design-week-open-air-party-9th-apr-parco-della-resistenza-milano-tickets?sharer_id=633f3154508c0000019c5340&utm_source=dice&utm_campaign=event_share&utm_medium=event_share",
+        "luogo": "Parco della Resistenza",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Parco+della+Resistenza",
+        "Coordinates MB": "",
+        "event": "Le Cannibale & MOAB",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.183544,
+          45.44692
+        ],
+        "type": "Point"
+      },
+      "id": "44d0a98cb8aea59496566a6d16c2b7d4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "7:00 PM - 2:00 AM",
+        "endDate": "08/04/2025",
+        "Display date": "08",
+        "regLink": "https://dice.fm/event/8eyq75-sabotage-bluesquare-takover-design-week-special-8th-apr-bluesquare-milano-milan-tickets",
+        "luogo": "Via Tortona 33, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tortona+33,+Milano",
+        "Coordinates MB": "",
+        "event": "Sabotage bluesquare takeover",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.161447,
+          45.451252
+        ],
+        "type": "Point"
+      },
+      "id": "476c833b43c031e1fa06c9b6b42b0eb6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 8:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Garofalo 31, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Garofalo+31,+Milano",
+        "Coordinates MB": "",
+        "event": "PAFF PAFF - Finemateria",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.219121,
+          45.481074
+        ],
+        "type": "Point"
+      },
+      "id": "47a2588215b5e7f8e387b8755d8f184e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:30 PM - 10:00 PM",
+        "endDate": "07/04/2025",
+        "Display date": "07",
+        "regLink": "https://eventos.porcelanosagrupo.com/events/poetics_of_bonds/#form",
+        "luogo": "Porcelanosa Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Porcelanosa+Milano",
+        "Coordinates MB": "",
+        "event": "[Re]Connecting Afterwork",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.178229,
+          45.469394
+        ],
+        "type": "Point"
+      },
+      "id": "484930c28fed57f8cec704ec255b9221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 9:00 PM",
+        "endDate": "07/04/2025",
+        "Display date": "07",
+        "regLink": "",
+        "luogo": "Via della Spiga 42, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+della+Spiga+42,+Milano",
+        "Coordinates MB": "",
+        "event": "Adaptive Ground - Marsèll",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.195914,
+          45.471131
+        ],
+        "type": "Point"
+      },
+      "id": "4a49f60b8d23f3f0817b2c64f193ca56"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "09:30 AM - 7:00 PM",
+        "endDate": "12/04/2025",
+        "Display date": "08 – 12",
+        "regLink": "",
+        "luogo": "Via Statuto, 8, 20121 Milano MI",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Statuto,+8,+20121+Milano+MI",
+        "Coordinates MB": "",
+        "event": "Original 1227 Desk Lamp: from office staple to style icon",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.186268,
+          45.476241
+        ],
+        "type": "Point"
+      },
+      "id": "4b491aeaae904c1162f4dfd5d4f08b48"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 10:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "08 – 13",
+        "regLink": "",
+        "luogo": "Via della Moscova 33, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+della+Moscova+33,+Milano",
+        "Coordinates MB": "",
+        "event": "Loro Piana - Cortile della seta",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.187265,
+          45.477011
+        ],
+        "type": "Point"
+      },
+      "id": "4d24dd2e7dba5a59a41a425ad70e412b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "08 – 13",
+        "regLink": "",
+        "luogo": "Via Tortona 14, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tortona+14,+Milano",
+        "Coordinates MB": "",
+        "event": "Soul and soil",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.168577,
+          45.453808
+        ],
+        "type": "Point"
+      },
+      "id": "56eb777b455e7d7561e4f36a4654d093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 10:00 PM",
+        "endDate": "09/04/2025",
+        "Display date": "09",
+        "regLink": "",
+        "luogo": "Via Gorani, 4, 20123 Milano MI",
+        "startDate": "09/04/2024",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Gorani,+4,+20123+Milano+MI",
+        "Coordinates MB": "9.1783767, 45.4661897",
+        "event": "24Hours Show",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.181621,
+          45.464804
+        ],
+        "type": "Point"
+      },
+      "id": "57872c9d3bc89517ba666a3b524bdd35"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "9:00 PM - 2:00 AM",
+        "endDate": "08/04/2025",
+        "Display date": "08",
+        "regLink": "https://www2.cc-tapis.com/l/826533/2025-03-17/4z425m",
+        "luogo": "Via Fantoli 15/5, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Fantoli+15/5,+Milano",
+        "Coordinates MB": "",
+        "event": "Hypercode",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.25232,
+          45.45415
+        ],
+        "type": "Point"
+      },
+      "id": "5a811d775370d7ac9321906449bee648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Santa Marta, 10, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Santa+Marta,+10,+Milano",
+        "Coordinates MB": "",
+        "event": "Margraf - Crash",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.183321,
+          45.462403
+        ],
+        "type": "Point"
+      },
+      "id": "5abf377f5d369f62016e1fcec77eb040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Tadino 20, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tadino+20,+Milano",
+        "Coordinates MB": "",
+        "event": "Apartamento Magazine",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.207629,
+          45.478912
+        ],
+        "type": "Point"
+      },
+      "id": "5e8ea4bb4b196584c02662de2dc5ad69"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "All day",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Piazza Morbegno, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Morbegno,+Milano",
+        "Coordinates MB": "",
+        "event": "Birra Messina | Edicola Meraviglia",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.216256,
+          45.493206
+        ],
+        "type": "Point"
+      },
+      "id": "5eeb7d28139f2cb542faea4d9b47efbf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "7:00 AM - 10:30 PM",
+        "endDate": "09/04/2025",
+        "Display date": "09",
+        "regLink": "",
+        "luogo": "Giopato & Coombes Gallery",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Giopato+&+Coombes+Gallery",
+        "Coordinates MB": "",
+        "event": "Scarabei - Cocktail party",
+        "type": "Freebies",
+        "description": "Registrazione all'ingresso"
+      },
+      "geometry": {
+        "coordinates": [
+          9.183083,
+          45.462662
+        ],
+        "type": "Point"
+      },
+      "id": "664e67af9347b0a65c33ceeb23968ce9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "7:00 PM - 0:00 AM",
+        "endDate": "12/04/2025",
+        "Display date": "12",
+        "regLink": "https://xceed.me/it/milano/event/fdw-25-day-4-toy-tonics-jam-feat-kapote-sam-ruffillo-fimiani-zsa-zsa-1--184536/channel--fabbrica-design-week-25",
+        "luogo": "Via Giulio Cesare Procaccini, 4, 20154 Milano",
+        "startDate": "12/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Giulio+Cesare+Procaccini,+4,+20154+Milano",
+        "Coordinates MB": "",
+        "event": "Toy Tonics Jam",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.175146,
+          45.484804
+        ],
+        "type": "Point"
+      },
+      "id": "669e296a253cb875464027b2121150b4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "6:00 PM - 11:00 PM",
+        "endDate": "08/04/2025",
+        "Display date": "08",
+        "regLink": "",
+        "luogo": "Via Maroncelli 12/A, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Maroncelli+12/A,+Milano",
+        "Coordinates MB": "",
+        "event": "Trame di Luce",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.183578,
+          45.482917
+        ],
+        "type": "Point"
+      },
+      "id": "66a0fa7b11f54277b6ea8726a1ea3995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "11:00 AM - 7:00 PM",
+        "endDate": "11/04/2025",
+        "Display date": "07 – 11",
+        "regLink": "",
+        "luogo": "Via Biella, 8, 20143 Milano MI",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Biella,+8,+20143+Milano+MI",
+        "Coordinates MB": "",
+        "event": "Labò by The Design Blender",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.155136,
+          45.439817
+        ],
+        "type": "Point"
+      },
+      "id": "67360d1b1a6ed14383798a95dbab6ebf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "6:00 PM - 2:00 AM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Porpora 126, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Porpora+126,+Milano",
+        "Coordinates MB": "",
+        "event": "Comune",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.228515,
+          45.485836
+        ],
+        "type": "Point"
+      },
+      "id": "6a3f4c54a4e9e1b184c5dbd155cced6d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 10:00 PM",
+        "endDate": "08/04/2025",
+        "Display date": "08",
+        "regLink": "",
+        "luogo": "Via Lecco 18, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Lecco+18,+Milano",
+        "Coordinates MB": "",
+        "event": "Monogrid Open studio",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.205488,
+          45.478155
+        ],
+        "type": "Point"
+      },
+      "id": "6af8b988b07b5edab0cbcef34dd2d5e4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 10:00 PM",
+        "endDate": "10/04/2025",
+        "Display date": "10",
+        "regLink": "",
+        "luogo": "Corso Monforte 4, Milano",
+        "startDate": "10/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Monforte+4,+Milano",
+        "Coordinates MB": "",
+        "event": "Let's Play Terrazzo by Agglotech",
+        "type": "Freebies",
+        "description": "Registrazione all'ingresso"
+      },
+      "geometry": {
+        "coordinates": [
+          9.199224,
+          45.466627
+        ],
+        "type": "Point"
+      },
+      "id": "720d3b920406322c40c16f37678bb26e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 8:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "08 – 13",
+        "regLink": "",
+        "luogo": "Mimmo Scognamiglio Artecontemporanea",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Mimmo+Scognamiglio+Artecontemporanea",
+        "Coordinates MB": "",
+        "event": "Less is home",
+        "type": "Design",
+        "description": "Registrazione all'ingresso"
+      },
+      "geometry": {
+        "coordinates": [
+          9.189293,
+          45.474494
+        ],
+        "type": "Point"
+      },
+      "id": "748dc5e71d69b3483be89cb89954c54c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 8:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Cesare Battisti 1, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Cesare+Battisti+1,+Milano",
+        "Coordinates MB": "",
+        "event": "A matter of colors",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.200537,
+          45.462736
+        ],
+        "type": "Point"
+      },
+      "id": "75e4e97fc1b9df255c2fd7acb4ba8c40"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 10:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "08 – 13",
+        "regLink": "https://www.gucci.com/it/it/nst/bamboo-encounters",
+        "luogo": "Chiostro Grande di San Simpliciano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Chiostro+Grande+di+San+Simpliciano",
+        "Coordinates MB": "",
+        "event": "Gucci | Bamboo encounters",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.18589,
+          45.473916
+        ],
+        "type": "Point"
+      },
+      "id": "775b745724812fe022ba5150e5858a53"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:30 PM - 10:30 PM",
+        "endDate": "10/04/2025",
+        "Display date": "10",
+        "regLink": "https://lu.ma/xu9prj6k?tk=aisz8E",
+        "luogo": "Via Tommaso da Cazzaniga, 4-6",
+        "startDate": "10/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tommaso+da+Cazzaniga,+4-6",
+        "Coordinates MB": "",
+        "event": "Waves of Innovation | Light Art Installation",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.182402,
+          45.476508
+        ],
+        "type": "Point"
+      },
+      "id": "8040b2e9e198a441fce8198de7c8ccbb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "6:00 PM - 2:00 AM",
+        "endDate": "12/04/2025",
+        "Display date": "08 – 12",
+        "regLink": "",
+        "luogo": "Ex-Macello",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Ex-Macello",
+        "Coordinates MB": "",
+        "event": "VOCLA - Design by night",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.224461,
+          45.45649
+        ],
+        "type": "Point"
+      },
+      "id": "88d82bfda8241f83a8b194933b1daddb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:30 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Solferino 22, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Solferino+22,+Milano",
+        "Coordinates MB": "",
+        "event": "Woa Studio - Interactive wall",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.187424,
+          45.475649
+        ],
+        "type": "Point"
+      },
+      "id": "8979e7deb6584ef2cc3c3fe8131a5bae"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "11:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Villa Borsani",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Villa+Borsani",
+        "Coordinates MB": "",
+        "event": "ALCOVA",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.148875,
+          45.597184
+        ],
+        "type": "Point"
+      },
+      "id": "8e28fbe7b5381155a2be67c46f08017c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "All day",
+        "endDate": "13/04/2025",
+        "Display date": "13",
+        "regLink": "",
+        "luogo": "Via Filippino Lippi, 31, 20131 Milano MI",
+        "startDate": "13/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Filippino+Lippi,+31,+20131+Milano+MI",
+        "Coordinates MB": "",
+        "event": "Saturated Spaces",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.221006,
+          45.482572
+        ],
+        "type": "Point"
+      },
+      "id": "8fb6932ad76e6f1d16074c34a9b54e95"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "6:00 PM - 8:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Tortona 14, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tortona+14,+Milano",
+        "Coordinates MB": "",
+        "event": "Hisense - Live in beauty",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.168577,
+          45.453808
+        ],
+        "type": "Point"
+      },
+      "id": "a0fe67dc4f649f1e77af61f552250aaa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "9:30 AM - 7:30 PM",
+        "endDate": "12/04/2025",
+        "Display date": "08 – 12",
+        "regLink": "",
+        "luogo": "Corso Garibaldi, 117, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Garibaldi,+117,+Milano",
+        "Coordinates MB": "",
+        "event": "Seletti",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.185685,
+          45.479415
+        ],
+        "type": "Point"
+      },
+      "id": "a46ddaafcd6353c7c446caad06c53685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:30 PM - 10:00 PM",
+        "endDate": "10/04/2025",
+        "Display date": "10",
+        "regLink": "https://eventos.porcelanosagrupo.com/events/poetics_of_bonds/#form",
+        "luogo": "Porcelanosa Milano",
+        "startDate": "10/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Porcelanosa+Milano",
+        "Coordinates MB": "",
+        "event": "The Gather",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.178229,
+          45.469394
+        ],
+        "type": "Point"
+      },
+      "id": "aa7c6b7b74c9e97598fdbe5b841d9cb3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "11:00 AM - 11:00 PM",
+        "endDate": "11/04/2025",
+        "Display date": "11",
+        "regLink": "",
+        "luogo": "Via Vigevano 18, Milano",
+        "startDate": "11/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Vigevano+18,+Milano",
+        "Coordinates MB": "",
+        "event": "IKEA x OneShot",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.172957,
+          45.45312
+        ],
+        "type": "Point"
+      },
+      "id": "ac9413c27d062e2b58e208e056cdc7a1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:30 AM - 10:00 PM",
+        "endDate": "09/04/2025",
+        "Display date": "09",
+        "regLink": "",
+        "luogo": "Piazza San Simpliciano, Milano",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+San+Simpliciano,+Milano",
+        "Coordinates MB": "",
+        "event": "Hong Kong Walk On",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.183966,
+          45.473728
+        ],
+        "type": "Point"
+      },
+      "id": "ae9dd6d11a1b0d3ce9abe0959e85a3db"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "08 – 13",
+        "regLink": "",
+        "luogo": "Piazza santo Stefano 10, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+santo+Stefano+10,+Milano",
+        "Coordinates MB": "",
+        "event": "Ways of seeing",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.194633,
+          45.461933
+        ],
+        "type": "Point"
+      },
+      "id": "aea67891206b6edb100a237f5bd7c492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "All day",
+        "endDate": "12/04/2025",
+        "Display date": "07 – 12",
+        "regLink": "",
+        "luogo": "Galleria S. Carlo, 2, 20122 Milano MI",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Galleria+S.+Carlo,+2,+20122+Milano+MI",
+        "Coordinates MB": "",
+        "event": "BurroStudio x TheNorthFace",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.196601,
+          45.466051
+        ],
+        "type": "Point"
+      },
+      "id": "b249739da6d23b5ee630bb44ed02dc9c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "6:00 PM - 10:00 PM",
+        "endDate": "09/04/2025",
+        "Display date": "09",
+        "regLink": "",
+        "luogo": "RIVIERA - creative space",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=RIVIERA+-+creative+space",
+        "Coordinates MB": "",
+        "event": "24Hours Show",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.181212,
+          45.464645
+        ],
+        "type": "Point"
+      },
+      "id": "b431bd601a1ad58895fcfcb71e4cf5fd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "All day",
+        "endDate": "11/04/2025",
+        "Display date": "08 – 11",
+        "regLink": "",
+        "luogo": "Via Vezza d'Oglio, 14 Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Vezza+d'Oglio,+14+Milano",
+        "Coordinates MB": "",
+        "event": "Levis by Highsnobiety",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.205265,
+          45.441211
+        ],
+        "type": "Point"
+      },
+      "id": "b704a8a8716fbf41fe8e5a60b3548f27"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "6:30 PM - 10:00 PM",
+        "endDate": "10/04/2025",
+        "Display date": "09 – 10",
+        "regLink": "mailto:rosales@cufmilano.com ",
+        "luogo": "Cuf Milano",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Cuf+Milano",
+        "Coordinates MB": "",
+        "event": "Take a break ",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.187983,
+          45.481318
+        ],
+        "type": "Point"
+      },
+      "id": "b7b05f6a3c631dabca2f29195dfca8d0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 10:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Orto Botanico di Brera",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Orto+Botanico+di+Brera",
+        "Coordinates MB": "",
+        "event": "INTERNI CreAction",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.189183,
+          45.470914
+        ],
+        "type": "Point"
+      },
+      "id": "b989c8be625e3b854b95d3b4902891ac"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "2:30 PM - 8:00 PM",
+        "endDate": "10/04/2025",
+        "Display date": "10",
+        "regLink": "",
+        "luogo": "Viale Abruzzi 32, Milano",
+        "startDate": "10/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Abruzzi+32,+Milano",
+        "Coordinates MB": "",
+        "event": "Ditroit Open studio",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.217424,
+          45.478042
+        ],
+        "type": "Point"
+      },
+      "id": "bac70852ca97512e4e2ab1023693f9f3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "5:30 PM - 7:30 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "via Sammartini 40, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=via+Sammartini+40,+Milano",
+        "Coordinates MB": "",
+        "event": "Dropcity",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.209683,
+          45.492885
+        ],
+        "type": "Point"
+      },
+      "id": "bd98abbea1d73059042725be94bfc521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 2:00 AM",
+        "endDate": "08/04/2025",
+        "Display date": "08",
+        "regLink": "https://bulma.rsvp/bsr-k7-records-dj-kicks-8-apr-25",
+        "luogo": "Via Carlo Boncompagni, 51/10, 20139 Milano MI",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Carlo+Boncompagni,+51/10,+20139+Milano+MI",
+        "Coordinates MB": "",
+        "event": "BurroStudio Radio x !K7",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.232318,
+          45.439113
+        ],
+        "type": "Point"
+      },
+      "id": "bec33a078e6d2bd16975744942c0deb5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Museo della Permanente",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Museo+della+Permanente",
+        "Coordinates MB": "",
+        "event": "Kia: Eclipse of Perceptions",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.195517,
+          45.476574
+        ],
+        "type": "Point"
+      },
+      "id": "c24a463dde59a10aba71ba3c14ca9fa1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:30 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Studio Penta",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Studio+Penta",
+        "Coordinates MB": "",
+        "event": "Romantic Brutalism",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.165441,
+          45.463832
+        ],
+        "type": "Point"
+      },
+      "id": "c66048604b950f7ec56e6b82877811fe"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "09:00 AM - 09:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Brera 28, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Brera+28,+Milano",
+        "Coordinates MB": "",
+        "event": "Es Devlin. Library of Light",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.188462,
+          45.471966
+        ],
+        "type": "Point"
+      },
+      "id": "c83fa6efb738851744a02a2b2ca07778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "8:00 PM - 2:00 AM",
+        "endDate": "10/04/2025",
+        "Display date": "10",
+        "regLink": "https://www.supermodular.com/it/mdw_the-spot_party/",
+        "luogo": "Via Borgogna 5B, Milano",
+        "startDate": "10/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Borgogna+5B,+Milano",
+        "Coordinates MB": "",
+        "event": "The Spot - Closing Party",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.199539,
+          45.465899
+        ],
+        "type": "Point"
+      },
+      "id": "cb442950ba58194f6a173eb871b178db"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "11:00 AM - 11:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "12 – 13",
+        "regLink": "",
+        "luogo": "Via Vigevano 18, Milano",
+        "startDate": "12/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Vigevano+18,+Milano",
+        "Coordinates MB": "",
+        "event": "IKEA x BurroStudio",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.172957,
+          45.45312
+        ],
+        "type": "Point"
+      },
+      "id": "cd18d45572da8a035c9cedf9a4ca4ee4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "11:00 AM - 7:00 PM",
+        "endDate": "12/04/2025",
+        "Display date": "07 – 12",
+        "regLink": "",
+        "luogo": "Via S. Vittore al teatro, 30 Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+S.+Vittore+al+teatro,+30+Milano",
+        "Coordinates MB": "",
+        "event": "Boon_Editions x A-N-D",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.182609,
+          45.465308
+        ],
+        "type": "Point"
+      },
+      "id": "cdfbd0a167037176f73d920d69e032cb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "9:30 AM - 4:00 PM",
+        "endDate": "08/04/2025",
+        "Display date": "06 – 08",
+        "regLink": "https://prada-frames.com/event-details",
+        "luogo": "Stazione Centrale Milano",
+        "startDate": "06/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Stazione+Centrale+Milano",
+        "Coordinates MB": "",
+        "event": "Prada Frames",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.206096,
+          45.48397
+        ],
+        "type": "Point"
+      },
+      "id": "d2aeb13b09389c66018cfa6d6b1dd426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "9:00 PM - 2:00 AM",
+        "endDate": "10/04/2025",
+        "Display date": "10",
+        "regLink": "https://www.eventbrite.com/e/gira-che-ti-gira-tickets-1309554616109?aff=oddtdtcreator",
+        "luogo": "Via Antonio Raimondi, 15 20156 Milano",
+        "startDate": "10/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Antonio+Raimondi,+15+20156+Milano",
+        "Coordinates MB": "",
+        "event": "Gira che ti gira",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.141248,
+          45.503106
+        ],
+        "type": "Point"
+      },
+      "id": "d2bc1c831599a680b2df876275a19746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:30 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Broletto 5, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Broletto+5,+Milano",
+        "Coordinates MB": "",
+        "event": "Woa Studio - Interactive window",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.186012,
+          45.466527
+        ],
+        "type": "Point"
+      },
+      "id": "d4ebc96fbf33495d86233076a9792a70"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "11:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Ex stabilimento SNIA Viscosa",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Ex+stabilimento+SNIA+Viscosa",
+        "Coordinates MB": "",
+        "event": "ALCOVA",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.150824,
+          45.594535
+        ],
+        "type": "Point"
+      },
+      "id": "d57a8196c2102c61603d8cb14399838b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "6:00 PM – 10:00 PM",
+        "endDate": "12/04/2025",
+        "Display date": "11 – 12",
+        "regLink": "",
+        "luogo": "Via Carducci 23/A, Milano",
+        "startDate": "11/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Carducci+23/A,+Milano",
+        "Coordinates MB": "",
+        "event": "Dàmeda",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.175024,
+          45.464499
+        ],
+        "type": "Point"
+      },
+      "id": "d96993ca76d19d91f2705f0b7eb45080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "7:30 PM - 0:00 AM",
+        "endDate": "09/04/2025",
+        "Display date": "09",
+        "regLink": "https://lu.ma/sushjeji?locale=it",
+        "luogo": "Via Privata Vivarini, 7, Milano",
+        "startDate": "09/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Privata+Vivarini,+7,+Milano",
+        "Coordinates MB": "",
+        "event": "About: Griglie",
+        "type": "Freebies",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.180181,
+          45.438627
+        ],
+        "type": "Point"
+      },
+      "id": "db3b4cb9e3008f76d4690b6e6c57dc01"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "5:00 PM - 12:00 AM",
+        "endDate": "07/04/2025",
+        "Display date": "07",
+        "regLink": "",
+        "luogo": "Viale Abruzzi 28, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Abruzzi+28,+Milano",
+        "Coordinates MB": "",
+        "event": "Isaak - A vision by Ditroit",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.217363,
+          45.477653
+        ],
+        "type": "Point"
+      },
+      "id": "e1bc45d0edba093d2f128dccf687a8ab"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "5:00 PM - 12:00 AM",
+        "endDate": "12/04/2025",
+        "Display date": "08 – 12",
+        "regLink": "",
+        "luogo": "Via Ludovico di Breme 52, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Ludovico+di+Breme+52,+Milano",
+        "Coordinates MB": "",
+        "event": "Social Machines for empathetic spaces",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.138817,
+          45.49953
+        ],
+        "type": "Point"
+      },
+      "id": "e279501e989911463e884ab9046f4174"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 9:00 PM",
+        "endDate": "12/04/2025",
+        "Display date": "08 – 12",
+        "regLink": "",
+        "luogo": "Piazzale Lavater, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazzale+Lavater,+Milano",
+        "Coordinates MB": "9.1845623, 45.4723644",
+        "event": "C41 Magazine X Rayban",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.21061,
+          45.476552
+        ],
+        "type": "Point"
+      },
+      "id": "e58f7495a3f3d7fd9b9f3fc9f1737730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 12 AM",
+        "endDate": "08/04/2025",
+        "Display date": "08",
+        "regLink": "https://www.cofactorydesignweek2025.com/event-details/ape-opening-design-week",
+        "luogo": "Via Polidoro da Caravaggio 30B, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Polidoro+da+Caravaggio+30B,+Milano",
+        "Coordinates MB": "",
+        "event": "Ape Opening",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.135736,
+          45.500136
+        ],
+        "type": "Point"
+      },
+      "id": "e8a800f635154ed45bdb9b212858a443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 10:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Corso Venezia, 16 Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Venezia,+16+Milano",
+        "Coordinates MB": "",
+        "event": "Luis Vuittons - Objects Nomades",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.200172,
+          45.468902
+        ],
+        "type": "Point"
+      },
+      "id": "e92e8f2cb13892a1c15f3b30cda68016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "6:00 PM - 11:00 PM",
+        "endDate": "10/04/2025",
+        "Display date": "10",
+        "regLink": "",
+        "luogo": "Parco della Resistenza",
+        "startDate": "10/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Parco+della+Resistenza",
+        "Coordinates MB": "",
+        "event": "Anna Molly x DJ Ralf",
+        "type": "Club/gigs"
+      },
+      "geometry": {
+        "coordinates": [
+          9.183544,
+          45.44692
+        ],
+        "type": "Point"
+      },
+      "id": "e998bc956dfff55370630630c58bb5b8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 8:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Rosolino Pilo 14, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Rosolino+Pilo+14,+Milano",
+        "Coordinates MB": "",
+        "event": "Convey",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.212425,
+          45.473312
+        ],
+        "type": "Point"
+      },
+      "id": "eab83136075a9da272884e117cb3aa24"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "Not specified",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Via Achille Maiocchi 7, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Achille+Maiocchi+7,+Milano",
+        "Coordinates MB": "",
+        "event": "Capsule Plaza",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.212409,
+          45.475057
+        ],
+        "type": "Point"
+      },
+      "id": "eb3199629072698fe06f8b5d455bf60c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "9:30 AM - 5:30 PM",
+        "endDate": "13/04/2025",
+        "Display date": "08 – 13",
+        "regLink": "",
+        "luogo": "Via Archimede, 26, 20129 Milano MI",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Archimede,+26,+20129+Milano+MI",
+        "Coordinates MB": "",
+        "event": "Google | Making the Invisible Visible",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.212448,
+          45.465251
+        ],
+        "type": "Point"
+      },
+      "id": "f0e82a235db703f61e328f668e541eb5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 7:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "08 – 13",
+        "regLink": "https://connect.eventtia.com/en/public/events/artemest/registration/attendees?attendee_type=156444",
+        "luogo": "Via Gaetano Donizzetti, 48, Milano",
+        "startDate": "08/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Gaetano+Donizzetti,+48,+Milano",
+        "Coordinates MB": "",
+        "event": "L'Appartamento by Artemest",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.204721,
+          45.467196
+        ],
+        "type": "Point"
+      },
+      "id": "fc7dae5306ec65b4c676b2e8d9f1e273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a multi-day event",
+        "startHour": "10:00 AM - 8:00 PM",
+        "endDate": "13/04/2025",
+        "Display date": "07 – 13",
+        "regLink": "",
+        "luogo": "Casa degli artisti, Milano",
+        "startDate": "07/04/2025",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Casa+degli+artisti,+Milano",
+        "Coordinates MB": "",
+        "event": "House of Switzerland Milano",
+        "type": "Design",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.183823,
+          45.476623
+        ],
+        "type": "Point"
+      },
+      "id": "fd28e04e13215abf9fbc30106f575a04"
     }
   ],
   "type": "FeatureCollection"
