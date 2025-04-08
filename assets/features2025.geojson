@@ -2598,6 +2598,31 @@
         "type": "Point"
       },
       "id": "fc021a456bb8343b67b1d4ad2cdeb087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Multiday": "This is a one-day event",
+        "startHour": "11:30 PM - 6:30 AM",
+        "endDate": "10/04/2025",
+        "regLink": "https://it.ra.co/events/2142409",
+        "luogo": "Via Padova 21, 20100 Milano (MI), Italy",
+        "startDate": "10/04/2025",
+        "displayDate": "10",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Padova+21,+20100+Milano+(MI),+Italy",
+        "Coordinates MB": "",
+        "event": "Cypher invite KAISER, Slak - MDW 25",
+        "type": "Club/gigs",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          9.2194923,
+          45.4888351
+        ],
+        "type": "Point"
+      },
+      "id": "fc021a456bb8343b67b1d4ad2cdeb086"
     }
   ],
   "type": "FeatureCollection"
