@@ -1,4 +1,4 @@
-d3.json('assets/features2025.geojson')
+d3.json('assets/features2026.geojson')
 .then(function(data){
 
     // ASSING ID TO EACH FEATURE
@@ -90,10 +90,6 @@ d3.json('assets/features2025.geojson')
             saveEvents(eventData, this);
         });
     });
-
-
-
-
 });
 
 

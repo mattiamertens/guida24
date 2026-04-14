@@ -1,0 +1,1704 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "CONVEY opening",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.189891099999999, 45.45768169999999]
+      },
+      "properties": {
+        "event": "CONVEY opening",
+        "startDate": "19/04/2026",
+        "displayDate": "19",
+        "startHour": "12:00 PM – 3:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via san Senatore 10, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+san+Senatore+10,+Milano",
+        "regLink": "https://simpleflair.us7.list-manage.com/track/click?u=a1b63d5c3db746de326a6b2e1&id=57db50d7d6&e=44d85ab818",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Alcova",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.1250629, 45.46058319999999]
+      },
+      "properties": {
+        "event": "Alcova",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "11:00 AM – 07:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Giovanni Labus, 10, 20147 Milano MI, Italy",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Giovanni+Labus,+10,+20147+Milano+MI,+Italy",
+        "regLink": "https://shop.alcova.xyz/pages/tickets-alcova-milano-2026",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "QoT - Qualia of things",
+      "geometry": { "type": "Point", "coordinates": [9.1722114, 45.4609122] },
+      "properties": {
+        "event": "QoT - Qualia of things",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:30 AM - 8:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "via Olona 4, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=via+Olona+4,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Listening Room by Curiouz",
+      "geometry": { "type": "Point", "coordinates": [9.2174344, 45.4761651] },
+      "properties": {
+        "event": "Listening Room by Curiouz",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Viale Abruzzi 16, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Abruzzi+16,+Milano",
+        "regLink": "https://calendly.com/curiouz-mktteam/new-meeting",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Temporary home",
+      "geometry": { "type": "Point", "coordinates": [9.1633066, 45.4521475] },
+      "properties": {
+        "event": "Temporary home",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:30 AM - 8:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Bergognone 34, Milano ",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Bergognone+34,+Milano+",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Capsule Plaza",
+      "geometry": { "type": "Point", "coordinates": [9.2129745, 45.4746197] },
+      "properties": {
+        "event": "Capsule Plaza",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Maiocchi 8",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Maiocchi+8",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Dropcity",
+      "geometry": { "type": "Point", "coordinates": [9.2096839, 45.4928852] },
+      "properties": {
+        "event": "Dropcity",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Sammartini 40",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Sammartini+40",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CONVEY",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.189891099999999, 45.45768169999999]
+      },
+      "properties": {
+        "event": "CONVEY",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via san Senatore 10, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+san+Senatore+10,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Marimekko - THE PLANT APERITIVO",
+      "geometry": { "type": "Point", "coordinates": [9.1771855, 45.4422658] },
+      "properties": {
+        "event": "Marimekko - THE PLANT APERITIVO",
+        "startDate": "21/04/2026",
+        "displayDate": "21",
+        "startHour": "6:00 PM – 9:00 PM",
+        "endDate": "21/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Ascanio Sforza, 75",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Ascanio+Sforza,+75",
+        "regLink": "https://agenda.p-s.it/events/priority-system/priority-system",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC-tapis",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.1946332, 45.46193359999999]
+      },
+      "properties": {
+        "event": "CC-tapis",
+        "startDate": "19/04/2026",
+        "displayDate": "19",
+        "startHour": "5:00 PM – 8:00 PM",
+        "endDate": "19/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Piazza Santo Stefano 10, Milan",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Santo+Stefano+10,+Milan",
+        "regLink": "https://agenda.p-s.it/events/priority-system/priority-system",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BD Barcellona",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.2023257, 45.48791809999999]
+      },
+      "properties": {
+        "event": "BD Barcellona",
+        "startDate": "20/04/2026",
+        "displayDate": "20",
+        "startHour": "2:00 PM – 7:00 PM",
+        "endDate": "20/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Privata Leopoldo Gasparotto 4, Milan",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Privata+Leopoldo+Gasparotto+4,+Milan",
+        "regLink": "https://agenda.p-s.it/events/priority-system/priority-system",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "APARTAMENTO X MULLER VAN SEVEREN",
+      "geometry": { "type": "Point", "coordinates": [9.2213897, 45.4796887] },
+      "properties": {
+        "event": "APARTAMENTO X MULLER VAN SEVEREN",
+        "startDate": "20/04/2026",
+        "displayDate": "20",
+        "startHour": "5:00 PM – 9:00 PM",
+        "endDate": "20/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Filippino Lippi 4, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Filippino+Lippi+4,+Milano",
+        "regLink": "https://agenda.p-s.it/events/priority-system/priority-system",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DAFT ABOUT DRAFT COCKTAIL",
+      "geometry": { "type": "Point", "coordinates": [9.1945066, 45.4641767] },
+      "properties": {
+        "event": "DAFT ABOUT DRAFT COCKTAIL",
+        "startDate": "20/04/2026",
+        "displayDate": "20",
+        "startHour": "6:00 PM – 10:00 PM",
+        "endDate": "20/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Piazza Cesare Beccaria 8, Milan, Italy",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Cesare+Beccaria+8,+Milan,+Italy",
+        "regLink": "https://agenda.p-s.it/events/priority-system/priority-system",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "One Two Many ",
+      "geometry": { "type": "Point", "coordinates": [9.2218211, 45.4938623] },
+      "properties": {
+        "event": "One Two Many ",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Giacosa 37, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Giacosa+37,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "YVES SALOMON ÉDITIONS",
+      "geometry": { "type": "Point", "coordinates": [9.2039885, 45.4662288] },
+      "properties": {
+        "event": "YVES SALOMON ÉDITIONS",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 23",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Mascagni 22, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Mascagni+22,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Poliform @Palazzo Clerici",
+      "geometry": { "type": "Point", "coordinates": [9.1871001, 45.4667717] },
+      "properties": {
+        "event": "Poliform @Palazzo Clerici",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "10:00 AM – 6:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Clerici 5, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Clerici+5,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IKEA: Food for thought",
+      "geometry": { "type": "Point", "coordinates": [9.2124429, 45.4751269] },
+      "properties": {
+        "event": "IKEA: Food for thought",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "10:00 AM – 9:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Maiocchi 7, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Maiocchi+7,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Hyunday: Unfold Stories",
+      "geometry": { "type": "Point", "coordinates": [9.165553, 45.4529991] },
+      "properties": {
+        "event": "Hyunday: Unfold Stories",
+        "startDate": "24/04/2026",
+        "displayDate": "24",
+        "startHour": "6:00 AM – 9:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Torneria Tortona — via Tortona, 32, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Torneria+Tortona+—+via+Tortona,+32,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MONO-SOLUM",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.191825699999999, 45.4589524]
+      },
+      "properties": {
+        "event": "MONO-SOLUM",
+        "startDate": "23/04/2026",
+        "displayDate": "23",
+        "startHour": "6:00 AM – 7:30 PM",
+        "endDate": "23/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Osti 6, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Osti+6,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Soft Matters",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.2219567, 45.49368219999999]
+      },
+      "properties": {
+        "event": "Soft Matters",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "9:00 AM – 6:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Giacosa 35, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Giacosa+35,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Focus Visionnaire meets NM3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.187498699999999, 45.4818582]
+      },
+      "properties": {
+        "event": "Focus Visionnaire meets NM3",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:30 AM – 8:30 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "10 corso como, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=10+corso+como,+Milano",
+        "regLink": "https://visionnaire.t4event.it/events/NM3",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DESIGN PALAZZO AUSTRIA",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.190821699999999, 45.4695267]
+      },
+      "properties": {
+        "event": "DESIGN PALAZZO AUSTRIA",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "10:00 AM – 9:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Palazzo Confalonieri — Via Romagnosi, 8, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Palazzo+Confalonieri+—+Via+Romagnosi,+8,+Milano",
+        "regLink": "https://visionnaire.t4event.it/events/NM3",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Drifitng Lights",
+      "geometry": { "type": "Point", "coordinates": [9.182952, 45.4696088] },
+      "properties": {
+        "event": "Drifitng Lights",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 10:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "TEMPESTA Art Gallery — Foro Buonaparte, 68, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=TEMPESTA+Art+Gallery+—+Foro+Buonaparte,+68,+Milano",
+        "regLink": "https://visionnaire.t4event.it/events/NM3",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Pensare il flusso",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.188691799999999, 45.4744404]
+      },
+      "properties": {
+        "event": "Pensare il flusso",
+        "startDate": "21/04/2026",
+        "displayDate": "21",
+        "startHour": "6:00 PM – 10:00 PM",
+        "endDate": "21/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Goito 3, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Goito+3,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Shared Matter",
+      "geometry": { "type": "Point", "coordinates": [9.182713, 45.478701] },
+      "properties": {
+        "event": "Shared Matter",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 24",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "24/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Pinamonte da Vimercate 4, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Pinamonte+da+Vimercate+4,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Prototype Island",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.1826106, 45.47123190000001]
+      },
+      "properties": {
+        "event": "Prototype Island",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Foro Buonaparte, 54, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Foro+Buonaparte,+54,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Haute Culture Longevity Ritual",
+      "geometry": { "type": "Point", "coordinates": [9.1923765, 45.4694107] },
+      "properties": {
+        "event": "Haute Culture Longevity Ritual",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 6:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Manzoni, 16/A, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Manzoni,+16/A,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Places Where People Feel Better",
+      "geometry": { "type": "Point", "coordinates": [9.1860238, 45.4824182] },
+      "properties": {
+        "event": "Places Where People Feel Better",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 25",
+        "startHour": "9:00 AM – 8:00 PM",
+        "endDate": "25/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via A. di Tocqueville, 12, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+A.+di+Tocqueville,+12,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Alea Cocktail",
+      "geometry": { "type": "Point", "coordinates": [9.1860238, 45.4824182] },
+      "properties": {
+        "event": "Alea Cocktail",
+        "startDate": "21/04/2026",
+        "displayDate": "21",
+        "startHour": "6:00 PM – 8:00 PM",
+        "endDate": "21/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via A. di Tocqueville, 12, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+A.+di+Tocqueville,+12,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "When Apricots Blossom",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.1877745, 45.47056060000001]
+      },
+      "properties": {
+        "event": "When Apricots Blossom",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 6:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Palazzo Citterio — Via Brera, 12, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Palazzo+Citterio+—+Via+Brera,+12,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Matter of light",
+      "geometry": { "type": "Point", "coordinates": [9.1852679, 45.4772118] },
+      "properties": {
+        "event": "Matter of light",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "9:00 AM – 9:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Statuto 16, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Statuto+16,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CC TAPIS x Fornasetti",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.1946332, 45.46193359999999]
+      },
+      "properties": {
+        "event": "CC TAPIS x Fornasetti",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Piazza Santo Stefano 10, Milan",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Santo+Stefano+10,+Milan",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Appartamento bt Artemest",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.204721700000002, 45.4671961]
+      },
+      "properties": {
+        "event": "Appartamento bt Artemest",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Gaetano Donizetti, 48, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Gaetano+Donizetti,+48,+Milano",
+        "regLink": "https://artemest.idloom.events/artemest-milan-design-week/register?reg_type_parameter=general",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Gucci Memoria",
+      "geometry": { "type": "Point", "coordinates": [9.1858908, 45.4739166] },
+      "properties": {
+        "event": "Gucci Memoria",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "10:00 AM – 10:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Chiostri di San Simpliciano — Piazza Paolo VI, 6, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Chiostri+di+San+Simpliciano+—+Piazza+Paolo+VI,+6,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PoroCity",
+      "geometry": { "type": "Point", "coordinates": [9.170489, 45.4759863] },
+      "properties": {
+        "event": "PoroCity",
+        "startDate": "21/04/2026",
+        "displayDate": "21",
+        "startHour": "6:30 PM – 9:30 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Abbondio San Giorgio 6, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Abbondio+San+Giorgio+6,+Milano",
+        "regLink": "https://eventi.itistudio.com/evento/porocity-opening/iscriviti",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "The romance of Fragility",
+      "geometry": { "type": "Point", "coordinates": [9.1915427, 45.4732196] },
+      "properties": {
+        "event": "The romance of Fragility",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Fatebenefratelli 9, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Fatebenefratelli+9,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Extra ordinario",
+      "geometry": { "type": "Point", "coordinates": [9.2164783, 45.4736427] },
+      "properties": {
+        "event": "Extra ordinario",
+        "startDate": "22/04/2026",
+        "displayDate": "22",
+        "startHour": "6:00 PM – 9:00 PM",
+        "endDate": "22/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Antonio Stoppani, 40 - Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Antonio+Stoppani,+40+-+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Nilufar Grand Hotel",
+      "geometry": { "type": "Point", "coordinates": [9.1750774, 45.4953665] },
+      "properties": {
+        "event": "Nilufar Grand Hotel",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Viale Lancetti, 34, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Lancetti,+34,+Milano",
+        "regLink": "https://nilufar.com/grand-hotel/",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Cromo - Secret teahouse",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.1906166, 45.45989609999999]
+      },
+      "properties": {
+        "event": "Cromo - Secret teahouse",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 22",
+        "startHour": "9:00 AM – 1:00 PM",
+        "endDate": "22/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Torre Velasca",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Torre+Velasca",
+        "regLink": " cromotea.com/mdw2026",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Jil Sander | Reference Library",
+      "geometry": { "type": "Point", "coordinates": [9.1819749, 45.4685148] },
+      "properties": {
+        "event": "Jil Sander | Reference Library",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 24",
+        "startHour": "11:00 AM – 5:00 PM",
+        "endDate": "24/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Beltrami, 5 - Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Beltrami,+5+-+Milano",
+        "regLink": "https://www.sloty.it/referencelibrary/",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Aesop - the factory of light",
+      "geometry": { "type": "Point", "coordinates": [9.185704, 45.470332] },
+      "properties": {
+        "event": "Aesop - the factory of light",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 8:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Chiesa del Carmine, Piazza del Carmine 2",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Chiesa+del+Carmine,+Piazza+del+Carmine+2",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "6:AM",
+      "geometry": { "type": "Point", "coordinates": [9.2266972, 45.4807694] },
+      "properties": {
+        "event": "6:AM",
+        "startDate": "19/04/2026",
+        "displayDate": "19 – 26",
+        "startHour": "10:00 AM – 8:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Ampere 24, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Ampere+24,+Milano",
+        "regLink": "https://luma.com/6am-mdw26",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Sounds of Design",
+      "geometry": { "type": "Point", "coordinates": [9.1819676, 45.4743343] },
+      "properties": {
+        "event": "Sounds of Design",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Legnano, 14, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Legnano,+14,+Milano",
+        "regLink": "https://www.eventbrite.it/e/sounds-of-design-milan-design-week-2026-tickets-1985668656404?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Anima Mundi",
+      "geometry": { "type": "Point", "coordinates": [9.203718, 45.4688729] },
+      "properties": {
+        "event": "Anima Mundi",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "via Vivaio, 7, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=via+Vivaio,+7,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Becoming",
+      "geometry": { "type": "Point", "coordinates": [9.2037301, 45.4675136] },
+      "properties": {
+        "event": "Becoming",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "10:00 AM – 6:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Corso Monforte, 35, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Monforte,+35,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Renaissance of the real",
+      "geometry": { "type": "Point", "coordinates": [9.2042193, 45.4733779] },
+      "properties": {
+        "event": "Renaissance of the real",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 7:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Fondazione Luigi Rovati — Corso Venezia, 52, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Fondazione+Luigi+Rovati+—+Corso+Venezia,+52,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Continuum / From Archive to Living Art",
+      "geometry": { "type": "Point", "coordinates": [9.1736118, 45.4723325] },
+      "properties": {
+        "event": "Continuum / From Archive to Living Art",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "10:30 AM – 9:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": " Via Alemagna 6, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=+Via+Alemagna+6,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BUBBLES OF TIME | PAST. NOW. FUTURE.",
+      "geometry": { "type": "Point", "coordinates": [9.1942083, 45.4670946] },
+      "properties": {
+        "event": "BUBBLES OF TIME | PAST. NOW. FUTURE.",
+        "startDate": "20/04/2026",
+        "displayDate": "20",
+        "startHour": "5:00 PM – 10:00 PM",
+        "endDate": "20/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Corso Giacomo Matteotti 1, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Giacomo+Matteotti+1,+Milano",
+        "regLink": "https://www.kaldewei.com/planning/inspiration/fuorisalone-2026/registration/",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Bellezza della presenza",
+      "geometry": { "type": "Point", "coordinates": [9.1867245, 45.4695595] },
+      "properties": {
+        "event": "Bellezza della presenza",
+        "startDate": "24/04/2026",
+        "displayDate": "24",
+        "startHour": "5:00 PM – 8:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Ciovasso 5, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Ciovasso+5,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Kriptonite",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.186342699999999, 45.4813383]
+      },
+      "properties": {
+        "event": "Kriptonite",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "11:00 AM – 10:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": " Piazza XXV Aprile, 7, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=+Piazza+XXV+Aprile,+7,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Airstone x XL Extralight",
+      "geometry": { "type": "Point", "coordinates": [9.1833218, 45.4624033] },
+      "properties": {
+        "event": "Airstone x XL Extralight",
+        "startDate": "22/04/2026",
+        "displayDate": "22",
+        "startHour": "6:00 PM – 9:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Santa Marta, 10, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Santa+Marta,+10,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GLOW - Light in Transparency",
+      "geometry": { "type": "Point", "coordinates": [9.1897225, 45.4743596] },
+      "properties": {
+        "event": "GLOW - Light in Transparency",
+        "startDate": "22/04/2026",
+        "displayDate": "22",
+        "startHour": "6:00 PM – 10:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Cernaia 7, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Cernaia+7,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HISENSE - Cocktail party",
+      "geometry": { "type": "Point", "coordinates": [9.1685777, 45.4538084] },
+      "properties": {
+        "event": "HISENSE - Cocktail party",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "6:00 PM – 8:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Tortona, 14, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tortona,+14,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "McDonald’s/POOL",
+      "geometry": { "type": "Point", "coordinates": [9.1611189, 45.451374] },
+      "properties": {
+        "event": "McDonald’s/POOL",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 PM – 10:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "via Tortona 58, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=via+Tortona+58,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "The Nature of time",
+      "geometry": { "type": "Point", "coordinates": [9.18785, 45.4708473] },
+      "properties": {
+        "event": "The Nature of time",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "11:00 AM – 9:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Galleria Il Castello — Via Brera",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Galleria+Il+Castello+—+Via+Brera",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Living perspectives",
+      "geometry": { "type": "Point", "coordinates": [9.190551, 45.461466] },
+      "properties": {
+        "event": "Living perspectives",
+        "startDate": "23/04/2026",
+        "displayDate": "23",
+        "startHour": "7:00 PM – 11:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Paolo da Cannobio, 9",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Paolo+da+Cannobio,+9",
+        "regLink": "https://carminatiinteriors.com/living-perspectives/",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "THE SOUND OF PREMIUM",
+      "geometry": { "type": "Point", "coordinates": [9.1633066, 45.4521475] },
+      "properties": {
+        "event": "THE SOUND OF PREMIUM",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "10:30 AM – 8:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Bergognone 34, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Bergognone+34,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BEYOND THE KNOWN",
+      "geometry": { "type": "Point", "coordinates": [9.1868983, 45.4811474] },
+      "properties": {
+        "event": "BEYOND THE KNOWN",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 8:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Corso Como, 1, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Como,+1,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Acerbis x Plan C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.192081800000002, 45.4695982]
+      },
+      "properties": {
+        "event": "Acerbis x Plan C",
+        "startDate": "22/04/2026",
+        "displayDate": "22",
+        "startHour": "6:00 PM – 9:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Alessandro Manzoni, 21, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Alessandro+Manzoni,+21,+Milano",
+        "regLink": "https://agenda.p-s.it/events/priority-system/priority-system",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Trends & Cocktails",
+      "geometry": { "type": "Point", "coordinates": [10.2213215, 45.538535] },
+      "properties": {
+        "event": "Trends & Cocktails",
+        "startDate": "21/04/2026",
+        "displayDate": "21",
+        "startHour": "6:00 PM – 7:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Khastalla Showroom - Piazza paolo VI",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Khastalla+Showroom+-+Piazza+paolo+VI",
+        "regLink": "mailto:mdw@theforecastclub.net",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Crystal Crypt",
+      "geometry": { "type": "Point", "coordinates": [9.1862687, 45.4717126] },
+      "properties": {
+        "event": "Crystal Crypt",
+        "startDate": "21/04/2026",
+        "displayDate": "21",
+        "startHour": "6:00 PM – 9:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Marco Formentini, 10",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Marco+Formentini,+10",
+        "regLink": "https://agenda.p-s.it/events/priority-system/priority-system",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Presence",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.201793499999999, 45.4683715]
+      },
+      "properties": {
+        "event": "Presence",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "11:00 AM – 5:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Villa Necchi Campiglio",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Villa+Necchi+Campiglio",
+        "regLink": "https://salonedelmobile2026.segreteria-eventi.it/app/registration/1",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Baccarat cocktail",
+      "geometry": { "type": "Point", "coordinates": [9.1862687, 45.4717126] },
+      "properties": {
+        "event": "Baccarat cocktail",
+        "startDate": "21/04/2026",
+        "displayDate": "21",
+        "startHour": "6:00 PM – 9:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Marco Formentini, 10",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Marco+Formentini,+10",
+        "regLink": "https://agenda.p-s.it/events/priority-system/priority-system",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MAREA / TIDE",
+      "geometry": { "type": "Point", "coordinates": [9.1875015, 45.4759489] },
+      "properties": {
+        "event": "MAREA / TIDE",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "10:00 AM – 8:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Solferino, 24",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Solferino,+24",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Domestic Disorder",
+      "geometry": { "type": "Point", "coordinates": [9.1989906, 45.498001] },
+      "properties": {
+        "event": "Domestic Disorder",
+        "startDate": "22/04/2026",
+        "displayDate": "22",
+        "startHour": "6:00 PM – 10:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Villa Mirabello 14, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Villa+Mirabello+14,+Milano",
+        "regLink": "",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Le Cannibale",
+      "geometry": { "type": "Point", "coordinates": [9.1633066, 45.4521475] },
+      "properties": {
+        "event": "Le Cannibale",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 25",
+        "startHour": "7:00 PM – 11:30 PM",
+        "endDate": "25/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Bergognone 34, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Bergognone+34,+Milano",
+        "regLink": "https://dice.fm/bundles/we-will-design-soundsystem--outdoor-stage-lgar?dice_id=T39c07b12ead&utm_source=web&utm_campaign=visit_bundle&utm_medium=bundle",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "The Meanwhile Club",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.219121099999999, 45.4810741]
+      },
+      "properties": {
+        "event": "The Meanwhile Club",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 24",
+        "startHour": "6:30 PM – 9:30 PM",
+        "endDate": "24/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Garofalo 31, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Garofalo+31,+Milano",
+        "regLink": "https://dice.fm/bundles/the-meanwhile-club----milan-design-week-2026-ygyv?dice_id=jed266259a9d&utm_source=web&utm_campaign=visit_bundle&utm_medium=bundle",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Toytonics",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.175348399999999, 45.4848469]
+      },
+      "properties": {
+        "event": "Toytonics",
+        "startDate": "25/04/2026",
+        "displayDate": "25",
+        "startHour": "6:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Fabbrica del Vapore, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Fabbrica+del+Vapore,+Milano",
+        "regLink": "https://xceed.me/events/channel/fabbrica-design-week-26?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "FDW",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.175348399999999, 45.4848469]
+      },
+      "properties": {
+        "event": "FDW",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 24",
+        "startHour": "7:00 PM – 11:30 PM",
+        "endDate": "24/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Fabbrica del Vapore, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Fabbrica+del+Vapore,+Milano",
+        "regLink": "https://xceed.me/events/channel/fabbrica-design-week-26?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Edicola Italiana",
+      "geometry": { "type": "Point", "coordinates": [9.2065514, 45.4495234] },
+      "properties": {
+        "event": "Edicola Italiana",
+        "startDate": "19/04/2026",
+        "displayDate": "19",
+        "startHour": "7:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Piazza Bruno Buozzi, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Bruno+Buozzi,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Futura",
+      "geometry": { "type": "Point", "coordinates": [9.2174183, 45.4776574] },
+      "properties": {
+        "event": "Futura",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 25",
+        "startHour": "12:00 PM – 8:00 PM",
+        "endDate": "25/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Viale abruzzi 28, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+abruzzi+28,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Kantauri",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.1871823, 45.47617109999999]
+      },
+      "properties": {
+        "event": "Kantauri",
+        "startDate": "23/04/2026",
+        "displayDate": "23",
+        "startHour": "6:00 PM – 9:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Solferino, 19, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Solferino,+19,+Milano",
+        "regLink": "https://mailchi.mp/basqueliving/fuorisalone",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Pringles AperiHouse",
+      "geometry": { "type": "Point", "coordinates": [9.1663815, 45.4528247] },
+      "properties": {
+        "event": "Pringles AperiHouse",
+        "startDate": "21/04/2026",
+        "displayDate": "21 – 26",
+        "startHour": "3:00 PM – 9:00 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Tortona, 21, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Tortona,+21,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "The Protection show",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.200472699999999, 45.4534975]
+      },
+      "properties": {
+        "event": "The Protection show",
+        "startDate": "23/04/2026",
+        "displayDate": "23",
+        "startHour": "5:00 PM – 11:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Viale di Porta Romana 119, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+di+Porta+Romana+119,+Milano",
+        "regLink": "https://www.pronema.it/it/accredito-fuorisalone-2026/",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SURFACES",
+      "geometry": { "type": "Point", "coordinates": [9.1828062, 45.4753048] },
+      "properties": {
+        "event": "SURFACES",
+        "startDate": "22/04/2026",
+        "displayDate": "22",
+        "startHour": "7:00 PM – 9:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Laura Solera Mantegazza, 7, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Laura+Solera+Mantegazza,+7,+Milano",
+        "regLink": "",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "A Garden made of light",
+      "geometry": { "type": "Point", "coordinates": [9.2012625, 45.4671483] },
+      "properties": {
+        "event": "A Garden made of light",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 24",
+        "startHour": "5:00 PM – 8:00 PM",
+        "endDate": "24/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Corso Monforte, 23 Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Corso+Monforte,+23+Milano",
+        "regLink": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=ReWx2ovDnEi0eQwm3yizwY6zTjMOHnFHu6Xs6tYRNOxUMjBTRU1QNUNCNFFMV1dVOTk5U0tXUU5GUi4u&route=shorturl",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CASA NM3",
+      "geometry": { "type": "Point", "coordinates": [9.1863079, 45.4972444] },
+      "properties": {
+        "event": "CASA NM3",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "9:30 PM – 6:30 PM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a multi-day event",
+        "luogo": "Via Carlo Farini, 93, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Carlo+Farini,+93,+Milano",
+        "regLink": "https://e712bb2b.sibforms.com/serve/MUIFADWKajhQKNpGyEpdtfyUodd4VVZm5C0SpWGXyoijtbk6UmhupU3EXGBe3VZIb9YML7eg0t9BtkRMM5d3dQHBYMuNVX0mvF4VfjlkiToRMHJez8GTZLaGUYFL_58jFZHZ1fg3RSr-QihZoocB_DhWqj7CwExhB3bRCH-IiRngDqUtCWggZyPwuyMPtcKHkR-hhqU8YQXFM2L7",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Maison Rapito",
+      "geometry": { "type": "Point", "coordinates": [9.211527, 45.4510554] },
+      "properties": {
+        "event": "Maison Rapito",
+        "startDate": "24/04/2026",
+        "displayDate": "24",
+        "startHour": "4:00 PM – 10:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Cascina Cuccagna",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Cascina+Cuccagna",
+        "regLink": "xxxxxxxx",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Entra Pure",
+      "geometry": { "type": "Point", "coordinates": [9.1815907, 45.4535373] },
+      "properties": {
+        "event": "Entra Pure",
+        "startDate": "21/04/2026",
+        "displayDate": "21",
+        "startHour": "6:00 PM – 11:30 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Santa Croce 19/a, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Santa+Croce+19/a,+Milano",
+        "regLink": "",
+        "type": "Design"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Portanuova",
+      "geometry": { "type": "Point", "coordinates": [9.1923929, 45.4829027] },
+      "properties": {
+        "event": "Portanuova",
+        "startDate": "20/04/2026",
+        "displayDate": "20",
+        "startHour": "7:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Piazza Gae Aulenti 12, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Gae+Aulenti+12,+Milano",
+        "regLink": "",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Team Ikuzawa",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.104935099999999, 45.5247135]
+      },
+      "properties": {
+        "event": "Team Ikuzawa",
+        "startDate": "23/04/2026",
+        "displayDate": "23",
+        "startHour": "7:00 PM – 10:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Montello 8, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Montello+8,+Milano",
+        "regLink": "",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Marina Rinaldi",
+      "geometry": { "type": "Point", "coordinates": [9.194234, 45.4652354] },
+      "properties": {
+        "event": "Marina Rinaldi",
+        "startDate": "23/04/2026",
+        "displayDate": "23",
+        "startHour": "6:00 PM – 8:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Piazza Liberty 2",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Liberty+2",
+        "regLink": "",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Max&Co",
+      "geometry": { "type": "Point", "coordinates": [9.1947074, 45.4653781] },
+      "properties": {
+        "event": "Max&Co",
+        "startDate": "23/04/2026",
+        "displayDate": "23",
+        "startHour": "6:00 PM – 8:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Piazza Liberty 4",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Liberty+4",
+        "regLink": "",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Flower Mountain",
+      "geometry": { "type": "Point", "coordinates": [9.1977999, 45.4638564] },
+      "properties": {
+        "event": "Flower Mountain",
+        "startDate": "23/04/2026",
+        "displayDate": "23",
+        "startHour": "6:00 PM – 0:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Durini 4, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Durini+4,+Milano",
+        "regLink": "",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Timberland",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.186820299999999, 45.4646305]
+      },
+      "properties": {
+        "event": "Timberland",
+        "startDate": "24/04/2026",
+        "displayDate": "24",
+        "startHour": "5:00 PM – 8:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Orefici 11 store",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Orefici+11+store",
+        "regLink": "",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "After Fortuna",
+      "geometry": { "type": "Point", "coordinates": [9.1146654, 45.5143528] },
+      "properties": {
+        "event": "After Fortuna",
+        "startDate": "25/04/2026",
+        "displayDate": "25",
+        "startHour": "11:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Privata Venezia Giulia, 19, 20157 Milano MI",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Privata+Venezia+Giulia,+19,+20157+Milano+MI",
+        "regLink": "https://amelia.and-or.it/dettaglio_evento.php?evento=c046f038-34bf-11f1-8c60-b2d3fa880b7f",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Deoron ",
+      "geometry": { "type": "Point", "coordinates": [9.2187697, 45.4878333] },
+      "properties": {
+        "event": "Deoron ",
+        "startDate": "20/04/2026",
+        "displayDate": "20",
+        "startHour": "5:00 PM – 7:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Padova 11, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Padova+11,+Milano",
+        "regLink": "https://tally.so/r/ZjY7xa",
+        "type": "Freebies"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Golden Goose",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.156079900000002, 45.48079569999999]
+      },
+      "properties": {
+        "event": "Golden Goose",
+        "startDate": "21/04/2026",
+        "displayDate": "21",
+        "startHour": "6:00 PM – 11:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Viale Duilio 9, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Viale+Duilio+9,+Milano",
+        "regLink": "https://cloud.mailer.goldengoose.com/designweek_registration",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Strucchi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.198098, 45.46440339999999]
+      },
+      "properties": {
+        "event": "Strucchi",
+        "startDate": "20/04/2026",
+        "displayDate": "20",
+        "startHour": "7:00 PM – 10:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via durini, 16 Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+durini,+16+Milano",
+        "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSebvkRAaUnW6GujPCmVwt3arNJb9O_Wm9LCPhJwSmJ8XYr5Sw/viewform",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "APE - Design Occasionally",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.1910563, 45.48944969999999]
+      },
+      "properties": {
+        "event": "APE - Design Occasionally",
+        "startDate": "22/04/2026",
+        "displayDate": "22",
+        "startHour": "7:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Piazzale Lagosta 7, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazzale+Lagosta+7,+Milano",
+        "regLink": "https://www.eventbrite.it/e/ape-soundsystem-al-mercato-isola-celeste-design-occasionally-tickets-1986531018753?aff=oddtdtcreator",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "APE - Design Occasionally",
+      "geometry": { "type": "Point", "coordinates": [9.1687984, 45.441372] },
+      "properties": {
+        "event": "APE - Design Occasionally",
+        "startDate": "23/04/2026",
+        "displayDate": "23",
+        "startHour": "10:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Rimini 38, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Rimini+38,+Milano",
+        "regLink": "https://dice.fm/partner/tickets/event/yoe2w2-arca-mdw-candegin-presents-ape-soundsystem-accesso-riservato-ai-tesserati-arca-23rd-apr-arca-milano-tickets?dice_id=8948540&dice_channel=web&dice_tags=organic&dice_campaign=APE&dice_feature=mio_marketing&utm_source=web&utm_campaign=APE&utm_medium=mio_marketing",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "APE - Design Occasionally",
+      "geometry": { "type": "Point", "coordinates": [9.2282493, 45.4811422] },
+      "properties": {
+        "event": "APE - Design Occasionally",
+        "startDate": "24/04/2026",
+        "displayDate": "24",
+        "startHour": "6:00 PM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "via g. zanoia 2, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=via+g.+zanoia+2,+Milano",
+        "regLink": "https://6am.glass/mdw",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Design Symphony",
+      "geometry": { "type": "Point", "coordinates": [9.1918087, 45.4436062] },
+      "properties": {
+        "event": "Design Symphony",
+        "startDate": "24/04/2026",
+        "displayDate": "24",
+        "startHour": "6:00 PM – 0:00 AM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via g. spadolini 9, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+g.+spadolini+9,+Milano",
+        "regLink": "",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Design Symphony",
+      "geometry": { "type": "Point", "coordinates": [9.1918087, 45.4436062] },
+      "properties": {
+        "event": "Design Symphony",
+        "startDate": "25/04/2026",
+        "displayDate": "25",
+        "startHour": "4:00 PM – 0:00 AM",
+        "endDate": "",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via g. spadolini 9, Milano",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+g.+spadolini+9,+Milano",
+        "regLink": "",
+        "type": "Club/gigs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Opposites United",
+      "geometry": { "type": "Point", "coordinates": [9.1956585, 45.4766398] },
+      "properties": {
+        "event": "Opposites United",
+        "startDate": "20/04/2026",
+        "displayDate": "20 – 26",
+        "startHour": "4:00 PM – 0:00 AM",
+        "endDate": "26/04/2026",
+        "Multiday": "This is a one-day event",
+        "luogo": "Via Filippo Turati 34, Milan",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Via+Filippo+Turati+34,+Milan",
+        "regLink": "",
+        "type": "Design"
+      }
+    }
+  ]
+}

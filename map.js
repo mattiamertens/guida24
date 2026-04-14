@@ -1,4 +1,4 @@
-var geoJ = 'assets/features2025.geojson';
+var geoJ = 'assets/features2026.geojson';
 let savedEventsArray = JSON.parse(localStorage.getItem('savedEvents')) || [];
 let originalGeoJSON;
 
