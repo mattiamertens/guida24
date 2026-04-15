@@ -276,6 +276,9 @@ a {
 .no-pointer{
     pointer-events: none;
 }
+.t-align-center{
+    text-align: center;
+}
 
 
 /* POSITION */
