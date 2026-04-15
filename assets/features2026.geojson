@@ -1058,7 +1058,7 @@
     {
       "type": "Feature",
       "id": "Trends & Cocktails",
-      "geometry": { "type": "Point", "coordinates": [10.2213215, 45.538535] },
+      "geometry": { "type": "Point", "coordinates": [9.1847222, 45.4736252] },
       "properties": {
         "event": "Trends & Cocktails",
         "startDate": "21/04/2026",
@@ -1066,8 +1066,8 @@
         "startHour": "6:00 PM – 7:00 PM",
         "endDate": "",
         "Multiday": "This is a one-day event",
-        "luogo": "Khastalla Showroom - Piazza paolo VI",
-        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Khastalla+Showroom+-+Piazza+paolo+VI",
+        "luogo": "Piazza Paolo VI, Snc, 20121 Milano MI",
+        "gMapsLink": "https://www.google.com/maps/search/?api=1&query=Piazza+Paolo+VI,+Snc,+20121+Milano+MI",
         "regLink": "mailto:mdw@theforecastclub.net",
         "type": "Freebies"
       }
