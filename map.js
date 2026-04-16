@@ -218,7 +218,7 @@ map.on('click', 'clusters', (e) => {
                                         <button class="primary-btn"><a href="${event.properties.gMapsLink}" class="btn-text">Google maps</a></button>
                                         
                                         <button class="secondary-btn no-link-selector ${linkClass}">
-                                            <a href="${event.properties.regLink}" class="btn-text flex v-center underlined">
+                                            <a target="_blank" rel="noopener noreferrer" href="${event.properties.regLink}" class="btn-text flex v-center underlined">
                                                 RSVP
                                                 <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
                                             </a>
@@ -366,7 +366,7 @@ map.on('click', 'eventini', function poppinUp(e){
             <button class="primary-btn"><a href="${gMapsLink}" class="btn-text">Google maps</a></button>
             
             <button class="secondary-btn no-link ${linkClass}">
-                <a href="${regLink}" class="btn-text flex v-center underlined">
+                <a target="_blank" rel="noopener noreferrer" href="${regLink}" class="btn-text flex v-center underlined">
                     RSVP
                     <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
                 </a>
@@ -395,6 +395,7 @@ map.on('click', 'eventini', function poppinUp(e){
         let eventData = {id: dataId, type: type, title: event, displayDate: displayDate, startHour:startHour, endDate: endDate, gMapsLink: gMapsLink, rsvp: regLink, color: color, multiday: isMultipleDays};
 
        saveEvents(eventData, this);
+       console.log(eventData, this);
     });
 });
 
@@ -412,9 +413,6 @@ function saveEvents(event, element){
 
         document.querySelector('.nr-fav-events').innerHTML = savedEventsArray.length + ' events';
         renderSavedEvents(event);
-
-        // MAKE LITTLE ANIMATION FEEDBACK FOR SAVED EVENT
-
     }
     else{
         $(element).css('mask-image', 'var(--icon-favorites)');
@@ -434,7 +432,7 @@ function renderSavedEvents(event){
     $('.placebo').hide();
     $(favContainer).addClass('flex-display-start-center h-100');
 
-    let linkClass = event.regLink ? "" : "no-vis";
+    let linkClass = event.rsvp ? "" : "no-vis";
     // let startTime = event.startHour ? event.startHour : "19:00";
 
     $(favContainer).prepend(
@@ -465,7 +463,7 @@ function renderSavedEvents(event){
                 <button class="primary-btn"><a href="${event.gMapsLink}" class="btn-text">Google maps</a></button>
                 
                 <button class="secondary-btn ${linkClass}">
-                    <a href="${event.rsvp}" class="btn-text flex v-center underlined">
+                    <a target="_blank" rel="noopener noreferrer" href="${event.rsvp}" class="btn-text flex v-center underlined">
                         RSVP
                         <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
                     </a>

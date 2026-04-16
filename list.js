@@ -64,7 +64,7 @@ d3.json('assets/features2026.geojson')
                 <button class="primary-btn"><a href="${d.properties.gMapsLink}" class="btn-text">Google maps</a></button>
                 
                 <button class="secondary-btn no-link ${linkClass(d)}">
-                <a href="${d.properties.regLink}" class="btn-text flex v-center underlined">
+                <a target="_blank" rel="noopener noreferrer" href="${d.properties.regLink}" class="btn-text flex v-center underlined">
                     RSVP
                     <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
                 </a>
@@ -132,7 +132,7 @@ function renderSavedEvents(event){
     $('.placebo').hide();
     $(favContainer).addClass('flex-display-start-center h-100');
 
-    let linkClass = event.regLink ? "" : "no-vis";
+    let linkClass = event.rsvp ? "" : "no-vis";
 
     $(favContainer).prepend(
         `<div class="fav-popUp w-100 flex column g-m white-bg" data-id="${event.id}">
@@ -162,7 +162,7 @@ function renderSavedEvents(event){
                 <button class="primary-btn"><a href="${event.gMapsLink}" class="btn-text">Google maps</a></button>
                 
                 <button class="secondary-btn ${linkClass}">
-                    <a href="${event.rsvp}" class="btn-text flex v-center underlined">
+                    <a target="_blank" rel="noopener noreferrer" href="${event.rsvp}" class="btn-text flex v-center underlined">
                         RSVP
                         <div class="mask-image icon-s icon" alt="day-type" style="mask-image: var(--icon-extLink);"></div>
                     </a>
