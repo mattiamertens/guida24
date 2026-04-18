@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://guida-fs.netlify.app/$1",
+      "permanent": true
+    }
+  ]
+}
